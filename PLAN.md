@@ -13,6 +13,20 @@ This document outlines the complete workflow for producing the Everpeak Citadel 
 4. Clear tracking of which variations were selected
 5. Automated assembly after selection
 
+## Visual Continuity System
+
+**Critical requirement**: Maintain consistent character appearance, art style, and sequential flow across all panels.
+
+See [CONTINUITY.md](CONTINUITY.md) for the complete continuity system documentation.
+
+**Key Strategy**: Hierarchical Multi-Reference System
+- **Style Masters**: Define overall art style (line work, colors, technique)
+- **Character Library**: Comprehensive references (angles, expressions, poses) for each character
+- **Sequential Context**: Use previous panels to maintain scene continuity
+- **Enhanced Prompts**: Incorporate reference analysis into generation prompts
+
+This system ensures Val looks like Val in every panel, maintains consistent art style, and creates natural sequential flow.
+
 ## Production Workflow
 
 ```
@@ -445,7 +459,41 @@ echo "✓ Created releases/everpeak-citadel-chapter-${CHAPTER}.cbz"
 
 ## Implementation Steps
 
-### Phase 1: Foundation (Do This First)
+### Phase 0: Reference Library Creation (CRITICAL FIRST STEP)
+
+**Before generating any comic panels**, create the reference library for visual continuity.
+
+See [CONTINUITY.md](CONTINUITY.md) for complete details.
+
+0a. **Create reference folder structure**
+   ```bash
+   mkdir -p references/{style,characters,environments,sequential}
+   mkdir -p references/characters/{val,prismor,pocky,lunara,malrik}/{turnaround,expressions,poses,details}
+   ```
+
+0b. **Generate and select style masters**
+   - Generate 10 variations of a test panel
+   - Human selects best 2-3 that define the art style
+   - Analyze and save style guide data
+   - Estimated time: 1 hour
+
+0c. **Generate character reference library**
+   - For each of 5 main characters:
+     - Turnarounds: 5 angles × 3 variations = 15 images → select best 5
+     - Expressions: 6 emotions × 3 variations = 18 images → select best 6
+     - Poses: 5 poses × 3 variations = 15 images → select best 5
+   - Total per character: ~16 reference images
+   - Total for all 5 characters: ~80 reference images
+   - Estimated time: 6-8 hours
+   - **This is a one-time investment that ensures consistency across all 40 pages**
+
+0d. **Analyze all references**
+   - Use Claude's Read tool to analyze each reference image
+   - Extract style elements, color palettes, character features
+   - Save analysis metadata alongside each reference
+   - Generate prompt snippets for reuse
+
+### Phase 1: Foundation (Do This Second)
 
 1. **Create folder structure**
    ```bash
@@ -518,15 +566,16 @@ echo "✓ Created releases/everpeak-citadel-chapter-${CHAPTER}.cbz"
 
 ## Success Criteria
 
-- [ ] Sub-agent generates 3+ variations per panel
-- [ ] All variations saved to organized folders
-- [ ] Review interface loads and displays all variations
-- [ ] Selections persist to selections.json
-- [ ] Page assembly reads selections correctly
-- [ ] Final pages have proper borders and gutters
-- [ ] CBZ file opens in YACReader
-- [ ] Metadata displays correctly in comic reader
-- [ ] GitHub Pages showcases the project
+- [ ] **Reference Library**: Style masters and character references created and analyzed
+- [ ] **Visual Continuity**: Characters recognizable across multiple panels
+- [ ] **Sub-agent Generation**: Generates 3+ variations per panel with consistent style
+- [ ] **Organization**: All variations saved to organized folders with metadata
+- [ ] **Review Interface**: Loads and displays all variations correctly
+- [ ] **Selections**: Persist to selections.json with proper tracking
+- [ ] **Page Assembly**: Reads selections and composites panels correctly
+- [ ] **Layout**: Final pages have proper borders, gutters, and composition
+- [ ] **CBZ Format**: Opens correctly in YACReader with metadata
+- [ ] **GitHub Pages**: Showcases project with previews and downloads
 
 ## Next Steps
 
@@ -539,11 +588,13 @@ After creating this plan:
 
 ## Future Enhancements
 
-- **Style transfer**: Apply consistent art style across panels
-- **Character consistency**: Face detection and matching
-- **Automated lettering**: Add dialogue and captions programmatically
-- **Panel border variations**: Different styles (borderless, rounded, etc.)
-- **Color grading**: Unified color palette per chapter
-- **PDF export**: In addition to CBZ format
-- **Web viewer**: Interactive HTML5 comic reader
-- **Batch processing**: Generate entire chapters at once
+- ✅ **Style consistency** - Addressed via hierarchical multi-reference system (see CONTINUITY.md)
+- ✅ **Character consistency** - Addressed via character reference library (see CONTINUITY.md)
+- **Automated lettering**: Add dialogue and captions programmatically using text positioning
+- **Panel border variations**: Different styles (borderless, rounded, dramatic angles)
+- **Color grading**: Automated color adjustment for mood (darker for dramatic scenes, etc.)
+- **Advanced face consistency**: Face detection and matching algorithms
+- **PDF export**: High-resolution PDF format in addition to CBZ
+- **Web viewer**: Interactive HTML5 comic reader with page-turn animations
+- **Batch processing**: Generate entire chapters at once with dependency tracking
+- **Reference evolution**: ML-based selection of which references produce best results
