@@ -629,6 +629,535 @@ def generate_panel_with_continuity(panel_spec):
 - ✅ Prioritize: Style > Character > Sequential > Environment
 - ⚠️ Don't make prompts too long (diminishing returns)
 
+## Reference Image Viewer
+
+### Purpose
+
+With 80+ reference images organized across multiple folders, we need an efficient way to:
+- Browse the reference library
+- View references when crafting panel prompts
+- Compare references side-by-side
+- Review metadata and analysis
+- Select appropriate references for specific panels
+
+### Viewer Interface Design
+
+**Location**: `references/viewer.html`
+
+**Features**:
+1. **Library Browser**: Hierarchical view of all references
+2. **Filter System**: Filter by character, type (turnaround/expression/pose), style
+3. **Thumbnail Grid**: Visual overview with metadata overlays
+4. **Lightbox View**: Full-size image viewing with analysis data
+5. **Comparison Mode**: View multiple references side-by-side
+6. **Selection Tool**: Mark references for use in upcoming panel generation
+
+### HTML Structure
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Everpeak Reference Library</title>
+    <link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+    <!-- Sidebar: Navigation & Filters -->
+    <aside class="sidebar">
+        <h1>Reference Library</h1>
+
+        <section class="filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <label>Type:</label>
+                <button class="filter-btn active" data-type="all">All</button>
+                <button class="filter-btn" data-type="style">Style</button>
+                <button class="filter-btn" data-type="character">Characters</button>
+                <button class="filter-btn" data-type="environment">Environments</button>
+            </div>
+
+            <div class="filter-group" id="character-filter">
+                <label>Character:</label>
+                <button class="filter-btn" data-character="val">Val</button>
+                <button class="filter-btn" data-character="prismor">Prismor</button>
+                <button class="filter-btn" data-character="pocky">Pocky</button>
+                <button class="filter-btn" data-character="lunara">Lunara</button>
+                <button class="filter-btn" data-character="malrik">Malrik</button>
+            </div>
+
+            <div class="filter-group" id="category-filter">
+                <label>Category:</label>
+                <button class="filter-btn" data-category="turnaround">Turnarounds</button>
+                <button class="filter-btn" data-category="expressions">Expressions</button>
+                <button class="filter-btn" data-category="poses">Poses</button>
+                <button class="filter-btn" data-category="details">Details</button>
+            </div>
+        </section>
+
+        <section class="tree-view">
+            <h2>Library Structure</h2>
+            <ul class="tree">
+                <li>
+                    <span class="folder">📁 style</span>
+                    <ul><li class="file">master-style-01.png</li></ul>
+                </li>
+                <li>
+                    <span class="folder">📁 characters</span>
+                    <ul>
+                        <li>
+                            <span class="folder">📁 val</span>
+                            <ul>
+                                <li><span class="folder">📁 turnaround</span></li>
+                                <li><span class="folder">📁 expressions</span></li>
+                                <li><span class="folder">📁 poses</span></li>
+                                <li><span class="folder">📁 details</span></li>
+                            </ul>
+                        </li>
+                        <!-- Repeat for other characters -->
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="selection-panel">
+            <h2>Selected References</h2>
+            <p class="selection-count">0 selected</p>
+            <button id="export-selection">Export Selection</button>
+            <button id="clear-selection">Clear All</button>
+        </section>
+    </aside>
+
+    <!-- Main: Image Grid -->
+    <main class="image-grid">
+        <div class="toolbar">
+            <div class="view-controls">
+                <button class="view-btn active" data-view="grid">Grid</button>
+                <button class="view-btn" data-view="list">List</button>
+                <button class="view-btn" data-view="compare">Compare</button>
+            </div>
+            <div class="sort-controls">
+                <label>Sort:</label>
+                <select id="sort-select">
+                    <option value="name">Name</option>
+                    <option value="date">Date Added</option>
+                    <option value="type">Type</option>
+                    <option value="character">Character</option>
+                </select>
+            </div>
+            <div class="search">
+                <input type="text" id="search-input" placeholder="Search references...">
+            </div>
+        </div>
+
+        <!-- Reference Cards -->
+        <div class="cards-container" id="cards-container">
+            <!-- Card Template -->
+            <div class="reference-card" data-type="character" data-character="val" data-category="turnaround">
+                <div class="card-image">
+                    <img src="val/turnaround/front.png" alt="Val - Front View">
+                    <div class="card-overlay">
+                        <button class="btn-view">👁️ View</button>
+                        <button class="btn-select">✓ Select</button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Val - Front View</h3>
+                    <span class="badge badge-character">Character</span>
+                    <span class="badge badge-turnaround">Turnaround</span>
+                    <p class="card-description">Front-facing reference with neutral expression</p>
+                </div>
+                <div class="card-meta">
+                    <span>📅 2025-10-18</span>
+                    <span>🎨 1024x1536</span>
+                </div>
+            </div>
+            <!-- More cards generated dynamically -->
+        </div>
+    </main>
+
+    <!-- Lightbox: Full Image View -->
+    <div class="lightbox" id="lightbox" style="display: none;">
+        <div class="lightbox-content">
+            <button class="lightbox-close">✕</button>
+            <div class="lightbox-image">
+                <img id="lightbox-img" src="" alt="">
+            </div>
+            <div class="lightbox-sidebar">
+                <h2 id="lightbox-title">Image Title</h2>
+
+                <section class="metadata-section">
+                    <h3>Basic Info</h3>
+                    <dl>
+                        <dt>Path:</dt>
+                        <dd id="meta-path"></dd>
+                        <dt>Type:</dt>
+                        <dd id="meta-type"></dd>
+                        <dt>Character:</dt>
+                        <dd id="meta-character"></dd>
+                        <dt>Category:</dt>
+                        <dd id="meta-category"></dd>
+                        <dt>Size:</dt>
+                        <dd id="meta-size"></dd>
+                        <dt>Generated:</dt>
+                        <dd id="meta-date"></dd>
+                    </dl>
+                </section>
+
+                <section class="analysis-section">
+                    <h3>Style Analysis</h3>
+                    <div id="analysis-content">
+                        <h4>Colors</h4>
+                        <p id="analysis-colors"></p>
+
+                        <h4>Line Work</h4>
+                        <p id="analysis-linework"></p>
+
+                        <h4>Features</h4>
+                        <p id="analysis-features"></p>
+                    </div>
+                </section>
+
+                <section class="prompt-section">
+                    <h3>Prompt Snippet</h3>
+                    <textarea id="prompt-snippet" readonly></textarea>
+                    <button id="copy-prompt">Copy to Clipboard</button>
+                </section>
+
+                <div class="lightbox-actions">
+                    <button class="btn-select-lightbox">Add to Selection</button>
+                    <button class="btn-analyze">Re-analyze with Claude</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="viewer.js"></script>
+</body>
+</html>
+```
+
+### Key Features
+
+#### 1. Hierarchical Navigation
+- Tree view showing folder structure
+- Click folders to expand/collapse
+- Click files to view in lightbox
+
+#### 2. Smart Filtering
+- Filter by type (style/character/environment)
+- Filter by specific character
+- Filter by category (turnaround/expression/pose/details)
+- Multiple filters can be active simultaneously
+
+#### 3. Visual Grid Display
+- Thumbnail cards with key metadata
+- Hover overlay with quick actions
+- Badges showing type and category
+- Responsive grid layout
+
+#### 4. Lightbox Viewer
+- Full-size image display
+- Complete metadata panel
+- Saved analysis data
+- Prompt snippet for reuse
+- Copy prompt to clipboard
+
+#### 5. Comparison Mode
+- Select multiple references
+- View side-by-side
+- Compare metadata
+- Export selection list
+
+#### 6. Selection System
+- Mark references for upcoming panel generation
+- Export selection to JSON
+- Format: Compatible with panel specification
+
+### Viewer JavaScript (viewer.js)
+
+```javascript
+class ReferenceViewer {
+    constructor() {
+        this.references = [];
+        this.filteredReferences = [];
+        this.selectedReferences = new Set();
+        this.currentFilters = {
+            type: 'all',
+            character: null,
+            category: null,
+            search: ''
+        };
+
+        this.init();
+    }
+
+    async init() {
+        await this.loadReferences();
+        this.setupEventListeners();
+        this.render();
+    }
+
+    async loadReferences() {
+        // Load reference metadata from JSON files
+        // In practice, this would scan the references directory
+        // and load associated .json metadata files
+
+        try {
+            const response = await fetch('references-index.json');
+            this.references = await response.json();
+            this.filteredReferences = [...this.references];
+        } catch (error) {
+            console.error('Failed to load references:', error);
+            this.generateReferenceIndex();
+        }
+    }
+
+    generateReferenceIndex() {
+        // If no index exists, scan directory structure
+        // This would be generated by Claude when analyzing references
+    }
+
+    setupEventListeners() {
+        // Filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => this.handleFilter(e));
+        });
+
+        // Search input
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            this.currentFilters.search = e.target.value;
+            this.applyFilters();
+        });
+
+        // View mode buttons
+        document.querySelectorAll('.view-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => this.handleViewChange(e));
+        });
+
+        // Sort select
+        document.getElementById('sort-select').addEventListener('change', (e) => {
+            this.sortReferences(e.target.value);
+        });
+
+        // Export selection
+        document.getElementById('export-selection').addEventListener('click', () => {
+            this.exportSelection();
+        });
+
+        // Clear selection
+        document.getElementById('clear-selection').addEventListener('click', () => {
+            this.clearSelection();
+        });
+
+        // Lightbox close
+        document.querySelector('.lightbox-close').addEventListener('click', () => {
+            this.closeLightbox();
+        });
+    }
+
+    handleFilter(event) {
+        const btn = event.target;
+        const filterType = btn.dataset.type || btn.dataset.character || btn.dataset.category;
+
+        // Update filter state
+        if (btn.dataset.type) {
+            this.currentFilters.type = filterType;
+        } else if (btn.dataset.character) {
+            this.currentFilters.character = filterType;
+        } else if (btn.dataset.category) {
+            this.currentFilters.category = filterType;
+        }
+
+        // Update button states
+        btn.parentElement.querySelectorAll('.filter-btn').forEach(b => {
+            b.classList.remove('active');
+        });
+        btn.classList.add('active');
+
+        this.applyFilters();
+    }
+
+    applyFilters() {
+        this.filteredReferences = this.references.filter(ref => {
+            // Type filter
+            if (this.currentFilters.type !== 'all' && ref.type !== this.currentFilters.type) {
+                return false;
+            }
+
+            // Character filter
+            if (this.currentFilters.character && ref.character !== this.currentFilters.character) {
+                return false;
+            }
+
+            // Category filter
+            if (this.currentFilters.category && ref.category !== this.currentFilters.category) {
+                return false;
+            }
+
+            // Search filter
+            if (this.currentFilters.search) {
+                const searchLower = this.currentFilters.search.toLowerCase();
+                return ref.path.toLowerCase().includes(searchLower) ||
+                       (ref.description || '').toLowerCase().includes(searchLower);
+            }
+
+            return true;
+        });
+
+        this.render();
+    }
+
+    render() {
+        const container = document.getElementById('cards-container');
+        container.innerHTML = '';
+
+        this.filteredReferences.forEach(ref => {
+            const card = this.createCard(ref);
+            container.appendChild(card);
+        });
+
+        this.updateSelectionCount();
+    }
+
+    createCard(ref) {
+        const card = document.createElement('div');
+        card.className = 'reference-card';
+        card.dataset.path = ref.path;
+
+        card.innerHTML = `
+            <div class="card-image">
+                <img src="${ref.path}" alt="${ref.description || ref.path}" loading="lazy">
+                <div class="card-overlay">
+                    <button class="btn-view" onclick="viewer.openLightbox('${ref.path}')">👁️ View</button>
+                    <button class="btn-select" onclick="viewer.toggleSelection('${ref.path}')">
+                        ${this.selectedReferences.has(ref.path) ? '✓ Selected' : '+ Select'}
+                    </button>
+                </div>
+            </div>
+            <div class="card-info">
+                <h3>${this.getDisplayName(ref)}</h3>
+                <span class="badge badge-${ref.type}">${ref.type}</span>
+                ${ref.category ? `<span class="badge badge-${ref.category}">${ref.category}</span>` : ''}
+                <p class="card-description">${ref.description || ''}</p>
+            </div>
+            <div class="card-meta">
+                <span>📅 ${new Date(ref.generated).toLocaleDateString()}</span>
+                <span>🎨 ${ref.analysis?.size || 'N/A'}</span>
+            </div>
+        `;
+
+        return card;
+    }
+
+    openLightbox(path) {
+        const ref = this.references.find(r => r.path === path);
+        if (!ref) return;
+
+        // Update lightbox image
+        document.getElementById('lightbox-img').src = ref.path;
+        document.getElementById('lightbox-title').textContent = this.getDisplayName(ref);
+
+        // Update metadata
+        document.getElementById('meta-path').textContent = ref.path;
+        document.getElementById('meta-type').textContent = ref.type;
+        document.getElementById('meta-character').textContent = ref.character || 'N/A';
+        document.getElementById('meta-category').textContent = ref.category || 'N/A';
+        document.getElementById('meta-size').textContent = ref.analysis?.size || 'N/A';
+        document.getElementById('meta-date').textContent = new Date(ref.generated).toLocaleString();
+
+        // Update analysis
+        if (ref.analysis) {
+            document.getElementById('analysis-colors').textContent = ref.analysis.colors?.description || 'No analysis';
+            document.getElementById('analysis-linework').textContent = ref.analysis.style?.lineWork || 'No analysis';
+            document.getElementById('analysis-features').textContent = ref.analysis.features?.description || 'No analysis';
+        }
+
+        // Update prompt snippet
+        document.getElementById('prompt-snippet').value = ref.prompt_snippet || 'No prompt snippet available';
+
+        // Show lightbox
+        document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+
+    toggleSelection(path) {
+        if (this.selectedReferences.has(path)) {
+            this.selectedReferences.delete(path);
+        } else {
+            this.selectedReferences.add(path);
+        }
+        this.render();
+    }
+
+    clearSelection() {
+        this.selectedReferences.clear();
+        this.render();
+    }
+
+    exportSelection() {
+        const selected = Array.from(this.selectedReferences).map(path => {
+            return this.references.find(r => r.path === path);
+        });
+
+        const exportData = {
+            exported: new Date().toISOString(),
+            count: selected.length,
+            references: selected
+        };
+
+        // Download as JSON
+        const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `reference-selection-${Date.now()}.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+    }
+
+    updateSelectionCount() {
+        const count = this.selectedReferences.size;
+        document.querySelector('.selection-count').textContent = `${count} selected`;
+    }
+
+    getDisplayName(ref) {
+        // Extract meaningful name from path
+        const parts = ref.path.split('/');
+        return parts[parts.length - 1].replace(/\.[^/.]+$/, "").replace(/-/g, ' ');
+    }
+}
+
+// Initialize viewer
+const viewer = new ReferenceViewer();
+```
+
+### Integration with Workflow
+
+**When building panel prompts**:
+1. Open reference viewer at `references/viewer.html`
+2. Filter to relevant character and pose type
+3. Select appropriate references
+4. Export selection
+5. Selection JSON automatically includes metadata and prompt snippets
+6. Use selected references in panel generation
+
+**Automatic indexing**:
+- When Claude analyzes references, it generates `references-index.json`
+- Viewer loads this index for fast browsing
+- No need to scan filesystem on every load
+
+### Benefits
+
+- 📚 **Easy Browsing**: Visual interface for 80+ references
+- 🔍 **Smart Search**: Find references quickly by character, type, or keyword
+- 📊 **Metadata Access**: View analysis data alongside images
+- 🎯 **Quick Selection**: Mark references for panel generation
+- 📋 **Copy Prompts**: Reuse analyzed prompt snippets
+- 🔄 **Export Selections**: Generate panel specs with proper references
+
 ## Success Metrics
 
 A successful continuity system should achieve:

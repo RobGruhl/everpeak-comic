@@ -492,6 +492,13 @@ See [CONTINUITY.md](CONTINUITY.md) for complete details.
    - Extract style elements, color palettes, character features
    - Save analysis metadata alongside each reference
    - Generate prompt snippets for reuse
+   - Create `references-index.json` for the reference viewer
+
+0e. **Set up reference viewer** (optional but recommended)
+   - Create `references/viewer.html` for browsing the reference library
+   - Visual interface to view, filter, and select references
+   - See CONTINUITY.md "Reference Image Viewer" section for full specs
+   - Makes it easy to browse 80+ references and select appropriate ones for panels
 
 ### Phase 1: Foundation (Do This Second)
 
