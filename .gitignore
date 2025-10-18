@@ -123,4 +123,4 @@ dist
 *.swo
 .DS_Store
 
-].docs/
+.docs/
