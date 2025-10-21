@@ -12,6 +12,10 @@ from pathlib import Path
 from openai import OpenAI
 from PIL import Image, ImageDraw
 import time
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Configuration
 SCRIPT_FILE = "Comic Book Script - Everpeak.md"
@@ -148,9 +152,10 @@ def generate_panel_image(panel, page_num, character_descriptions, client):
 
     try:
         response = client.images.generate(
-            model="dall-e-2",
+            model="gpt-image-1",
             prompt=prompt,
             size="1024x1024",
+            quality="high",
             n=1
         )
 

@@ -9,7 +9,8 @@ A simple AI-generated comic book based on a D&D campaign.
 pip install -r requirements.txt
 
 # Set your OpenAI API key
-export OPENAI_API_KEY="your-key-here"
+cp .env.example .env
+# Edit .env and add your API key
 
 # Generate the comic
 python generate.py
@@ -27,8 +28,8 @@ python generate.py
 ## Requirements
 
 - Python 3.8+
-- OpenAI API key
-- ~$5-10 in API credits for full comic
+- OpenAI API key (get at https://platform.openai.com/api-keys)
+- API credits for full comic (171 panels with gpt-image-1)
 
 ## Output
 
