@@ -156,12 +156,17 @@ def generate_panel_image(panel, page_num, character_descriptions, client):
             prompt=prompt,
             size="1024x1024",
             quality="high",
-            n=1
+            n=1,
+            response_format="b64_json"
         )
 
-        # Download image
-        import urllib.request
-        urllib.request.urlretrieve(response.data[0].url, filename)
+        # Decode base64 image data
+        import base64
+        image_data = base64.b64decode(response.data[0].b64_json)
+
+        # Save image
+        with open(filename, 'wb') as f:
+            f.write(image_data)
 
         print(f"  ✓ Saved {filename.name}")
         time.sleep(1)  # Rate limiting
