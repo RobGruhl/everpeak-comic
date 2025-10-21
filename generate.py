@@ -306,6 +306,10 @@ def main():
     # Parse script
     pages, character_descriptions = parse_script()
 
+    # TEST MODE: Only generate page 1
+    pages = [p for p in pages if p['page_num'] == 1]
+    print(f"\n⚠️  TEST MODE: Only generating page {pages[0]['page_num']}")
+
     # Generate panels for each page
     print("\n" + "=" * 60)
     print("GENERATING PANELS")
