@@ -9,25 +9,23 @@
       "visual": "Malrik approaching well-dressed person",
       "dialogue": "Malrik: \"Care for a game, friend? Just a bit of fun?\"",
       "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
+        "Malrik": "Drow rogue, young adult. 5'6\" tall. Slim agile acrobat's build. Dark gray-blue drow skin. Short white hair, practical cut. Pale lavender eyes, sharp and observant. Sharp cheekbones with mischievous warm smile. Dark leather armor, well-maintained. Colorful street performer's vest underneath. Deck of playing cards always within reach. Quick fluid movements. Warm smile contrasting with typical drow stereotypes."
       },
       "npcs": {},
       "aspect_ratio": "square",
       "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Malrik approaching well-dressed person\n\nDialogue: Malrik: \"Care for a game, friend? Just a bit of fun?\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nLocation: Festival marketplace - bustling outdoor area with festival stalls, decorations, winter setting with snow on ground, crowd of people celebrating.\n\nCharacters:\n- Malrik: Drow rogue, young adult. 5'6\" tall. Slim agile acrobat's build. Dark gray-blue drow complexion. White hair kept short and practical. Pale lavender eyes, sharp and observant. Sharp cheekbones with mischievous smile. Dark well-maintained leather armor, not flashy. Street performer's clothing underneath - colorful vest visible. Multiple hidden pockets. Deck of playing cards in hand or at belt. Quick fluid movements. Warm engaging smile.\n\nNPCs:\n- Well-dressed gambler: Human adult, dressed in fine winter clothes (merchant class), interested expression, holding coin purse.\n\nScene: Malrik approaching a well-dressed person in the festival marketplace. Malrik has a friendly, charming demeanor, gesturing invitingly. The well-dressed gambler looks interested. Festival stalls and decorations visible in background. Casual, inviting body language from Malrik.\n\nDialogue: Malrik: \"Care for a game, friend? Just a bit of fun?\"\n\nInclude speech bubble with text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 2,
       "annotation": null,
       "visual": "Close on dice rolling Malrik's hand with subtle sleight-of-hand magic",
       "dialogue": "Gambler: \"Ten gold says I win!\"",
-      "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
-      },
+      "characters": {},
       "npcs": {},
       "aspect_ratio": "square",
       "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Close on dice rolling Malrik's hand with subtle sleight-of-hand magic\n\nDialogue: Gambler: \"Ten gold says I win!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nLocation: Festival marketplace game table - close-up view of gaming surface.\n\nScene: Extreme close-up on dice in mid-roll on a wooden gaming table. Malrik's hand visible with dark gray-blue drow skin, showing subtle magical shimmer or glow suggesting sleight-of-hand magic at work. Fingers positioned with practiced precision. Perhaps faint sparkles or magical effect around fingertips. Coins visible on table. Sense of motion as dice tumble.\n\nDialogue: Gambler (off-panel): \"Ten gold says I win!\"\n\nInclude speech bubble with text clearly readable.\n\nStyle: Bold ink line art, vibrant colors with emphasis on magical effects, dynamic composition showing motion, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 3,
@@ -35,12 +33,12 @@
       "visual": "Malrik collecting winnings with charming smile",
       "dialogue": "Gambler: \"Not my lucky day, lad!\" Malrik: \"Perhaps the Essences smile on me today.\"",
       "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
+        "Malrik": "Drow rogue, young adult. 5'6\" tall. Slim agile acrobat's build. Dark gray-blue drow skin. Short white hair, practical cut. Pale lavender eyes, sharp and observant. Sharp cheekbones with mischievous warm smile. Dark leather armor, well-maintained. Colorful street performer's vest underneath. Deck of playing cards always within reach. Quick fluid movements. Warm smile contrasting with typical drow stereotypes."
       },
       "npcs": {},
       "aspect_ratio": "square",
       "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Malrik collecting winnings with charming smile\n\nDialogue: Gambler: \"Not my lucky day, lad!\" Malrik: \"Perhaps the Essences smile on me today.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nLocation: Festival marketplace game table.\n\nCharacters:\n- Malrik: Drow rogue. 5'6\" tall. Slim agile build. Dark gray-blue drow skin. White short hair. Pale lavender eyes twinkling with mischief. Sharp cheekbones. Charming warm smile - genuinely friendly despite winning. Dark leather armor. Colorful vest underneath. Quick graceful movements as he collects coins.\n\nNPCs:\n- Gambler: Human adult in fine clothes, shaking head with good-natured resignation, smiling despite losing, holding empty coin purse.\n\nScene: Malrik collecting gold coins from the table with graceful sweeping gesture. His expression is charming and friendly - no gloating, pure warmth. The gambler stands or sits nearby with good-natured resignation, perhaps laughing at his own bad luck. Festival atmosphere in background. Malrik's body language shows he's a performer who makes losing feel fun.\n\nDialogue: Gambler: \"Not my lucky day, lad!\" Malrik: \"Perhaps the Essences smile on me today.\"\n\nInclude speech bubbles with text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 4,
@@ -48,27 +46,29 @@
       "visual": "Small halfling child (Sorrel) watching Malrik Wise eyes despite young appearance",
       "dialogue": "Sorrel: \"Oh wow! You're really good at that!\"",
       "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
-        "Sorrel": ""
+        "Malrik": "Drow rogue, young adult. 5'6\" tall. Slim agile acrobat's build. Dark gray-blue drow skin. Short white hair, practical cut. Pale lavender eyes, sharp and observant. Sharp cheekbones with mischievous warm smile. Dark leather armor, well-maintained. Colorful street performer's vest underneath. Deck of playing cards always within reach. Quick fluid movements. Warm smile contrasting with typical drow stereotypes."
       },
-      "npcs": {},
+      "npcs": {
+        "Sorrel": "Gold dragon wyrmling in halfling disguise. Appears as halfling child around 10 years old. 3'2\" tall. Sandy-blond hair. Warm amber eyes with hints of gold (the giveaway to those who know). Small unassuming build. Slightly oversized travel cloak over simple halfling garb. Stands with feet turned inward (shy posture). Arms often behind back. Expression shows curious wide-eyed wonder mixed with ancient wisdom beyond apparent age. Despite childlike appearance, eyes reveal deep intelligence."
+      },
       "aspect_ratio": "square",
       "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Sorrel: \n\nScene: Small halfling child (Sorrel) watching Malrik Wise eyes despite young appearance\n\nDialogue: Sorrel: \"Oh wow! You're really good at that!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nLocation: Festival marketplace - edge of gaming area.\n\nCharacters:\n- Malrik: Drow rogue visible in background or mid-ground, 5'6\" tall, dark gray-blue skin, white hair, pale lavender eyes, leather armor with colorful vest, at gaming table or nearby.\n\nNPCs:\n- Sorrel (main focus): Halfling child (secretly gold dragon). 3'2\" tall, appears around 10 years old. Sandy-blond hair. Warm amber eyes with subtle golden hints - these eyes are KEY and show unusual wisdom. Small unassuming build. Slightly oversized travel cloak over simple halfling garb. Standing with feet turned inward (shy posture), arms behind back or at sides. Expression of wide-eyed wonder BUT with subtle hint of ancient knowing in the eyes. Face shows childlike excitement mixed with perceptive observation.\n\nScene: Focus on Sorrel watching Malrik's performance. Sorrel stands at edge of small crowd or off to side, observing intently. The halfling child's body language is shy and unassuming, but the eyes reveal something more - ancient wisdom, keen perception. Malrik visible performing or collecting winnings. Festival marketplace background. Sorrel's expression shows genuine amazement but also subtle recognition of skill.\n\nDialogue: Sorrel: \"Oh wow! You're really good at that!\"\n\nInclude speech bubble with text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 5,
       "annotation": null,
       "visual": "Malrik noticing Sorrel's unusual interest",
-      "dialogue": "Malrik: \"Just a bit of fun. You like games, kid?\" Sorrel: \"I like watching clever people at work.\"  ## CHAPTER 2: TROUBLE AT THE FORGE",
+      "dialogue": "Malrik: \"Just a bit of fun. You like games, kid?\" Sorrel: \"I like watching clever people at work.\"",
       "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
-        "Sorrel": ""
+        "Malrik": "Drow rogue, young adult. 5'6\" tall. Slim agile acrobat's build. Dark gray-blue drow skin. Short white hair, practical cut. Pale lavender eyes, sharp and observant. Sharp cheekbones with mischievous warm smile. Dark leather armor, well-maintained. Colorful street performer's vest underneath. Deck of playing cards always within reach. Quick fluid movements. Warm smile contrasting with typical drow stereotypes."
       },
-      "npcs": {},
+      "npcs": {
+        "Sorrel": "Gold dragon wyrmling in halfling disguise. Appears as halfling child around 10 years old. 3'2\" tall. Sandy-blond hair. Warm amber eyes with hints of gold (the giveaway to those who know). Small unassuming build. Slightly oversized travel cloak over simple halfling garb. Stands with feet turned inward (shy posture). Arms often behind back. Expression shows curious wide-eyed wonder mixed with ancient wisdom beyond apparent age. Despite childlike appearance, eyes reveal deep intelligence."
+      },
       "aspect_ratio": "square",
       "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Sorrel: \n\nScene: Malrik noticing Sorrel's unusual interest\n\nDialogue: Malrik: \"Just a bit of fun. You like games, kid?\" Sorrel: \"I like watching clever people at work.\"  ## CHAPTER 2: TROUBLE AT THE FORGE\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nLocation: Festival marketplace.\n\nCharacters:\n- Malrik: Drow rogue. 5'6\" tall. Slim agile build. Dark gray-blue drow skin. White short hair. Pale lavender eyes now showing curiosity and slight puzzlement. Sharp cheekbones. Friendly smile but with hint of intrigue - sensing something unusual about this child. Dark leather armor. Colorful vest. Body language showing he's turning attention to Sorrel, maybe crouching or leaning down to talk at child's level.\n\nNPCs:\n- Sorrel: Halfling child. 3'2\" tall, appears 10 years old. Sandy-blond hair. Warm amber eyes with golden hints that catch light unusually. Small build. Oversized travel cloak. Shy posture with feet turned inward, arms behind back. Expression mixing childlike innocence with unsettling wisdom - the way they phrase things is too perceptive, too knowing. Slight mysterious smile.\n\nScene: Malrik and Sorrel in conversation. Malrik has noticed something unusual about this halfling child's interest or the way they speak. Body language suggests Malrik is engaging with friendly curiosity, perhaps crouching to be at eye level. Sorrel maintains shy posture but eyes show ancient intelligence. Festival background with other people passing by, unaware of the dragon in their midst. Moment of connection between clever rogue and wise dragon disguised as child.\n\nDialogue: Malrik: \"Just a bit of fun. You like games, kid?\" Sorrel: \"I like watching clever people at work.\"\n\nInclude speech bubbles with text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
   ]
 }

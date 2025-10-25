@@ -302,22 +302,39 @@ def refine_panel_with_gemini(openai_filename, original_prompt, panel_num):
             image_data = f.read()
 
         # Create refinement prompt
+        # Extract dialogue from prompt
+        dialogue_section = ""
+        if "Dialogue:" in original_prompt:
+            dialogue_start = original_prompt.find("Dialogue:")
+            dialogue_end = original_prompt.find("\n\n", dialogue_start)
+            if dialogue_end == -1:
+                dialogue_end = original_prompt.find("\nInclude", dialogue_start)
+            if dialogue_end == -1:
+                dialogue_end = len(original_prompt)
+            dialogue_section = original_prompt[dialogue_start:dialogue_end].strip()
+
         refine_prompt = f"""The attached image is a comic book panel. The panel should depict: {original_prompt}
 
 This should be a {aspect} image in comic book style.
 
+CRITICAL: This panel MUST include speech bubbles with the following dialogue:
+{dialogue_section}
+
 Please refine this image to better match the description, ensuring:
+- ALL dialogue text is preserved in clear, readable speech bubbles
+- Speech bubbles are positioned near the speaking character
 - Characters match their descriptions accurately
-- Text in speech bubbles is clear and readable
 - Composition follows the scene description
-- Art style is consistent (bold ink line art, vibrant colors)"""
+- Art style is consistent (bold ink line art, vibrant colors)
+
+DO NOT remove or alter any dialogue text. The speech bubbles are essential to the comic."""
 
         # Send to Gemini
         response = client.models.generate_content(
             model="gemini-2.5-flash-image",
             contents=[
-                types.Part.from_bytes(image_data, mime_type="image/png"),
-                refine_prompt
+                types.Part(inline_data=types.Blob(data=image_data, mime_type="image/png")),
+                types.Part(text=refine_prompt)
             ],
         )
 
