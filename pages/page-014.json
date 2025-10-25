@@ -1,0 +1,109 @@
+{
+  "page_num": 14,
+  "title": "First Combat - Blink Mephits",
+  "panel_count": 8,
+  "panels": [
+    {
+      "panel_num": 1,
+      "annotation": null,
+      "visual": "Pocky attempting to fix runes Chalk in hand, concentrating",
+      "dialogue": "Pocky: \"If I can just realign this symbol...\"",
+      "characters": {
+        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Pocky attempting to fix runes Chalk in hand, concentrating\n\nDialogue: Pocky: \"If I can just realign this symbol...\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 2,
+      "annotation": null,
+      "visual": "Rune sparking violently **Sound EFFECTS:** \"CRACKLE!\"",
+      "dialogue": "Pocky: \"No! It's not—\"",
+      "characters": {
+        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Rune sparking violently **Sound EFFECTS:** \"CRACKLE!\"\n\nDialogue: Pocky: \"No! It's not—\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 3,
+      "annotation": "Large splash",
+      "visual": "Blink Mephit materializing Nearly invisible, flickering edges Afterimages trailing **Sound EFFECTS:** \"SHHHHRRRR\" **Caption:** \"BLINK MEPHIT - DISPLACEMENT ESSENCE CORRUPTED\"",
+      "dialogue": "",
+      "characters": {
+        "Blink Mephit": "Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages"
+      },
+      "npcs": {},
+      "aspect_ratio": "splash",
+      "size": "1536x2048",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Blink Mephit: Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages\n\nScene: Blink Mephit materializing Nearly invisible, flickering edges Afterimages trailing **Sound EFFECTS:** \"SHHHHRRRR\" **Caption:** \"BLINK MEPHIT - DISPLACEMENT ESSENCE CORRUPTED\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 4,
+      "annotation": null,
+      "visual": "Val disoriented by mephit's spatial attack Reality warping around him",
+      "dialogue": "Val: \"Can't... which way is...?\"",
+      "characters": {
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val disoriented by mephit's spatial attack Reality warping around him\n\nDialogue: Val: \"Can't... which way is...?\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 5,
+      "annotation": null,
+      "visual": "Lunara casting firebolt Mephit blinking to avoid Fire tracking it through teleports **Sound EFFECTS:** \"FWOOSH!\"",
+      "dialogue": "",
+      "characters": {
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Lunara casting firebolt Mephit blinking to avoid Fire tracking it through teleports **Sound EFFECTS:** \"FWOOSH!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 6,
+      "annotation": null,
+      "visual": "Firebolt connecting Mephit shrieking, partially dispersed **Sound EFFECTS:** \"SKREEEEE!\"",
+      "dialogue": "",
+      "characters": {},
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nScene: Firebolt connecting Mephit shrieking, partially dispersed **Sound EFFECTS:** \"SKREEEEE!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 7,
+      "annotation": null,
+      "visual": "Prismor channeling poison spray Toxic mist coating mephit",
+      "dialogue": "Prismor: \"By the Ancients, begone!\"",
+      "characters": {
+        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Prismor channeling poison spray Toxic mist coating mephit\n\nDialogue: Prismor: \"By the Ancients, begone!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 8,
+      "annotation": "Wide",
+      "visual": "Mephit dissolving into light Energy flowing back to damaged rune Rune fading **Sound EFFECTS:** \"WHOOOOSH\"",
+      "dialogue": "Pocky: \"It was bound to the tampered rune! Destroying it freed the passage!\" ",
+      "characters": {
+        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
+      },
+      "npcs": {},
+      "aspect_ratio": "wide",
+      "size": "1536x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Mephit dissolving into light Energy flowing back to damaged rune Rune fading **Sound EFFECTS:** \"WHOOOOSH\"\n\nDialogue: Pocky: \"It was bound to the tampered rune! Destroying it freed the passage!\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    }
+  ]
+}

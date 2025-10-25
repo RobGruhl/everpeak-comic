@@ -1,0 +1,98 @@
+{
+  "page_num": 8,
+  "title": "The Race",
+  "panel_count": 7,
+  "panels": [
+    {
+      "panel_num": 1,
+      "annotation": "Wide",
+      "visual": "Race starting line Multiple sleds lined up Rope dropping **Sound EFFECTS:** \"GO!\"",
+      "dialogue": "",
+      "characters": {},
+      "npcs": {},
+      "aspect_ratio": "wide",
+      "size": "1536x1024",
+      "prompt": "Professional comic book panel illustration.\n\nScene: Race starting line Multiple sleds lined up Rope dropping **Sound EFFECTS:** \"GO!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 2,
+      "annotation": null,
+      "visual": "Val's sled leaping forward with magical boost Leaving trail of sparks **Sound EFFECTS:** \"WHOOOOSH!\"",
+      "dialogue": "Val: \"Whoa!\"",
+      "characters": {
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val's sled leaping forward with magical boost Leaving trail of sparks **Sound EFFECTS:** \"WHOOOOSH!\"\n\nDialogue: Val: \"Whoa!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 3,
+      "annotation": null,
+      "visual": "Midway down - displacement magic gone wrong Val swerving wildly as space warps **Sound EFFECTS:** \"BRZZZZT!\"",
+      "dialogue": "",
+      "characters": {
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Midway down - displacement magic gone wrong Val swerving wildly as space warps **Sound EFFECTS:** \"BRZZZZT!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 4,
+      "annotation": null,
+      "visual": "Prismor hitting thornbushes Cloak tearing, taking damage **Sound EFFECTS:** \"CRASH!\"",
+      "dialogue": "Prismor: \"Ugh! These weren't here in previous years!\"",
+      "characters": {
+        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Prismor hitting thornbushes Cloak tearing, taking damage **Sound EFFECTS:** \"CRASH!\"\n\nDialogue: Prismor: \"Ugh! These weren't here in previous years!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 5,
+      "annotation": null,
+      "visual": "Val crossing finish line Sled shooting sparks everywhere **Sound EFFECTS:** \"ZZZZAP!\"",
+      "dialogue": "",
+      "characters": {
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val crossing finish line Sled shooting sparks everywhere **Sound EFFECTS:** \"ZZZZAP!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 6,
+      "annotation": null,
+      "visual": "Sorrel (halfling child) at finish line, eyes wide",
+      "dialogue": "Sorrel: \"Oh wow! That's a really fast sled! Can I use it for the next run?\" Val: \"Uh... sure, kid.\"",
+      "characters": {
+        "Sorrel": "",
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Sorrel: \n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Sorrel (halfling child) at finish line, eyes wide\n\nDialogue: Sorrel: \"Oh wow! That's a really fast sled! Can I use it for the next run?\" Val: \"Uh... sure, kid.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 7,
+      "annotation": null,
+      "visual": "Malrik collecting winnings Passing gold to Prismor secretly",
+      "dialogue": "Gambler: \"Funny things happening with the essences these days...\" Malrik (thought): \"Funnier than you know.\"  ## CHAPTER 4: THE BALCONY GARDEN",
+      "characters": {
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
+        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Malrik collecting winnings Passing gold to Prismor secretly\n\nDialogue: Gambler: \"Funny things happening with the essences these days...\" Malrik (thought): \"Funnier than you know.\"  ## CHAPTER 4: THE BALCONY GARDEN\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    }
+  ]
+}

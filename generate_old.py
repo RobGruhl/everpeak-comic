@@ -27,7 +27,7 @@ except ImportError:
 load_dotenv()
 
 # Configuration
-PAGES_JSON_DIR = Path("pages")  # Structured page JSON files
+SCRIPT_FILE = "Comic Book Script - Everpeak.md"
 OUTPUT_DIR = Path("output")
 PANELS_DIR = OUTPUT_DIR / "panels"
 PAGES_DIR = OUTPUT_DIR / "pages"
@@ -49,33 +49,6 @@ def setup_directories():
     PANELS_DIR.mkdir(parents=True, exist_ok=True)
     PAGES_DIR.mkdir(parents=True, exist_ok=True)
     print(f"✓ Created output directories")
-
-
-def load_page_data(page_num):
-    """Load page data from JSON file."""
-    page_file = PAGES_JSON_DIR / f"page-{page_num:03d}.json"
-
-    if not page_file.exists():
-        raise FileNotFoundError(f"Page file not found: {page_file}")
-
-    with open(page_file, 'r', encoding='utf-8') as f:
-        return json.load(f)
-
-
-def list_available_pages():
-    """List all available page JSON files."""
-    if not PAGES_JSON_DIR.exists():
-        return []
-
-    page_files = sorted(PAGES_JSON_DIR.glob("page-*.json"))
-    pages = []
-
-    for page_file in page_files:
-        with open(page_file, 'r', encoding='utf-8') as f:
-            page_data = json.load(f)
-            pages.append(page_data)
-
-    return pages
 
 
 def parse_script():
@@ -191,7 +164,7 @@ Panel: {panel['visual']}"""
     return prompt
 
 
-def generate_panel_image(panel, page_num, client):
+def generate_panel_image(panel, page_num, character_descriptions, client):
     """Generate a single panel image using OpenAI, optionally refine with Gemini."""
 
     # OpenAI filename
@@ -199,22 +172,18 @@ def generate_panel_image(panel, page_num, client):
     # Final filename (will be symlinked or copied)
     final_filename = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
 
-    # Get prompt from panel data (pre-built in JSON)
-    prompt = panel.get('prompt', '')
-
-    if not prompt:
-        print(f"  ✗ Error: No prompt found for panel {panel['panel_num']}")
-        return None
-
     # Skip if already exists
     if openai_filename.exists():
         print(f"  ↪ Panel {panel['panel_num']} (OpenAI) already exists, skipping generation")
 
         # Refine with Gemini for panels 1-5
         if panel['panel_num'] <= 5 and GEMINI_AVAILABLE:
+            prompt = create_panel_prompt(panel, character_descriptions)
             gemini_file = refine_panel_with_gemini(openai_filename, prompt, panel['panel_num'])
 
         return final_filename
+
+    prompt = create_panel_prompt(panel, character_descriptions)
 
     print(f"  → Generating panel {panel['panel_num']} with OpenAI...")
     print(f"     Prompt: {prompt[:100]}...")
@@ -337,11 +306,11 @@ Please refine this image to better match the description, ensuring:
         return None
 
 
-def assemble_page(page_data):
+def assemble_page(page, pages_data):
     """Assemble panels into a page."""
 
-    page_num = page_data['page_num']
-    panels = page_data['panels']
+    page_num = page['page_num']
+    panels = page['panels']
     num_panels = len(panels)
 
     print(f"\n→ Assembling page {page_num} ({num_panels} panels)...")
@@ -462,44 +431,41 @@ def main():
     # Setup
     setup_directories()
 
-    # Load page data from JSON
-    print("\n→ Loading page data from JSON files...")
-    page_num = 1  # TEST MODE: Only generate page 1
+    # Parse script
+    pages, character_descriptions = parse_script()
 
-    try:
-        page_data = load_page_data(page_num)
-        print(f"✓ Loaded page {page_num}: '{page_data['title']}' ({page_data['panel_count']} panels)")
-    except FileNotFoundError as e:
-        print(f"\n✗ Error: {e}")
-        print(f"\n  Run parse_script.py first to generate page JSON files:")
-        print(f"  python parse_script.py")
+    # TEST MODE: Only generate page 1
+    pages = [p for p in pages if p['page_num'] == 1]
+    if not pages:
+        print("\n✗ Error: No pages found in script!")
         return
-
-    print(f"\n⚠️  TEST MODE: Only generating page {page_num}")
+    print(f"\n⚠️  TEST MODE: Only generating page {pages[0]['page_num']}")
 
     # Generate panels for each page
     print("\n" + "=" * 60)
     print("GENERATING PANELS")
     print("=" * 60)
 
-    print(f"\n📄 Page {page_data['page_num']} ({page_data['panel_count']} panels)")
+    for page in pages:
+        print(f"\n📄 Page {page['page_num']} ({len(page['panels'])} panels)")
 
-    for panel in page_data['panels']:
-        generate_panel_image(panel, page_data['page_num'], client)
+        for panel in page['panels']:
+            generate_panel_image(panel, page['page_num'], character_descriptions, client)
 
     # Assemble pages
     print("\n" + "=" * 60)
     print("ASSEMBLING PAGES")
     print("=" * 60)
 
-    assemble_page(page_data)
+    for page in pages:
+        assemble_page(page, pages)
 
     # Create CBZ
     print("\n" + "=" * 60)
     print("PACKAGING CBZ")
     print("=" * 60)
 
-    create_cbz([page_data])
+    create_cbz(pages)
 
 
 if __name__ == "__main__":

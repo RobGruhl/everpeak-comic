@@ -1,0 +1,129 @@
+{
+  "page_num": 28,
+  "title": "Battle Intensifies",
+  "panel_count": 9,
+  "panels": [
+    {
+      "panel_num": 1,
+      "annotation": null,
+      "visual": "Malrik attempting Displacement lens Using sleight of hand **Caption:** \"DC 15 SLEIGHT OF HAND - FAILED!\"",
+      "dialogue": "",
+      "characters": {
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Malrik attempting Displacement lens Using sleight of hand **Caption:** \"DC 15 SLEIGHT OF HAND - FAILED!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 2,
+      "annotation": null,
+      "visual": "Blink Mephit spawning Nearly invisible, flickering **Sound EFFECTS:** \"FWIP-FWIP\"",
+      "dialogue": "",
+      "characters": {
+        "Blink Mephit": "Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Blink Mephit: Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages\n\nScene: Blink Mephit spawning Nearly invisible, flickering **Sound EFFECTS:** \"FWIP-FWIP\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 3,
+      "annotation": null,
+      "visual": "Gear Mephit attacking Lunara Throwing gear-grenade **Sound EFFECTS:** \"TICK-TICK-BOOM!\" **Caption:** \"8 DAMAGE TO LUNARA!\"",
+      "dialogue": "",
+      "characters": {
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing",
+        "Gear Mephit": "Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n- Gear Mephit: Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components\n\nScene: Gear Mephit attacking Lunara Throwing gear-grenade **Sound EFFECTS:** \"TICK-TICK-BOOM!\" **Caption:** \"8 DAMAGE TO LUNARA!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 4,
+      "annotation": null,
+      "visual": "Val punching Gear Mephit Monk powers flowing **Sound EFFECTS:** \"CRACK!\"",
+      "dialogue": "Val: \"Fight me, not my friends!\"",
+      "characters": {
+        "Gear Mephit": "Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components",
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Gear Mephit: Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val punching Gear Mephit Monk powers flowing **Sound EFFECTS:** \"CRACK!\"\n\nDialogue: Val: \"Fight me, not my friends!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 5,
+      "annotation": null,
+      "visual": "Pocky attempting Celestial lens again Failing again **Caption:** \"FAILED - STARLIGHT MEPHIT SPAWNS!\"",
+      "dialogue": "",
+      "characters": {
+        "Starlight Mephit": "Size: Small elemental (2-3 feet) Form: Swirling star-fields and cosmic dust Body: Ethereal, composed of living starlight",
+        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Starlight Mephit: Size: Small elemental (2-3 feet) Form: Swirling star-fields and cosmic dust Body: Ethereal, composed of living starlight\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Pocky attempting Celestial lens again Failing again **Caption:** \"FAILED - STARLIGHT MEPHIT SPAWNS!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 6,
+      "annotation": "Large",
+      "visual": "Starlight Mephit appearing Made of swirling cosmic dust and stars Radiating beauty and danger **Sound EFFECTS:** \"SHIMMMMER\"",
+      "dialogue": "",
+      "characters": {
+        "Starlight Mephit": "Size: Small elemental (2-3 feet) Form: Swirling star-fields and cosmic dust Body: Ethereal, composed of living starlight"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Starlight Mephit: Size: Small elemental (2-3 feet) Form: Swirling star-fields and cosmic dust Body: Ethereal, composed of living starlight\n\nScene: Starlight Mephit appearing Made of swirling cosmic dust and stars Radiating beauty and danger **Sound EFFECTS:** \"SHIMMMMER\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 7,
+      "annotation": null,
+      "visual": "Starlight Mephit firing cone of starlight Val and Pocky in the area **Sound EFFECTS:** \"SHOOOOM\"",
+      "dialogue": "",
+      "characters": {
+        "Starlight Mephit": "Size: Small elemental (2-3 feet) Form: Swirling star-fields and cosmic dust Body: Ethereal, composed of living starlight",
+        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books",
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Starlight Mephit: Size: Small elemental (2-3 feet) Form: Swirling star-fields and cosmic dust Body: Ethereal, composed of living starlight\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Starlight Mephit firing cone of starlight Val and Pocky in the area **Sound EFFECTS:** \"SHOOOOM\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 8,
+      "annotation": null,
+      "visual": "Val dodging, constitution save success Taking minimal damage **Caption:** \"VAL: SAVE SUCCESS - 3 DAMAGE\"",
+      "dialogue": "",
+      "characters": {
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val dodging, constitution save success Taking minimal damage **Caption:** \"VAL: SAVE SUCCESS - 3 DAMAGE\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 9,
+      "annotation": null,
+      "visual": "Pocky taking full hit, glowing **Caption:** \"POCKY: SAVE FAILED - 6 DAMAGE, GLOWING\"",
+      "dialogue": "Pocky: \"Ow! Why am I glowing?!\" ",
+      "characters": {
+        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Pocky taking full hit, glowing **Caption:** \"POCKY: SAVE FAILED - 6 DAMAGE, GLOWING\"\n\nDialogue: Pocky: \"Ow! Why am I glowing?!\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "page_num": 40,
+  "title": "The New Everpeak (Final Page)",
+  "panel_count": 5,
+  "panels": [
+    {
+      "panel_num": 1,
+      "annotation": "Large, top half of page",
+      "visual": "Establishing shot of Everpeak Citadel Magical energy flowing through ley lines visible Displacement-dominant but balanced Beautiful and thriving",
+      "dialogue": "",
+      "characters": {},
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nScene: Establishing shot of Everpeak Citadel Magical energy flowing through ley lines visible Displacement-dominant but balanced Beautiful and thriving\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 2,
+      "annotation": null,
+      "visual": "Festival celebrations continuing Party integrated into community **Caption:** \"The Winter Festival celebrates not just the season, but new beginnings.\"",
+      "dialogue": "",
+      "characters": {
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Festival celebrations continuing Party integrated into community **Caption:** \"The Winter Festival celebrates not just the season, but new beginnings.\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 3,
+      "annotation": null,
+      "visual": "Close on party together Sharing a drink, laughing",
+      "dialogue": "Val: \"So... same time next century?\" Malrik: \"Let's hope it's quieter!\" (Laughter)",
+      "characters": {
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Close on party together Sharing a drink, laughing\n\nDialogue: Val: \"So... same time next century?\" Malrik: \"Let's hope it's quieter!\" (Laughter)\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 4,
+      "annotation": null,
+      "visual": "Night sky above Everpeak Stars shining bright Orrery's glow visible deep within **Caption:** \"Some called it the end of tradition. Others called it evolution.\"",
+      "dialogue": "",
+      "characters": {},
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nScene: Night sky above Everpeak Stars shining bright Orrery's glow visible deep within **Caption:** \"Some called it the end of tradition. Others called it evolution.\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 5,
+      "annotation": "Wide bottom",
+      "visual": "Final splash panel Party silhouetted against starlit sky Everpeak glowing below **Caption:** \"But the five heroes who saved Everpeak knew the truth: They had given the citadel a future. And that was enough.\" Prismor: \"The high elves sacrificed everything for this place.\" Lunara: \"And we honored that sacrifice by letting it grow.\" Pocky: \"Not the same as before...\" Malrik: \"Better.\" Val: \"Different. And worth protecting.\"  Warm coppers/golds for Val Cool blues/crystals for Prismor Deep blues/silvers for Pocky Greens/browns for Lunara Purple/grays for Malrik Multi-colored essence effects throughout Golden light for Sorrel Ancient elven architecture mixed with lived-in spaces Magical energy as visible colored light Winter/snow contrasted with magical warmth Each essence has distinct color coding Character growth shown through body language and expression changes Magical effects: flowing, ethereal lettering Combat: bold, sharp lettering Essence manifestations: color-coded to match essence type ",
+      "dialogue": "",
+      "characters": {
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work",
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
+        "Sorrel": "",
+        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)",
+        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books",
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
+      },
+      "npcs": {},
+      "aspect_ratio": "wide",
+      "size": "1536x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Sorrel: \n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Final splash panel Party silhouetted against starlit sky Everpeak glowing below **Caption:** \"But the five heroes who saved Everpeak knew the truth: They had given the citadel a future. And that was enough.\" Prismor: \"The high elves sacrificed everything for this place.\" Lunara: \"And we honored that sacrifice by letting it grow.\" Pocky: \"Not the same as before...\" Malrik: \"Better.\" Val: \"Different. And worth protecting.\"  Warm coppers/golds for Val Cool blues/crystals for Prismor Deep blues/silvers for Pocky Greens/browns for Lunara Purple/grays for Malrik Multi-colored essence effects throughout Golden light for Sorrel Ancient elven architecture mixed with lived-in spaces Magical energy as visible colored light Winter/snow contrasted with magical warmth Each essence has distinct color coding Character growth shown through body language and expression changes Magical effects: flowing, ethereal lettering Combat: bold, sharp lettering Essence manifestations: color-coded to match essence type \n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    }
+  ]
+}

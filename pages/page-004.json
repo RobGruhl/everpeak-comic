@@ -1,0 +1,74 @@
+{
+  "page_num": 4,
+  "title": "Festival Activities Begin",
+  "panel_count": 5,
+  "panels": [
+    {
+      "panel_num": 1,
+      "annotation": null,
+      "visual": "Malrik approaching well-dressed person",
+      "dialogue": "Malrik: \"Care for a game, friend? Just a bit of fun?\"",
+      "characters": {
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Malrik approaching well-dressed person\n\nDialogue: Malrik: \"Care for a game, friend? Just a bit of fun?\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 2,
+      "annotation": null,
+      "visual": "Close on dice rolling Malrik's hand with subtle sleight-of-hand magic",
+      "dialogue": "Gambler: \"Ten gold says I win!\"",
+      "characters": {
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Close on dice rolling Malrik's hand with subtle sleight-of-hand magic\n\nDialogue: Gambler: \"Ten gold says I win!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 3,
+      "annotation": null,
+      "visual": "Malrik collecting winnings with charming smile",
+      "dialogue": "Gambler: \"Not my lucky day, lad!\" Malrik: \"Perhaps the Essences smile on me today.\"",
+      "characters": {
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Malrik collecting winnings with charming smile\n\nDialogue: Gambler: \"Not my lucky day, lad!\" Malrik: \"Perhaps the Essences smile on me today.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 4,
+      "annotation": null,
+      "visual": "Small halfling child (Sorrel) watching Malrik Wise eyes despite young appearance",
+      "dialogue": "Sorrel: \"Oh wow! You're really good at that!\"",
+      "characters": {
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
+        "Sorrel": ""
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Sorrel: \n\nScene: Small halfling child (Sorrel) watching Malrik Wise eyes despite young appearance\n\nDialogue: Sorrel: \"Oh wow! You're really good at that!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 5,
+      "annotation": null,
+      "visual": "Malrik noticing Sorrel's unusual interest",
+      "dialogue": "Malrik: \"Just a bit of fun. You like games, kid?\" Sorrel: \"I like watching clever people at work.\"  ## CHAPTER 2: TROUBLE AT THE FORGE",
+      "characters": {
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
+        "Sorrel": ""
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Sorrel: \n\nScene: Malrik noticing Sorrel's unusual interest\n\nDialogue: Malrik: \"Just a bit of fun. You like games, kid?\" Sorrel: \"I like watching clever people at work.\"  ## CHAPTER 2: TROUBLE AT THE FORGE\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    }
+  ]
+}
