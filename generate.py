@@ -121,12 +121,26 @@ def parse_script():
 def create_panel_prompt(panel, character_descriptions):
     """Create an image generation prompt for a panel."""
 
+    # Extract condensed character info (just main party for brevity)
+    # Note: Full character_descriptions is ~11K chars, too long for prompt
+    # This extracts just key visual identifiers for main characters
+    condensed_chars = """
+Characters reference:
+- Val: Brass dragonborn monk, 7ft tall, brass/copper scales, orange eyes, monastery robes
+- Prismor: Blue crystal dragonborn paladin, crystalline blue scales, plate armor, greatsword
+- Pocky: Human wizard, dark hair, blue robes with silver trim, carries books and scrolls
+- Lunara: High elf druid, long silver-blonde hair, earth-tone robes, nature-themed
+- Malrik: Drow rogue, dark skin, white hair, performer's outfit with cards and coins
+"""
+
     # Build prompt
     prompt = f"""Professional comic book panel illustration.
 
-{panel['visual']}
+{condensed_chars}
 
-Style: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, clean white background between panels."""
+Panel: {panel['visual']}
+
+Style: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."""
 
     # Limit to reasonable length for API
     if len(prompt) > 4000:
@@ -313,6 +327,9 @@ def main():
 
     # TEST MODE: Only generate page 1
     pages = [p for p in pages if p['page_num'] == 1]
+    if not pages:
+        print("\n✗ Error: No pages found in script!")
+        return
     print(f"\n⚠️  TEST MODE: Only generating page {pages[0]['page_num']}")
 
     # Generate panels for each page

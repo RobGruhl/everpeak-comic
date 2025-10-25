@@ -29,7 +29,7 @@ python generate.py
 
 - Python 3.8+
 - OpenAI API key (get at https://platform.openai.com/api-keys)
-- API credits for full comic (171 panels with gpt-image-1)
+- API credits for full comic (144 panels with gpt-image-1)
 
 ## Output
 
@@ -39,4 +39,4 @@ python generate.py
 
 ## Format
 
-26 pages, ~171 panels total. CBZ format is a standard ZIP archive containing images and metadata.
+12 pages, 144 panels total. CBZ format is a standard ZIP archive containing images and metadata.
