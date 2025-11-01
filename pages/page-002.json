@@ -2,6 +2,7 @@
   "page_num": 2,
   "title": "The Ceremony Begins",
   "panel_count": 6,
+  "is_spread": true,
   "panels": [
     {
       "panel_num": 1,
@@ -9,16 +10,12 @@
       "visual": "Crowd gathered in courtyard Lunara at center with Yule Tree All five heroes visible in crowd",
       "dialogue": "Announcer: \"Citizens of Everpeak! The Yule Tree Ceremony begins!\"",
       "characters": {
-        "Lunara": "High elf druid, Circle of the Moon. Appears in her 20s. 5'8\" tall. Graceful lithe build with natural athleticism. Long flowing chestnut brown hair with flowers woven in. Vibrant green eyes reflecting forest depths. Fair skin with slight tan. Classical elven beauty with pointed ears. Serene expression. Practical druid robes in earthy greens and browns. Living vines and small flowers woven into clothing. Wooden staff. Leaf-shaped pendant. Moves with fluid dance-like grace.",
-        "Val": "Brass dragonborn monk. Just under 7 feet tall, lean athletic build with wiry monk strength. Warm brass/copper-bronze scales with metallic sheen. Ember-glow orange eyes, bright and expressive. Reptilian face with kind open expression, shorter snout. Simple monastery robes in earth tones (browns, tans) with chalk dust marks. Bare clawed feet. Prayer beads around wrist. Always in motion with expressive hand gestures.",
-        "Prismor": "Blue crystal dragonborn paladin. 7 feet tall, imposing presence. Muscular powerful warrior's physique. Crystalline blue scales with hints of green, gem-like quality. Deep sapphire blue eyes, wise and contemplative. Noble dignified reptilian features. Plate armor with crystalline accents, Oath of the Ancients symbols (leaves, vines) etched in armor. Greatsword strapped to back. Forest green cape. Perfect military posture.",
-        "Apocalypse Winter": "Human wizard, early 20s. 5'10\" tall. Strong but scholarly build (unusual combination). Dark hair, somewhat unkempt from library hours. Keen blue eyes, intelligent and curious. Pale skin from indoor studying. Determined jawline with slight worry lines. Practical wizard robes in deep blue with silver trim. Leather satchel stuffed with scrolls and books. Component pouch at belt. Ink-stained fingers. Reading glasses. Often has book in hand.",
-        "Malrik": "Drow rogue, young adult. 5'6\" tall. Slim agile acrobat's build. Dark gray-blue drow skin. Short white hair, practical cut. Pale lavender eyes, sharp and observant. Sharp cheekbones with mischievous warm smile. Dark leather armor, well-maintained. Colorful street performer's vest underneath. Deck of playing cards always within reach. Quick fluid movements. Warm smile contrasting with typical drow stereotypes."
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
       },
       "npcs": {},
       "aspect_ratio": "square",
       "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration - LARGE PANEL.\n\nLocation: Grand courtyard of Everpeak Citadel - massive open space surrounded by white stone walls, festival decorations everywhere (ribbons, lanterns, banners), winter setting with snow on ground, mountain peaks visible above, magical lights glowing.\n\nCharacters:\n- Lunara (center, main focus): High elf druid. 5'8\" tall, graceful lithe build. Long flowing chestnut brown hair with flowers. Vibrant green eyes. Fair skin. Pointed ears. Practical druid robes in earthy greens and browns. Living vines and flowers woven into clothing. Wooden staff in hands. Standing at center of courtyard with large evergreen Yule Tree behind her.\n- Val (in crowd): Brass dragonborn monk, nearly 7 feet tall, brass/copper scales, ember orange eyes, monastery robes in browns, visible in crowd watching.\n- Prismor (in crowd): Blue crystal dragonborn paladin, 7 feet tall, crystalline blue scales, plate armor, imposing presence in crowd.\n- Apocalypse Winter/Pocky (in crowd): Human wizard, 5'10\", dark hair, blue wizard robes with silver trim, leather satchel, visible in crowd.\n- Malrik (in crowd): Drow rogue, 5'6\", dark gray-blue skin, white hair, leather armor with colorful vest, visible in crowd.\n\nScene: Wide establishing shot showing large crowd gathered in grand courtyard for Yule Tree ceremony. Lunara stands at center near massive evergreen tree. All five main heroes visible scattered throughout the crowd. Festival atmosphere, excited crowd. Announcer calling out to crowd.\n\nDialogue: Announcer (off-panel or crowd): \"Citizens of Everpeak! The Yule Tree Ceremony begins!\"\n\nInclude speech bubble with text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Crowd gathered in courtyard Lunara at center with Yule Tree All five heroes visible in crowd\n\nDialogue: Announcer: \"Citizens of Everpeak! The Yule Tree Ceremony begins!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 2,
@@ -26,37 +23,34 @@
       "visual": "Close on Lunara's face, concentrating Green energy swirling around her hands",
       "dialogue": "Lunara: \"By root and branch, by earth and stone, let this tree find its home...\"",
       "characters": {
-        "Lunara": "High elf druid, Circle of the Moon. Appears in her 20s. 5'8\" tall. Graceful lithe build with natural athleticism. Long flowing chestnut brown hair with flowers woven in. Vibrant green eyes reflecting forest depths. Fair skin with slight tan. Classical elven beauty with pointed ears. Serene expression. Practical druid robes in earthy greens and browns. Living vines and small flowers woven into clothing. Wooden staff. Leaf-shaped pendant. Moves with fluid dance-like grace."
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
       },
       "npcs": {},
       "aspect_ratio": "square",
       "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: High elf druid. Close-up on face. Long flowing chestnut brown hair with flowers woven in. Vibrant green eyes showing deep concentration. Fair skin with slight tan. Pointed elven ears. Serene but focused expression. Practical druid robes in earthy greens and browns visible.\n\nScene: Close-up panel focusing on Lunara's face showing intense concentration. Her hands visible in foreground with bright green magical energy (Nature Essence) swirling and flowing around them. Dramatic lighting from the green magical glow. Expression shows she is channeling powerful druidic magic.\n\nDialogue: Lunara: \"By root and branch, by earth and stone, let this tree find its home...\"\n\nInclude speech bubble with text clearly readable.\n\nStyle: Bold ink line art, vibrant colors with emphasis on green magical energy, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Close on Lunara's face, concentrating Green energy swirling around her hands\n\nDialogue: Lunara: \"By root and branch, by earth and stone, let this tree find its home...\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 3,
       "annotation": null,
-      "visual": "Tree's roots entering ground But - magical resistance visible as crackling energy",
+      "visual": "Tree's roots entering ground But - magical resistance visible as crackling energy **Sound EFFECTS:** \"KRRZZZT\"",
       "dialogue": "",
       "characters": {},
       "npcs": {},
       "aspect_ratio": "square",
       "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nScene: Close-up on base of large evergreen Yule Tree. Massive gnarled roots extending downward toward snowy ground. Roots beginning to enter earth but encountering magical resistance - visible as crackling chaotic energy, sparks of conflicting magic colors (green Nature Essence clashing with something wrong). Energy arcing and sparking violently where roots touch ground. Snow melting around contact point. Sense of something fighting against the natural magic.\n\nSound Effects: Large bold letters \"KRRZZZT\" showing electrical/magical crackling sound.\n\nNo dialogue in this panel.\n\nStyle: Bold ink line art, vibrant colors with emphasis on crackling magical energy effects, dynamic composition showing conflict, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nScene: Tree's roots entering ground But - magical resistance visible as crackling energy **Sound EFFECTS:** \"KRRZZZT\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 4,
       "annotation": null,
-      "visual": "Verdant essence taking visible form - angry nature elemental Crowd gasping",
+      "visual": "Verdant essence taking visible form - angry nature elemental Crowd gasping **Sound EFFECTS:** \"WHOOOSH\"",
       "dialogue": "",
       "characters": {},
       "npcs": {},
-      "creatures": {
-        "Verdant Mephit": "Nature Essence corrupted. Small elemental, 2-3 feet tall. Living vines and thorny brambles given humanoid shape. Glowing green pinpoint eyes. Body made of twisted roots and thorns. Leaf-like wings that rustle. Garden scent mixed with decay. Leaves thorny vines and moss trail. Angry hostile manifestation."
-      },
       "aspect_ratio": "square",
       "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCreatures:\n- Verdant Mephit (Nature Essence corrupted): Small elemental creature about 2-3 feet tall. Body composed of living vines and thorny brambles twisted into rough humanoid shape. Glowing green pinpoint eyes full of anger. Body is twisted roots and sharp thorns. Leaf-like rustling wings. Aura of both garden scent and decay. Trail of thorny vines and moss wherever it moves. Hostile angry expression. Manifestation of corrupted Nature Essence.\n\nScene: The Verdant Mephit materializing dramatically from the crackling magical energy, taking visible physical form. Composed of twisted nature elements - vines, thorns, leaves. Green energy coalescing into the angry elemental. Background shows crowd of people gasping in shock and fear, hands to mouths, stepping back. Dramatic moment of supernatural manifestation.\n\nSound Effects: \"WHOOOSH\" in large flowing letters showing the sound of elemental materializing.\n\nNo dialogue in this panel.\n\nStyle: Bold ink line art, vibrant colors emphasizing greens and earth tones for the mephit, dynamic composition showing shock and supernatural threat, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nScene: Verdant essence taking visible form - angry nature elemental Crowd gasping **Sound EFFECTS:** \"WHOOOSH\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 5,
@@ -64,26 +58,27 @@
       "visual": "Lunara straining, pushing harder Sweat on her brow despite cold",
       "dialogue": "Lunara: \"No... something's wrong with the Essence!\"",
       "characters": {
-        "Lunara": "High elf druid, Circle of the Moon. Appears in her 20s. 5'8\" tall. Graceful lithe build with natural athleticism. Long flowing chestnut brown hair with flowers woven in. Vibrant green eyes reflecting forest depths. Fair skin with slight tan. Classical elven beauty with pointed ears. Serene expression now strained. Practical druid robes in earthy greens and browns. Living vines and small flowers woven into clothing. Wooden staff. Pushing herself to limits."
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
       },
       "npcs": {},
       "aspect_ratio": "square",
       "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: High elf druid. 5'8\" tall. Long flowing chestnut brown hair with flowers, now windswept from magical exertion. Vibrant green eyes wide with strain and concern. Fair skin with sweat beading on forehead despite winter cold. Pointed elven ears. Expression showing physical and magical strain. Practical druid robes in earthy greens and browns. Living vines and flowers woven into clothing. Wooden staff gripped tightly. Body language showing she is pushing magic harder, leaning forward with effort.\n\nScene: Medium shot of Lunara straining to control the corrupted Nature Essence. Green magical energy intensifying around her, more chaotic and wild. Sweat visible on her brow despite the cold winter air. Her serene demeanor replaced with determination and concern. Hands outstretched channeling more power. Background shows the ongoing magical conflict.\n\nDialogue: Lunara: \"No... something's wrong with the Essence!\"\n\nInclude speech bubble with text clearly readable.\n\nStyle: Bold ink line art, vibrant colors with chaotic green energy, dynamic composition showing struggle and exertion, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Lunara straining, pushing harder Sweat on her brow despite cold\n\nDialogue: Lunara: \"No... something's wrong with the Essence!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 6,
       "annotation": "Wide",
-      "visual": "Tree finally settling into place, but wobbling Essence dissipating into air angrily Relieved but confused crowd",
-      "dialogue": "Crowd member: \"That's never happened before...\" Val (to Lunara): \"Are you alright? What WAS that?\"",
+      "visual": "Tree finally settling into place, but wobbling Essence dissipating into air angrily Relieved but confused crowd **Sound EFFECTS:** \"THUD\"",
+      "dialogue": "Crowd member: \"That's never happened before...\" Val (to Lunara): \"Are you alright? What WAS that?\" ",
       "characters": {
-        "Lunara": "High elf druid exhausted from magical exertion. 5'8\" tall. Long chestnut brown hair disheveled. Vibrant green eyes tired. Fair skin with sweat. Pointed ears. Exhausted expression. Druid robes in earthy greens and browns. Wooden staff used for support. Breathing hard.",
-        "Val": "Brass dragonborn monk. Just under 7 feet tall, lean athletic build with wiry monk strength. Warm brass/copper-bronze scales with metallic sheen. Ember-glow orange eyes showing concern. Reptilian face with kind open expression, shorter snout. Simple monastery robes in earth tones (browns, tans) with chalk dust marks. Bare clawed feet. Prayer beads around wrist. Moving to Lunara's side with concern."
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing",
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
       },
       "npcs": {},
       "aspect_ratio": "wide",
       "size": "1536x1024",
-      "prompt": "Professional comic book panel illustration - WIDE PANEL.\n\nLocation: Grand courtyard of Everpeak Citadel - festival setting.\n\nCharacters:\n- Lunara: High elf druid, exhausted. 5'8\" tall. Long chestnut brown hair now disheveled from exertion. Vibrant green eyes showing tiredness. Fair skin with sweat despite cold. Pointed ears. Exhausted but relieved expression. Druid robes in earthy greens and browns. Wooden staff used for support, leaning on it. Breathing heavily.\n- Val: Brass dragonborn monk, nearly 7 feet tall. Brass/copper scales with metallic sheen. Ember-glow orange eyes full of concern. Kind reptilian face. Monastery robes in browns. Moving to Lunara's side, one hand reaching toward her in concern. Expressive caring body language.\n\nScene: Wide panel showing the Yule Tree finally settling into place in the ground, but it's wobbling unstably. The Verdant Mephit essence dissipating into the air as angry green wisps of energy. Large crowd visible in background looking relieved but very confused - people talking among themselves, pointing, concerned expressions. Val approaching Lunara who looks exhausted. Winter courtyard setting. Tree now planted but clearly something went wrong.\n\nSound Effects: \"THUD\" in bold letters as tree settles.\n\nDialogue: \nCrowd member (background): \"That's never happened before...\" \nVal (to Lunara): \"Are you alright? What WAS that?\"\n\nInclude speech bubbles with text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, wide dynamic composition showing aftermath of magical conflict, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Tree finally settling into place, but wobbling Essence dissipating into air angrily Relieved but confused crowd **Sound EFFECTS:** \"THUD\"\n\nDialogue: Crowd member: \"That's never happened before...\" Val (to Lunara): \"Are you alright? What WAS that?\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
-  ]
+  ],
+  "page_end": 3
 }

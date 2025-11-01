@@ -135,12 +135,15 @@ def parse_pages(content, characters, npcs):
 
     # Parse pages
     pages = []
-    page_pattern = r'### Page (\d+)(?:-\d+)?:(.*?)(?=### Page \d+(?:-\d+)?:|### Chapter|\Z)'
+    # Updated pattern to capture end page number for spreads (e.g., "Page 2-3")
+    page_pattern = r'### Page (\d+)(?:-(\d+))?:(.*?)(?=### Page \d+(?:-\d+)?:|### Chapter|\Z)'
 
     for page_match in re.finditer(page_pattern, narrative_text, re.DOTALL):
         page_num = int(page_match.group(1))
-        page_header = page_match.group(2).split('\n')[0].strip()
-        page_content = page_match.group(2)
+        page_end = int(page_match.group(2)) if page_match.group(2) else None
+        is_spread = page_end is not None
+        page_header = page_match.group(3).split('\n')[0].strip()
+        page_content = page_match.group(3)
 
         # Parse panels
         panels = []
@@ -199,6 +202,7 @@ def parse_pages(content, characters, npcs):
                     panel_npcs[npc_name] = npc_desc
 
             # Determine size/aspect ratio
+            # gpt-image-1 supports: 1024x1024, 1536x1024, 1024x1536
             aspect_ratio = "square"
             size = "1024x1024"
             if panel_annotation:
@@ -211,7 +215,7 @@ def parse_pages(content, characters, npcs):
                     size = "1024x1536"
                 elif 'splash' in annotation_lower or 'full' in annotation_lower:
                     aspect_ratio = "splash"
-                    size = "1536x2048"
+                    size = "1024x1536"  # Fixed: was 1536x2048 (not supported)
 
             panel_data = {
                 "panel_num": panel_num,
@@ -231,8 +235,11 @@ def parse_pages(content, characters, npcs):
                 "page_num": page_num,
                 "title": page_header,
                 "panel_count": len(panels),
+                "is_spread": is_spread,
                 "panels": panels
             }
+            if is_spread:
+                page_data["page_end"] = page_end
             pages.append(page_data)
 
     return pages

@@ -21,8 +21,22 @@ CBZ_FILE = OUTPUT_DIR / "everpeak-citadel.cbz"
 # Layout settings
 PAGE_WIDTH = 1600
 PAGE_HEIGHT = 2400
+SPREAD_WIDTH = 3200  # Two-page spread width
 GUTTER = 20
 BORDER = 3
+
+# Layout strategies for different panel counts
+LAYOUT_STRATEGIES = {
+    1: "full_page",      # Single splash panel
+    2: "vertical_half",  # Two panels stacked vertically
+    3: "vertical_third", # Three panels stacked vertically
+    4: "2x2_grid",       # Perfect 2x2 grid
+    5: "2_over_3",       # 2 wider panels top, 3 smaller bottom (best for 5)
+    6: "2x3_grid",       # Standard 2x3 grid
+    7: "3_over_4",       # 3 panels top row, 4 panels bottom row
+    8: "2x4_grid",       # 2 columns, 4 rows
+    9: "3x3_grid",       # Perfect 3x3 grid
+}
 
 
 def setup_directories():
@@ -33,7 +47,11 @@ def setup_directories():
 
 def load_page_data(page_num):
     """Load page data from JSON file."""
-    page_file = PAGES_JSON_DIR / f"page-{page_num:03d}.json"
+    # Handle cover page (page 0)
+    if page_num == 0:
+        page_file = PAGES_JSON_DIR / "cover.json"
+    else:
+        page_file = PAGES_JSON_DIR / f"page-{page_num:03d}.json"
 
     if not page_file.exists():
         raise FileNotFoundError(f"Page file not found: {page_file}")
@@ -56,6 +74,91 @@ def list_available_pages():
             pages.append(page_data)
 
     return pages
+
+
+def apply_layout_2_over_3(page_img, panels, page_num, page_width, page_height):
+    """Apply 2-over-3 layout: 2 wider panels on top, 3 smaller panels on bottom."""
+    # Top row: 2 panels
+    top_panel_width = (page_width - 3 * GUTTER) // 2
+    top_panel_height = (page_height - 3 * GUTTER) // 2
+
+    # Bottom row: 3 panels
+    bottom_panel_width = (page_width - 4 * GUTTER) // 3
+    bottom_panel_height = (page_height - 3 * GUTTER) // 2
+
+    # Place first 2 panels in top row
+    for i in range(min(2, len(panels))):
+        panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panels[i]['panel_num']}.png"
+        if panel_file.exists():
+            img = Image.open(panel_file)
+            img = img.resize((top_panel_width, top_panel_height), Image.Resampling.LANCZOS)
+            x = GUTTER + i * (top_panel_width + GUTTER)
+            y = GUTTER
+            page_img.paste(img, (x, y))
+
+    # Place remaining 3 panels in bottom row
+    for i in range(2, min(5, len(panels))):
+        panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panels[i]['panel_num']}.png"
+        if panel_file.exists():
+            img = Image.open(panel_file)
+            img = img.resize((bottom_panel_width, bottom_panel_height), Image.Resampling.LANCZOS)
+            col = i - 2
+            x = GUTTER + col * (bottom_panel_width + GUTTER)
+            y = GUTTER + top_panel_height + GUTTER
+            page_img.paste(img, (x, y))
+
+
+def apply_layout_3_over_4(page_img, panels, page_num, page_width, page_height):
+    """Apply 3-over-4 layout: 3 panels on top row, 4 panels on bottom row."""
+    # Top row: 3 panels
+    top_panel_width = (page_width - 4 * GUTTER) // 3
+    top_panel_height = (page_height - 3 * GUTTER) // 2
+
+    # Bottom row: 4 panels
+    bottom_panel_width = (page_width - 5 * GUTTER) // 4
+    bottom_panel_height = (page_height - 3 * GUTTER) // 2
+
+    # Place first 3 panels in top row
+    for i in range(min(3, len(panels))):
+        panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panels[i]['panel_num']}.png"
+        if panel_file.exists():
+            img = Image.open(panel_file)
+            img = img.resize((top_panel_width, top_panel_height), Image.Resampling.LANCZOS)
+            x = GUTTER + i * (top_panel_width + GUTTER)
+            y = GUTTER
+            page_img.paste(img, (x, y))
+
+    # Place remaining 4 panels in bottom row
+    for i in range(3, min(7, len(panels))):
+        panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panels[i]['panel_num']}.png"
+        if panel_file.exists():
+            img = Image.open(panel_file)
+            img = img.resize((bottom_panel_width, bottom_panel_height), Image.Resampling.LANCZOS)
+            col = i - 3
+            x = GUTTER + col * (bottom_panel_width + GUTTER)
+            y = GUTTER + top_panel_height + GUTTER
+            page_img.paste(img, (x, y))
+
+
+def apply_standard_grid(page_img, panels, page_num, page_width, page_height, cols, rows):
+    """Apply standard grid layout."""
+    panel_width = (page_width - (cols + 1) * GUTTER) // cols
+    panel_height = (page_height - (rows + 1) * GUTTER) // rows
+
+    for i, panel in enumerate(panels):
+        if i >= cols * rows:  # Safety check
+            break
+
+        panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
+        if panel_file.exists():
+            img = Image.open(panel_file)
+            img = img.resize((panel_width, panel_height), Image.Resampling.LANCZOS)
+
+            col = i % cols
+            row = i // cols
+            x = GUTTER + col * (panel_width + GUTTER)
+            y = GUTTER + row * (panel_height + GUTTER)
+            page_img.paste(img, (x, y))
 
 
 def cleanup_variants(page_num, panels):
@@ -81,89 +184,103 @@ def cleanup_variants(page_num, panels):
 
 
 def assemble_page(page_data, cleanup=False):
-    """Assemble panels into a page."""
+    """Assemble panels into a page using smart layout strategies."""
 
     page_num = page_data['page_num']
     panels = page_data['panels']
     num_panels = len(panels)
+    is_spread = page_data.get('is_spread', False)
+    is_cover = page_data.get('is_cover', False)
 
-    print(f"\n→ Assembling page {page_num} ({num_panels} panels)...")
+    # Determine page dimensions
+    if is_spread:
+        page_width = SPREAD_WIDTH
+        page_height = PAGE_HEIGHT
+        page_type = "spread"
+    else:
+        page_width = PAGE_WIDTH
+        page_height = PAGE_HEIGHT
+        page_type = "cover" if is_cover else "page"
 
-    # Check if all panels have been selected
-    missing_panels = []
-    for panel in panels:
-        panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
-        if not panel_file.exists():
-            missing_panels.append(panel['panel_num'])
+    print(f"\n→ Assembling {page_type} {page_num} ({num_panels} panels){' [TWO-PAGE SPREAD]' if is_spread else ''}...")
 
-    if missing_panels:
-        print(f"  ✗ Error: Missing selected panels: {missing_panels}")
-        print(f"  Run review.py to select variants first")
-        return None
+    # Check if all panels have been selected (skip for cover since it won't have variants)
+    if not is_cover:
+        missing_panels = []
+        for panel in panels:
+            # For cover page, look for cover-panel-1.png instead of page-000-panel-1.png
+            if page_num == 0:
+                panel_file = PANELS_DIR / f"cover-panel-{panel['panel_num']}.png"
+            else:
+                panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
+
+            if not panel_file.exists():
+                missing_panels.append(panel['panel_num'])
+
+        if missing_panels:
+            print(f"  ✗ Error: Missing selected panels: {missing_panels}")
+            print(f"  Run review.py to select variants first")
+            return None
 
     # Create blank page
-    page_img = Image.new('RGB', (PAGE_WIDTH, PAGE_HEIGHT), 'white')
+    page_img = Image.new('RGB', (page_width, page_height), 'white')
 
-    # Simple layout logic
-    if num_panels <= 3:
-        # Vertical stack
-        panel_height = (PAGE_HEIGHT - (num_panels + 1) * GUTTER) // num_panels
+    # Apply layout strategy based on panel count
+    layout_strategy = LAYOUT_STRATEGIES.get(num_panels)
 
-        for i, panel in enumerate(panels):
-            panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
-            if panel_file.exists():
-                img = Image.open(panel_file)
-                # Resize to fit
-                img = img.resize((PAGE_WIDTH - 2 * GUTTER, panel_height), Image.Resampling.LANCZOS)
+    if num_panels == 1 or is_cover:
+        # Full page splash
+        apply_standard_grid(page_img, panels, page_num, page_width, page_height, 1, 1)
 
-                y = GUTTER + i * (panel_height + GUTTER)
-                page_img.paste(img, (GUTTER, y))
+    elif num_panels == 2:
+        # Vertical stack (2 rows, 1 column)
+        apply_standard_grid(page_img, panels, page_num, page_width, page_height, 1, 2)
 
-    elif num_panels <= 6:
+    elif num_panels == 3:
+        # Vertical stack (3 rows, 1 column)
+        apply_standard_grid(page_img, panels, page_num, page_width, page_height, 1, 3)
+
+    elif num_panels == 4:
+        # 2x2 grid
+        apply_standard_grid(page_img, panels, page_num, page_width, page_height, 2, 2)
+
+    elif num_panels == 5:
+        # 2-over-3 layout (optimal for 5 panels)
+        apply_layout_2_over_3(page_img, panels, page_num, page_width, page_height)
+
+    elif num_panels == 6:
         # 2x3 grid
-        cols = 2
-        rows = (num_panels + 1) // 2
-        panel_width = (PAGE_WIDTH - (cols + 1) * GUTTER) // cols
-        panel_height = (PAGE_HEIGHT - (rows + 1) * GUTTER) // rows
+        apply_standard_grid(page_img, panels, page_num, page_width, page_height, 2, 3)
 
-        for i, panel in enumerate(panels):
-            panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
-            if panel_file.exists():
-                img = Image.open(panel_file)
-                img = img.resize((panel_width, panel_height), Image.Resampling.LANCZOS)
+    elif num_panels == 7:
+        # 3-over-4 layout (optimal for 7 panels)
+        apply_layout_3_over_4(page_img, panels, page_num, page_width, page_height)
 
-                col = i % cols
-                row = i // cols
-                x = GUTTER + col * (panel_width + GUTTER)
-                y = GUTTER + row * (panel_height + GUTTER)
-                page_img.paste(img, (x, y))
+    elif num_panels == 8:
+        # 2x4 grid
+        apply_standard_grid(page_img, panels, page_num, page_width, page_height, 2, 4)
+
+    elif num_panels == 9:
+        # 3x3 grid
+        apply_standard_grid(page_img, panels, page_num, page_width, page_height, 3, 3)
 
     else:
-        # 3-column grid
+        # Fallback: use 3-column grid for 10+ panels
         cols = 3
         rows = (num_panels + 2) // 3
-        panel_width = (PAGE_WIDTH - (cols + 1) * GUTTER) // cols
-        panel_height = (PAGE_HEIGHT - (rows + 1) * GUTTER) // rows
+        apply_standard_grid(page_img, panels, page_num, page_width, page_height, cols, rows)
 
-        for i, panel in enumerate(panels):
-            panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
-            if panel_file.exists():
-                img = Image.open(panel_file)
-                img = img.resize((panel_width, panel_height), Image.Resampling.LANCZOS)
+    # Save page with appropriate naming
+    if page_num == 0:
+        output_file = PAGES_DIR / "cover.png"
+    else:
+        output_file = PAGES_DIR / f"page-{page_num:03d}.png"
 
-                col = i % cols
-                row = i // cols
-                x = GUTTER + col * (panel_width + GUTTER)
-                y = GUTTER + row * (panel_height + GUTTER)
-                page_img.paste(img, (x, y))
-
-    # Save page
-    output_file = PAGES_DIR / f"page-{page_num:03d}.png"
     page_img.save(output_file)
-    print(f"✓ Saved {output_file.name}")
+    print(f"✓ Saved {output_file.name} ({page_width}x{page_height})")
 
-    # Cleanup variants if requested
-    if cleanup:
+    # Cleanup variants if requested (skip for cover)
+    if cleanup and not is_cover:
         cleanup_variants(page_num, panels)
 
     return output_file

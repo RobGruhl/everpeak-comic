@@ -103,7 +103,11 @@ def setup_directories():
 
 def load_page_data(page_num):
     """Load page data from JSON file."""
-    page_file = PAGES_JSON_DIR / f"page-{page_num:03d}.json"
+    # Handle cover page (page 0)
+    if page_num == 0:
+        page_file = PAGES_JSON_DIR / "cover.json"
+    else:
+        page_file = PAGES_JSON_DIR / f"page-{page_num:03d}.json"
 
     if not page_file.exists():
         raise FileNotFoundError(f"Page file not found: {page_file}")
@@ -117,10 +121,14 @@ def load_page_data(page_num):
     wait=wait_exponential(multiplier=1, min=1, max=60),
     stop=stop_after_attempt(3)
 )
-async def generate_panel_variant_async(panel, page_num, variant_num, client):
+async def generate_panel_variant_async(panel, page_num, variant_num, client, is_cover=False):
     """Generate a single variant of a panel with retry logic."""
 
-    variant_filename = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}-v{variant_num}.png"
+    # Use cover naming for cover page
+    if is_cover or page_num == 0:
+        variant_filename = PANELS_DIR / f"cover-panel-{panel['panel_num']}-v{variant_num}.png"
+    else:
+        variant_filename = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}-v{variant_num}.png"
 
     # Get prompt from panel data
     prompt = panel.get('prompt', '')
@@ -170,18 +178,27 @@ async def generate_panel_variant_async(panel, page_num, variant_num, client):
             return variant_filename
 
 
-async def generate_panel_variants(panel, page_num, client):
+async def generate_panel_variants(panel, page_num, client, is_cover=False):
     """Generate all variants for a single panel concurrently."""
 
+    # Determine file naming prefix
+    if is_cover or page_num == 0:
+        prefix = "cover"
+        final_filename = PANELS_DIR / f"cover-panel-{panel['panel_num']}.png"
+        variant_pattern = lambda v: PANELS_DIR / f"cover-panel-{panel['panel_num']}-v{v}.png"
+    else:
+        prefix = f"page-{page_num:03d}"
+        final_filename = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
+        variant_pattern = lambda v: PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}-v{v}.png"
+
     # Check if final selection already exists
-    final_filename = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
     if final_filename.exists():
         logger.info(f"  ↪ Panel {panel['panel_num']} already selected, skipping")
         return
 
     # Check if all variants already exist
     all_exist = all(
-        (PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}-v{i}.png").exists()
+        variant_pattern(i).exists()
         for i in range(1, VARIANTS_PER_PANEL + 1)
     )
 
@@ -193,7 +210,7 @@ async def generate_panel_variants(panel, page_num, client):
 
     # Generate all variants concurrently
     tasks = [
-        generate_panel_variant_async(panel, page_num, variant_num, client)
+        generate_panel_variant_async(panel, page_num, variant_num, client, is_cover)
         for variant_num in range(1, VARIANTS_PER_PANEL + 1)
     ]
 
@@ -209,12 +226,20 @@ async def generate_page_panels(page_data, client):
 
     page_num = page_data['page_num']
     panels = page_data['panels']
+    is_spread = page_data.get('is_spread', False)
+    is_cover = page_data.get('is_cover', False)
+    page_end = page_data.get('page_end')
 
-    logger.info(f"\n📄 Page {page_num} ({len(panels)} panels, {len(panels) * VARIANTS_PER_PANEL} total images)")
+    # Display page info
+    page_label = "Cover" if is_cover else f"Page {page_num}"
+    if is_spread and page_end:
+        page_label += f"-{page_end} (SPREAD)"
+
+    logger.info(f"\n📄 {page_label} ({len(panels)} panels, {len(panels) * VARIANTS_PER_PANEL} total images)")
 
     # Process each panel (which generates 3 variants each)
     for panel in panels:
-        await generate_panel_variants(panel, page_num, client)
+        await generate_panel_variants(panel, page_num, client, is_cover)
 
 
 async def generate_pages_async(page_nums, force=False):

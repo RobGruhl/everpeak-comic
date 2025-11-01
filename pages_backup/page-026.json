@@ -2,7 +2,6 @@
   "page_num": 26,
   "title": "Combat Chaos",
   "panel_count": 8,
-  "is_spread": true,
   "panels": [
     {
       "panel_num": 1,
@@ -105,6 +104,5 @@
       "size": "1024x1024",
       "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Lunara attempting Nature lens Success! **Caption:** \"DC 15 NATURE CHECK - SUCCESS!\"\n\nDialogue: Lunara: \"The garden's wisdom flows through me!\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
-  ],
-  "page_end": 27
+  ]
 }

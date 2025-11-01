@@ -1,0 +1,74 @@
+{
+  "page_num": 1,
+  "title": "Character Introductions",
+  "panel_count": 5,
+  "panels": [
+    {
+      "panel_num": 1,
+      "annotation": null,
+      "visual": "Val walking through crowds, delivering messages Festival vendors setting up stalls",
+      "dialogue": "Val (thought bubble): \"The Dawn's Crown alignment approaches. The whole citadel buzzes with excitement...\"",
+      "characters": {
+        "Val": "Brass dragonborn monk. Just under 7 feet tall, lean athletic build with wiry monk strength. Warm brass/copper-bronze scales with metallic sheen. Ember-glow orange eyes, bright and expressive. Reptilian face with kind open expression, shorter snout. Simple monastery robes in earth tones (browns, tans) with chalk dust marks. Bare clawed feet. Prayer beads around wrist. Always in motion with expressive hand gestures."
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nLocation: Everpeak Citadel festival marketplace - massive mountain fortress carved from white stone, festival decorations with ribbons and lanterns, vendors setting up stalls, winter setting with snow-capped peaks visible.\n\nCharacters:\n- Val (Valthirion Emberstride): Brass dragonborn monk. Just under 7 feet tall, lean athletic build with wiry monk strength. Warm brass/copper-bronze scales with metallic sheen catching light. Ember-glow orange eyes, bright and expressive. Reptilian dragonborn face with kind open expression, shorter snout than typical dragonborn. Simple monastery robes in earth tones (browns, tans) with chalk dust marks and wear from courier work. Bare clawed feet (monk tradition). Prayer beads around one wrist. Always in motion, expressive hand gestures. Warm friendly demeanor.\n\nScene: Val walking through festival crowds, delivering messages to various people. Festival vendors setting up stalls with colorful wares. Morning light, busy festive atmosphere.\n\nDialogue: Val (thought bubble): \"The Dawn's Crown alignment approaches. The whole citadel buzzes with excitement...\"\n\nInclude thought bubble with text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 2,
+      "annotation": null,
+      "visual": "Prismor on balcony overlooking preparations Crystalline scales catching sunlight",
+      "dialogue": "Prismor (thought): \"Decades I've protected this place. But today... something feels different.\"",
+      "characters": {
+        "Prismor": "Blue crystal dragonborn paladin. 7 feet tall, imposing presence. Muscular powerful warrior's physique. Crystalline blue scales with hints of green, gem-like quality. Deep sapphire blue eyes, wise and contemplative. Noble dignified reptilian features. Plate armor with crystalline accents, Oath of the Ancients symbols (leaves, vines) etched in armor. Greatsword strapped to back. Forest green cape. Perfect military posture."
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nLocation: Everpeak Citadel balcony - high vantage point overlooking festival preparations, carved stone balcony with elegant elven architecture, winter mountain vista.\n\nCharacters:\n- Prismor: Blue crystal dragonborn paladin, Oath of the Ancients. 7 feet tall, imposing presence. Muscular powerful warrior's physique. Crystalline blue scales with hints of green, almost gem-like quality that catches and refracts light. Deep sapphire blue eyes, wise and contemplative. Noble bearing with dignified reptilian dragonborn features. Plate armor with crystalline accents matching his scales, Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs). Well-maintained greatsword strapped to back. Forest green flowing cape. Holy symbol prominently displayed. Stands with perfect military posture, protective stance. Thoughtful measured movements.\n\nScene: Prismor standing on stone balcony overlooking festival preparations below. Morning sunlight catching and refracting through his crystalline scales creating prismatic effects. Contemplative pose, hands on balcony rail.\n\nDialogue: Prismor (thought bubble): \"Decades I've protected this place. But today... something feels different.\"\n\nInclude thought bubble with text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 3,
+      "annotation": null,
+      "visual": "Pocky in library with Marge, looking at old star charts",
+      "dialogue": "Marge: \"Be careful with those, dear. They're older than you think.\" Pocky: \"The alignment happens only once a century. Think of what we might learn!\"",
+      "characters": {
+        "Apocalypse Winter": "Human wizard, early 20s. 5'10\" tall. Strong but scholarly build (unusual combination). Dark hair, somewhat unkempt from library hours. Keen blue eyes, intelligent and curious. Pale skin from indoor studying. Determined jawline with slight worry lines. Practical wizard robes in deep blue with silver trim. Leather satchel stuffed with scrolls and books. Component pouch at belt. Ink-stained fingers. Reading glasses. Often has book in hand."
+      },
+      "npcs": {
+        "Marge": "Head Librarian. Middle-aged human woman (40s-50s). 5'4\" tall. Slightly stooped from years of reading. Gray-streaked brown hair in practical bun. Sharp brown eyes behind half-moon spectacles. Pale skin from indoor life. Kind face with smile lines. Modest scholar's robes in muted colors. Ink-stained everywhere - fingers, sleeves, hem. Spectacles on chain. Quill behind ear. Constantly adjusting glasses. Warm maternal energy."
+      },
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nLocation: The Grand Library - soaring ceilings with ornate columns carved with runes and magical symbols, endless shelves of books floor to ceiling, tall windows filtering pale winter sunlight, reading desks with magical lights, ancient manuscripts, star charts on walls, dust motes floating in light shafts, smell of old parchment and ink.\n\nCharacters:\n- Apocalypse Winter (\"Pocky\"): Human wizard, early 20s. 5'10\" tall. Strong but scholarly build (unusual combination). Dark hair, somewhat unkempt from hours in the library. Keen blue intelligent curious eyes. Pale skin from spending time indoors studying. Determined jawline with slight worry lines from concentration. Practical wizard robes in deep blue with silver trim. Leather satchel stuffed with scrolls and books. Component pouch at belt. Simple well-crafted quarterstaff. Ink stains on fingers. Reading glasses perched on nose or hanging from chain. Often has book in hand or under arm. Gestures dramatically. Carries himself with quiet determination.\n\nNPCs:\n- Marge: Head Librarian. Middle-aged human woman (40s-50s). 5'4\" tall. Slightly stooped from years of reading. Gray-streaked brown hair pulled back in practical bun. Sharp brown eyes behind half-moon spectacles. Pale skin from indoor life. Kind face with smile lines. Modest scholar's robes in muted colors. Ink-stained everywhere - fingers, sleeves, hem. Spectacles on chain around neck. Quill tucked behind ear. Pockets stuffed with bookmarks and notes. Constantly adjusting spectacles. Taps finger when thinking. Warm maternal energy.\n\nScene: Pocky and Marge in the library examining old astronomical star charts spread on a reading desk. Ancient manuscripts and scrolls visible. Marge showing Pocky the delicate charts with a cautious expression, Pocky leaning in eagerly.\n\nDialogue: Marge: \"Be careful with those, dear. They're older than you think.\" Pocky: \"The alignment happens only once a century. Think of what we might learn!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 4,
+      "annotation": null,
+      "visual": "Lunara guiding the Yule Tree up mountain path",
+      "dialogue": "Lunara (thought): \"The tree feels... resistant. The Nature Essence isn't flowing as it should.\"",
+      "characters": {
+        "Lunara": "High elf druid, Circle of the Moon. Appears in her 20s. 5'8\" tall. Graceful lithe build with natural athleticism. Long flowing chestnut brown hair with flowers woven in. Vibrant green eyes reflecting forest depths. Fair skin with slight tan. Classical elven beauty with pointed ears. Serene expression. Practical druid robes in earthy greens and browns. Living vines and small flowers woven into clothing. Wooden staff. Leaf-shaped pendant. Moves with fluid dance-like grace."
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nLocation: Mountain path leading to Everpeak Citadel - winding stone path carved into mountainside, snow-covered slopes, winter evergreen trees, glimpses of citadel above, magical atmosphere.\n\nCharacters:\n- Lunara: High elf druid, Circle of the Moon. Young appearing (in her 20s but could be much older). 5'8\" tall. Graceful and lithe build with natural athleticism. Long flowing chestnut brown hair with fresh flowers woven throughout. Vibrant green eyes that seem to reflect forest depths. Fair skin with slight tan from outdoor work. Classical elven beauty with pointed ears and serene expression. Calloused hands from gardening and tending plants. Practical druid robes in earthy greens and browns. Living vines and small flowers literally woven into her clothing (magical). Wooden staff carved with natural patterns. Pouches of seeds and herbs at belt. Bare feet or simple leather sandals. Pendant in the shape of a leaf. Moves with fluid almost dance-like grace. Calming grounded presence.\n\nScene: Lunara using druidic magic to guide a large evergreen Yule Tree up the mountain path. Green magical energy flowing from her hands to the tree. The tree is massive, being magically moved. Lunara shows concentration and concern as the magic feels wrong. Winter setting, snow on ground.\n\nDialogue: Lunara (thought bubble): \"The tree feels... resistant. The Nature Essence isn't flowing as it should.\"\n\nInclude thought bubble with text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 5,
+      "annotation": null,
+      "visual": "Malrik performing card tricks for children in marketplace",
+      "dialogue": "Child: \"How did you do that?!\" Malrik: \"Magic, little one. But the real magic happens all around us...\" ",
+      "characters": {
+        "Malrik": "Drow rogue, young adult. 5'6\" tall. Slim agile acrobat's build. Dark gray-blue drow skin. Short white hair, practical cut. Pale lavender eyes, sharp and observant. Sharp cheekbones with mischievous warm smile. Dark leather armor, well-maintained. Colorful street performer's vest underneath. Deck of playing cards always within reach. Quick fluid movements. Warm smile contrasting with typical drow stereotypes."
+      },
+      "npcs": {},
+      "aspect_ratio": "square",
+      "size": "1024x1024",
+      "prompt": "Professional comic book panel illustration.\n\nLocation: Festival marketplace - bustling stalls with colorful banners and goods, winter festival decorations, crowd of people, festive atmosphere.\n\nCharacters:\n- Malrik: Drow rogue, young adult. 5'6\" tall. Slim agile acrobat's build. Dark gray-blue drow complexion. White hair kept short and practical. Pale lavender eyes, sharp and observant. Sharp cheekbones with mischievous smile. Dark well-maintained leather armor, not flashy. Street performer's clothing underneath - colorful vest visible. Multiple hidden pockets and pouches. Deck of playing cards always within reach in hand. Small collection of juggling balls. Twin daggers hidden. Mysterious pendant with unknown symbols. Quick fluid movements, always ready to dodge. Constantly fidgeting with cards or coins. Eyes scanning surroundings. Warm smile that contrasts with typical drow stereotypes. Performs small sleight-of-hand tricks unconsciously.\n\nScene: Malrik crouching or kneeling at eye level with several human children in the marketplace. Performing elaborate card tricks with flourish, cards fanned out or floating. Children gathered around watching in awe. Festive marketplace background with stalls. Malrik has a warm genuine smile, engaging with the children. Playing cards mid-trick, showing his showmanship.\n\nDialogue: Child: \"How did you do that?!\" Malrik: \"Magic, little one. But the real magic happens all around us...\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    }
+  ]
+}

@@ -34,9 +34,25 @@ current_page_data = None
 current_page_num = None
 
 
+def get_panel_filename(page_num, panel_num, variant=None, is_cover=False):
+    """Generate panel filename based on page type."""
+    if is_cover or page_num == 0:
+        base = f"cover-panel-{panel_num}"
+    else:
+        base = f"page-{page_num:03d}-panel-{panel_num}"
+
+    if variant:
+        return f"{base}-v{variant}.png"
+    return f"{base}.png"
+
+
 def load_page_data(page_num):
     """Load page data from JSON file."""
-    page_file = PAGES_JSON_DIR / f"page-{page_num:03d}.json"
+    # Handle cover page (page 0)
+    if page_num == 0:
+        page_file = PAGES_JSON_DIR / "cover.json"
+    else:
+        page_file = PAGES_JSON_DIR / f"page-{page_num:03d}.json"
 
     if not page_file.exists():
         raise FileNotFoundError(f"Page file not found: {page_file}")
