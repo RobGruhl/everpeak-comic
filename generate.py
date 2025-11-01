@@ -124,11 +124,8 @@ def load_page_data(page_num):
 async def generate_panel_variant_async(panel, page_num, variant_num, client, is_cover=False):
     """Generate a single variant of a panel with retry logic."""
 
-    # Use cover naming for cover page
-    if is_cover or page_num == 0:
-        variant_filename = PANELS_DIR / f"cover-panel-{panel['panel_num']}-v{variant_num}.png"
-    else:
-        variant_filename = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}-v{variant_num}.png"
+    # All pages use page-XXX format (page 0 = page-000)
+    variant_filename = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}-v{variant_num}.png"
 
     # Get prompt from panel data
     prompt = panel.get('prompt', '')
@@ -181,15 +178,8 @@ async def generate_panel_variant_async(panel, page_num, variant_num, client, is_
 async def generate_panel_variants(panel, page_num, client, is_cover=False):
     """Generate all variants for a single panel concurrently."""
 
-    # Determine file naming prefix
-    if is_cover or page_num == 0:
-        prefix = "cover"
-        final_filename = PANELS_DIR / f"cover-panel-{panel['panel_num']}.png"
-        variant_pattern = lambda v: PANELS_DIR / f"cover-panel-{panel['panel_num']}-v{v}.png"
-    else:
-        prefix = f"page-{page_num:03d}"
-        final_filename = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
-        variant_pattern = lambda v: PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}-v{v}.png"
+    # All pages use page-XXX format (page 0 = page-000)
+    final_filename = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
 
     # Check if final selection already exists
     if final_filename.exists():
@@ -198,7 +188,7 @@ async def generate_panel_variants(panel, page_num, client, is_cover=False):
 
     # Check if all variants already exist
     all_exist = all(
-        variant_pattern(i).exists()
+        (PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}-v{i}.png").exists()
         for i in range(1, VARIANTS_PER_PANEL + 1)
     )
 

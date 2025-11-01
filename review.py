@@ -34,18 +34,6 @@ current_page_data = None
 current_page_num = None
 
 
-def get_panel_filename(page_num, panel_num, variant=None, is_cover=False):
-    """Generate panel filename based on page type."""
-    if is_cover or page_num == 0:
-        base = f"cover-panel-{panel_num}"
-    else:
-        base = f"page-{page_num:03d}-panel-{panel_num}"
-
-    if variant:
-        return f"{base}-v{variant}.png"
-    return f"{base}.png"
-
-
 def load_page_data(page_num):
     """Load page data from JSON file."""
     # Handle cover page (page 0)
