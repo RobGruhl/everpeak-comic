@@ -34,9 +34,9 @@ OUTPUT_DIR = Path("output")
 PANELS_DIR = OUTPUT_DIR / "panels"
 PAGES_DIR = OUTPUT_DIR / "pages"
 
-# Rate limiting settings
-MAX_CONCURRENT = 5  # Maximum concurrent API requests
-MAX_RPM = 50        # Maximum requests per minute
+# Rate limiting settings (can be overridden via env vars or CLI)
+MAX_CONCURRENT = int(os.getenv('MAX_CONCURRENT', 20))  # Maximum concurrent API requests (default: 20)
+MAX_RPM = int(os.getenv('MAX_RPM', 50))                # Maximum requests per minute
 VARIANTS_PER_PANEL = 3  # Number of variants to generate per panel
 
 # Image generation settings
@@ -237,9 +237,13 @@ async def generate_page_panels(page_data, client):
 
     logger.info(f"\n📄 {page_label} ({len(panels)} panels, {len(panels) * VARIANTS_PER_PANEL} total images)")
 
-    # Process each panel (which generates 3 variants each)
-    for panel in panels:
-        await generate_panel_variants(panel, page_num, client, is_cover)
+    # Process all panels in parallel (each panel generates 3 variants concurrently)
+    # The semaphore limits total concurrent API requests across all panels
+    tasks = [
+        generate_panel_variants(panel, page_num, client, is_cover)
+        for panel in panels
+    ]
+    await asyncio.gather(*tasks)
 
 
 async def generate_pages_async(page_nums, force=False):
@@ -356,8 +360,10 @@ Examples:
 
     args = parser.parse_args()
 
-    # Update global rate limiters
-    global semaphore, rpm_limiter
+    # Update global rate limiters and config values
+    global semaphore, rpm_limiter, MAX_CONCURRENT, MAX_RPM
+    MAX_CONCURRENT = args.concurrent
+    MAX_RPM = args.rpm
     semaphore = asyncio.Semaphore(args.concurrent)
     rpm_limiter = RPMLimiter(args.rpm)
 
