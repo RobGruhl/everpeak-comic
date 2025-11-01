@@ -1,0 +1,46 @@
+{
+  "page_num": 12,
+  "title": "The Race (Part 2)",
+  "panel_count": 3,
+  "is_spread": false,
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Val crossing finish line Sled shooting sparks everywhere **Sound EFFECTS:** \"ZZZZAP!\"",
+      "dialogue": "",
+      "characters": {
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val crossing finish line Sled shooting sparks everywhere **Sound EFFECTS:** \"ZZZZAP!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 2,
+      "visual": "Sorrel (halfling child) at finish line, eyes wide",
+      "dialogue": "Sorrel: \"Oh wow! That's a really fast sled! Can I use it for the next run?\" Val: \"Uh... sure, kid.\"",
+      "characters": {
+        "Sorrel": "",
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Sorrel: \n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Sorrel (halfling child) at finish line, eyes wide\n\nDialogue: Sorrel: \"Oh wow! That's a really fast sled! Can I use it for the next run?\" Val: \"Uh... sure, kid.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 3,
+      "visual": "Malrik collecting winnings Passing gold to Prismor secretly",
+      "dialogue": "Gambler: \"Funny things happening with the essences these days...\" Malrik (thought): \"Funnier than you know.\"  ## CHAPTER 4: THE BALCONY GARDEN",
+      "characters": {
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
+        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Malrik collecting winnings Passing gold to Prismor secretly\n\nDialogue: Gambler: \"Funny things happening with the essences these days...\" Malrik (thought): \"Funnier than you know.\"  ## CHAPTER 4: THE BALCONY GARDEN\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    }
+  ]
+}

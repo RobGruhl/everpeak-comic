@@ -816,17 +816,11 @@ def select_variant(page_num, panel_num, variant_num):
 
 @app.route('/preview/<int:page_num>')
 def preview_page(page_num):
-    """Generate a preview of the assembled page using professional layout engine."""
+    """Generate a preview of the assembled page using simplified layout system."""
     try:
         # Load page data
         page_data = load_page_data(page_num)
         panels = page_data['panels']
-        is_spread = page_data.get('is_spread', False)
-        custom_layout = page_data.get('custom_layout', None)
-
-        # Determine page dimensions
-        page_width = 3200 if is_spread else PAGE_WIDTH
-        page_height = PAGE_HEIGHT
 
         # Check if all panels have been selected
         missing_panels = []
@@ -838,7 +832,7 @@ def preview_page(page_num):
         if missing_panels:
             return f"Error: Missing selected panels: {missing_panels}", 400
 
-        # Load panel images
+        # Load panel images (all 1024x1536 portrait)
         panel_images = []
         for panel in panels:
             panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
@@ -846,16 +840,15 @@ def preview_page(page_num):
                 panel_images.append(Image.open(panel_file))
             else:
                 # Create placeholder if missing
-                placeholder = Image.new('RGB', (1024, 1024), 'gray')
+                placeholder = Image.new('RGB', (1024, 1536), 'gray')
                 panel_images.append(placeholder)
 
-        # Use professional layout engine (same as assemble.py)
+        # Use simplified layout engine (same as assemble.py)
         page_img = assemble_page_with_layout(
             panels_data=panels,
             panel_images=panel_images,
-            page_width=page_width,
-            page_height=page_height,
-            custom_layout=custom_layout
+            page_width=PAGE_WIDTH,
+            page_height=PAGE_HEIGHT
         )
 
         # Return image as response

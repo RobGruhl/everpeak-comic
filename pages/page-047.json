@@ -1,0 +1,20 @@
+{
+  "page_num": 47,
+  "title": "The Final Push (Part 3)",
+  "panel_count": 1,
+  "is_spread": false,
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Lord Alric collapsing Forged key clattering to ground Stolen lenses spilling from his hands Broken and defeated",
+      "dialogue": "Alric: \"Impossible... I had... the power...\" ",
+      "characters": {
+        "Lord Alric": "Race: Human noble Age: 40s Height: 6'0\" Fashionable but subtly militaristic coat Rich fabrics in dark colors (navy, black, crimson)"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lord Alric: Race: Human noble Age: 40s Height: 6'0\" Fashionable but subtly militaristic coat Rich fabrics in dark colors (navy, black, crimson)\n\nScene: Lord Alric collapsing Forged key clattering to ground Stolen lenses spilling from his hands Broken and defeated\n\nDialogue: Alric: \"Impossible... I had... the power...\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    }
+  ]
+}

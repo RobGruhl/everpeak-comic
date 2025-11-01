@@ -2,6 +2,7 @@
   "page_num": 14,
   "title": "First Combat - Blink Mephits",
   "panel_count": 8,
+  "is_spread": true,
   "panels": [
     {
       "panel_num": 1,
@@ -39,7 +40,7 @@
       },
       "npcs": {},
       "aspect_ratio": "splash",
-      "size": "1536x2048",
+      "size": "1024x1536",
       "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Blink Mephit: Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages\n\nScene: Blink Mephit materializing Nearly invisible, flickering edges Afterimages trailing **Sound EFFECTS:** \"SHHHHRRRR\" **Caption:** \"BLINK MEPHIT - DISPLACEMENT ESSENCE CORRUPTED\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
@@ -105,5 +106,6 @@
       "size": "1536x1024",
       "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Mephit dissolving into light Energy flowing back to damaged rune Rune fading **Sound EFFECTS:** \"WHOOOOSH\"\n\nDialogue: Pocky: \"It was bound to the tampered rune! Destroying it freed the passage!\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
-  ]
+  ],
+  "page_end": 15
 }

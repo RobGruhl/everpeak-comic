@@ -2,6 +2,7 @@
   "page_num": 11,
   "title": "The Descent",
   "panel_count": 6,
+  "is_spread": true,
   "panels": [
     {
       "panel_num": 1,
@@ -85,5 +86,6 @@
       "size": "1024x1024",
       "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Trying again, different path Back at start again Party getting confused\n\nDialogue: Lunara: \"We're going in circles!\" Val: \"No, this is wrong. Someone's tampered with the runes!\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
-  ]
+  ],
+  "page_end": 12
 }

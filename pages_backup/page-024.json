@@ -2,6 +2,7 @@
   "page_num": 24,
   "title": "Alric's Monologue",
   "panel_count": 9,
+  "is_spread": true,
   "panels": [
     {
       "panel_num": 1,
@@ -113,5 +114,6 @@
       "size": "1536x1024",
       "prompt": "Professional comic book panel illustration.\n\nScene: Combat beginning Initiative order visible Everyone in action poses **Caption:** \"BATTLE BEGINS!\" \n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
-  ]
+  ],
+  "page_end": 25
 }

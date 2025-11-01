@@ -1,91 +1,54 @@
 {
   "page_num": 11,
-  "title": "The Descent",
-  "panel_count": 6,
-  "is_spread": true,
+  "title": "The Race (Part 1)",
+  "panel_count": 4,
+  "is_spread": false,
   "panels": [
     {
       "panel_num": 1,
-      "annotation": null,
-      "visual": "Val leading party to hidden entrance",
-      "dialogue": "Val: \"I know a faster way through the courier tunnels. But... I'm not supposed to show outsiders.\" Malrik: \"We're not outsiders. We're friends.\"",
-      "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
-        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
-      },
+      "visual": "Race starting line Multiple sleds lined up Rope dropping **Sound EFFECTS:** \"GO!\"",
+      "dialogue": "",
+      "characters": {},
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val leading party to hidden entrance\n\nDialogue: Val: \"I know a faster way through the courier tunnels. But... I'm not supposed to show outsiders.\" Malrik: \"We're not outsiders. We're friends.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nScene: Race starting line Multiple sleds lined up Rope dropping **Sound EFFECTS:** \"GO!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 2,
-      "annotation": null,
-      "visual": "Entering tunnels Chalk symbols on walls Party descending",
-      "dialogue": "Val: \"Everyone, blindfolds on. Guild rules.\" Prismor: \"You're taking this seriously.\" Val: \"These secrets keep the guild safe.\"",
+      "visual": "Val's sled leaping forward with magical boost Leaving trail of sparks **Sound EFFECTS:** \"WHOOOOSH!\"",
+      "dialogue": "Val: \"Whoa!\"",
       "characters": {
-        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)",
         "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
       },
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Entering tunnels Chalk symbols on walls Party descending\n\nDialogue: Val: \"Everyone, blindfolds on. Guild rules.\" Prismor: \"You're taking this seriously.\" Val: \"These secrets keep the guild safe.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val's sled leaping forward with magical boost Leaving trail of sparks **Sound EFFECTS:** \"WHOOOOSH!\"\n\nDialogue: Val: \"Whoa!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 3,
-      "annotation": null,
-      "visual": "Malrik attempting to peek Val noticing",
-      "dialogue": "Malrik (thought): \"Just a little look...\" Val: \"I saw that!\"",
+      "visual": "Midway down - displacement magic gone wrong Val swerving wildly as space warps **Sound EFFECTS:** \"BRZZZZT!\"",
+      "dialogue": "",
       "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
         "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
       },
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Malrik attempting to peek Val noticing\n\nDialogue: Malrik (thought): \"Just a little look...\" Val: \"I saw that!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Midway down - displacement magic gone wrong Val swerving wildly as space warps **Sound EFFECTS:** \"BRZZZZT!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 4,
-      "annotation": "Wide",
-      "visual": "Tunnel revealed - chalk everywhere, magical symbols Party looking around in wonder",
-      "dialogue": "Pocky: \"Fascinating! The displacement magic creates shortcuts through space!\"",
+      "visual": "Prismor hitting thornbushes Cloak tearing, taking damage **Sound EFFECTS:** \"CRASH!\"",
+      "dialogue": "Prismor: \"Ugh! These weren't here in previous years!\"",
       "characters": {
-        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
+        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)"
       },
       "npcs": {},
-      "aspect_ratio": "wide",
-      "size": "1536x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Tunnel revealed - chalk everywhere, magical symbols Party looking around in wonder\n\nDialogue: Pocky: \"Fascinating! The displacement magic creates shortcuts through space!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 5,
-      "annotation": null,
-      "visual": "Val trying to lead through Suddenly finding themselves back where started **Sound EFFECTS:** \"*FWIP*\"",
-      "dialogue": "Val: \"What? This should work...\"",
-      "characters": {
-        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val trying to lead through Suddenly finding themselves back where started **Sound EFFECTS:** \"*FWIP*\"\n\nDialogue: Val: \"What? This should work...\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 6,
-      "annotation": null,
-      "visual": "Trying again, different path Back at start again Party getting confused",
-      "dialogue": "Lunara: \"We're going in circles!\" Val: \"No, this is wrong. Someone's tampered with the runes!\" ",
-      "characters": {
-        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing",
-        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Trying again, different path Back at start again Party getting confused\n\nDialogue: Lunara: \"We're going in circles!\" Val: \"No, this is wrong. Someone's tampered with the runes!\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Prismor hitting thornbushes Cloak tearing, taking damage **Sound EFFECTS:** \"CRASH!\"\n\nDialogue: Prismor: \"Ugh! These weren't here in previous years!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
-  ],
-  "page_end": 12
+  ]
 }

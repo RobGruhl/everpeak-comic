@@ -2,6 +2,7 @@
   "page_num": 8,
   "title": "The Race",
   "panel_count": 7,
+  "is_spread": true,
   "panels": [
     {
       "panel_num": 1,
@@ -94,5 +95,6 @@
       "size": "1024x1024",
       "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Malrik collecting winnings Passing gold to Prismor secretly\n\nDialogue: Gambler: \"Funny things happening with the essences these days...\" Malrik (thought): \"Funnier than you know.\"  ## CHAPTER 4: THE BALCONY GARDEN\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
-  ]
+  ],
+  "page_end": 9
 }

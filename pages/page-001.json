@@ -1,38 +1,35 @@
 {
   "page_num": 1,
-  "title": "Character Introductions",
-  "panel_count": 5,
+  "title": "Character Introductions (Part 1)",
+  "panel_count": 4,
   "is_spread": false,
   "panels": [
     {
       "panel_num": 1,
-      "annotation": null,
       "visual": "Val walking through crowds, delivering messages Festival vendors setting up stalls",
       "dialogue": "Val (thought bubble): \"The Dawn's Crown alignment approaches. The whole citadel buzzes with excitement...\"",
       "characters": {
         "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
       },
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
       "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val walking through crowds, delivering messages Festival vendors setting up stalls\n\nDialogue: Val (thought bubble): \"The Dawn's Crown alignment approaches. The whole citadel buzzes with excitement...\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 2,
-      "annotation": null,
       "visual": "Prismor on balcony overlooking preparations Crystalline scales catching sunlight",
       "dialogue": "Prismor (thought): \"Decades I've protected this place. But today... something feels different.\"",
       "characters": {
         "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)"
       },
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
       "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Prismor on balcony overlooking preparations Crystalline scales catching sunlight\n\nDialogue: Prismor (thought): \"Decades I've protected this place. But today... something feels different.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 3,
-      "annotation": null,
       "visual": "Pocky in library with Marge, looking at old star charts",
       "dialogue": "Marge: \"Be careful with those, dear. They're older than you think.\" Pocky: \"The alignment happens only once a century. Think of what we might learn!\"",
       "characters": {
@@ -40,35 +37,21 @@
         "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
       },
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
       "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Marge: Age: Middle-aged human woman (40s-50s) Height: 5'4\" Build: Slightly stooped from years of reading Modest scholar's robes in muted colors Ink-stained everywhere - fingers, sleeves, hem\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Pocky in library with Marge, looking at old star charts\n\nDialogue: Marge: \"Be careful with those, dear. They're older than you think.\" Pocky: \"The alignment happens only once a century. Think of what we might learn!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 4,
-      "annotation": null,
       "visual": "Lunara guiding the Yule Tree up mountain path",
       "dialogue": "Lunara (thought): \"The tree feels... resistant. The Nature Essence isn't flowing as it should.\"",
       "characters": {
         "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
       },
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
       "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Lunara guiding the Yule Tree up mountain path\n\nDialogue: Lunara (thought): \"The tree feels... resistant. The Nature Essence isn't flowing as it should.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 5,
-      "annotation": null,
-      "visual": "Malrik performing card tricks for children in marketplace",
-      "dialogue": "Child: \"How did you do that?!\" Malrik: \"Magic, little one. But the real magic happens all around us...\" ",
-      "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Malrik performing card tricks for children in marketplace\n\nDialogue: Child: \"How did you do that?!\" Malrik: \"Magic, little one. But the real magic happens all around us...\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
   ]
 }

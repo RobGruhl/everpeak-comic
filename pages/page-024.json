@@ -1,119 +1,52 @@
 {
   "page_num": 24,
-  "title": "Alric's Monologue",
-  "panel_count": 9,
-  "is_spread": true,
+  "title": "Second Combat - Two Blink Mephits (Part 2)",
+  "panel_count": 4,
+  "is_spread": false,
   "panels": [
     {
       "panel_num": 1,
-      "annotation": null,
-      "visual": "Close on Lord Alric's sneering face Holding forged key",
-      "dialogue": "Alric: \"For a century, this citadel has been wasted on peasants and merchants. The power here belongs to those who understand it!\"",
-      "characters": {
-        "Lord Alric": "Race: Human noble Age: 40s Height: 6'0\" Fashionable but subtly militaristic coat Rich fabrics in dark colors (navy, black, crimson)"
-      },
+      "visual": "Mephits damaged but still fighting Teleporting erratically **Sound EFFECTS:** \"*FWIP* *FWIP*\"",
+      "dialogue": "",
+      "characters": {},
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lord Alric: Race: Human noble Age: 40s Height: 6'0\" Fashionable but subtly militaristic coat Rich fabrics in dark colors (navy, black, crimson)\n\nScene: Close on Lord Alric's sneering face Holding forged key\n\nDialogue: Alric: \"For a century, this citadel has been wasted on peasants and merchants. The power here belongs to those who understand it!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nScene: Mephits damaged but still fighting Teleporting erratically **Sound EFFECTS:** \"*FWIP* *FWIP*\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 2,
-      "annotation": null,
-      "visual": "Alric gesturing to Orrery Crude lenses visible in wrong positions",
-      "dialogue": "Alric: \"The high elves hoarded this power. Now it's mine to command!\"",
-      "characters": {},
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nScene: Alric gesturing to Orrery Crude lenses visible in wrong positions\n\nDialogue: Alric: \"The high elves hoarded this power. Now it's mine to command!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 3,
-      "annotation": null,
-      "visual": "Party taking battle stances",
-      "dialogue": "Pocky: \"You're corrupting the essences! You'll destroy Everpeak!\" Alric: \"Destroy? No. RESHAPE!\"",
-      "characters": {
-        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Party taking battle stances\n\nDialogue: Pocky: \"You're corrupting the essences! You'll destroy Everpeak!\" Alric: \"Destroy? No. RESHAPE!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 4,
-      "annotation": null,
-      "visual": "Alric raising jagged key Muttering incantation **Sound EFFECTS:** \"VRRRRMMMMM\"",
+      "visual": "Prismor firing arrow with perfect aim Arrow tracking mephit through teleports **Sound EFFECTS:** \"THWIP!\"",
       "dialogue": "",
-      "characters": {},
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nScene: Alric raising jagged key Muttering incantation **Sound EFFECTS:** \"VRRRRMMMMM\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 5,
-      "annotation": "Wide",
-      "visual": "Chaotic barrier swirling around Alric Kaleidoscope of elemental colors All five essence types clashing **Sound EFFECTS:** \"WHOOOOOOSH\"",
-      "dialogue": "",
-      "characters": {},
-      "npcs": {},
-      "aspect_ratio": "wide",
-      "size": "1536x1024",
-      "prompt": "Professional comic book panel illustration.\n\nScene: Chaotic barrier swirling around Alric Kaleidoscope of elemental colors All five essence types clashing **Sound EFFECTS:** \"WHOOOOOOSH\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 6,
-      "annotation": null,
-      "visual": "Prismor's sword striking barrier Sparking off harmlessly **Sound EFFECTS:** \"CLANG-SPARK!\"",
-      "dialogue": "Prismor: \"It's deflecting everything!\"",
       "characters": {
         "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)"
       },
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Prismor's sword striking barrier Sparking off harmlessly **Sound EFFECTS:** \"CLANG-SPARK!\"\n\nDialogue: Prismor: \"It's deflecting everything!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Prismor firing arrow with perfect aim Arrow tracking mephit through teleports **Sound EFFECTS:** \"THWIP!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
-      "panel_num": 7,
-      "annotation": null,
-      "visual": "Sorrel flying into chamber Golden wings spread",
-      "dialogue": "Sorrel: \"The Orrery's mind is open! Reach out through your skills! You can guide the lenses!\"",
-      "characters": {
-        "Sorrel": ""
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Sorrel: \n\nScene: Sorrel flying into chamber Golden wings spread\n\nDialogue: Sorrel: \"The Orrery's mind is open! Reach out through your skills! You can guide the lenses!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 8,
-      "annotation": null,
-      "visual": "Party members touching temples Seeing spectral runic interfaces",
-      "dialogue": "Pocky: \"I can feel it... the Orrery is reaching out!\" Lunara: \"Nature... Celestial... Mechanistic... they're all singing!\"",
-      "characters": {
-        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing",
-        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Party members touching temples Seeing spectral runic interfaces\n\nDialogue: Pocky: \"I can feel it... the Orrery is reaching out!\" Lunara: \"Nature... Celestial... Mechanistic... they're all singing!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 9,
-      "annotation": "Wide bottom",
-      "visual": "Combat beginning Initiative order visible Everyone in action poses **Caption:** \"BATTLE BEGINS!\" ",
+      "panel_num": 3,
+      "visual": "Arrow striking true First mephit dissolving **Sound EFFECTS:** \"SHKREEEE!\"",
       "dialogue": "",
       "characters": {},
       "npcs": {},
-      "aspect_ratio": "wide",
-      "size": "1536x1024",
-      "prompt": "Professional comic book panel illustration.\n\nScene: Combat beginning Initiative order visible Everyone in action poses **Caption:** \"BATTLE BEGINS!\" \n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nScene: Arrow striking true First mephit dissolving **Sound EFFECTS:** \"SHKREEEE!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 4,
+      "visual": "Lunara casting spell at second mephit Nature magic binding it in place",
+      "dialogue": "Lunara: \"Nature answers my call!\"",
+      "characters": {
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Lunara casting spell at second mephit Nature magic binding it in place\n\nDialogue: Lunara: \"Nature answers my call!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
-  ],
-  "page_end": 25
+  ]
 }

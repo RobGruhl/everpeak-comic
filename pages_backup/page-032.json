@@ -2,6 +2,7 @@
   "page_num": 32,
   "title": "Turning the Tide",
   "panel_count": 9,
+  "is_spread": true,
   "panels": [
     {
       "panel_num": 1,
@@ -119,5 +120,6 @@
       "size": "1024x1024",
       "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Verdant Mephit: Size: Small elemental (2-3 feet) Form: Living vines and thorny brambles given shape Eyes: Glowing green pinpoints of light\n\nScene: Verdant Mephit's thorn attack hitting Alric **Caption:** \"8 DAMAGE TO ALRIC!\"\n\nDialogue: Alric: \"What?! You dare?!\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
-  ]
+  ],
+  "page_end": 33
 }

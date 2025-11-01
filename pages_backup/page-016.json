@@ -2,6 +2,7 @@
   "page_num": 16,
   "title": "The Crossroads",
   "panel_count": 6,
+  "is_spread": false,
   "panels": [
     {
       "panel_num": 1,

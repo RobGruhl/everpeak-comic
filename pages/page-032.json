@@ -1,125 +1,52 @@
 {
   "page_num": 32,
-  "title": "Turning the Tide",
-  "panel_count": 9,
-  "is_spread": true,
+  "title": "Alric's Monologue (Part 1)",
+  "panel_count": 4,
+  "is_spread": false,
   "panels": [
     {
       "panel_num": 1,
-      "annotation": null,
-      "visual": "Close on Malrik's determined face",
-      "dialogue": "Malrik (thought): \"I came here seeking purpose. I found friends. I will NOT let them fall!\"",
-      "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Close on Malrik's determined face\n\nDialogue: Malrik (thought): \"I came here seeking purpose. I found friends. I will NOT let them fall!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 2,
-      "annotation": null,
-      "visual": "Malrik attempting Displacement lens Sleight of hand flowing perfectly **Caption:** \"DC 15 SLEIGHT OF HAND - SUCCESS!\" **Sound EFFECTS:** \"CLICK!\"",
-      "dialogue": "",
-      "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Malrik attempting Displacement lens Sleight of hand flowing perfectly **Caption:** \"DC 15 SLEIGHT OF HAND - SUCCESS!\" **Sound EFFECTS:** \"CLICK!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 3,
-      "annotation": null,
-      "visual": "Displacement lens aligning Spatial energy flowing correctly Another crack in Alric's barrier",
-      "dialogue": "",
-      "characters": {},
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nScene: Displacement lens aligning Spatial energy flowing correctly Another crack in Alric's barrier\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 4,
-      "annotation": null,
-      "visual": "Malrik attempting witch bolt spell Missing Alric **Caption:** \"ATTACK ROLL - MISS!\"",
-      "dialogue": "Malrik: \"Damn!\"",
-      "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Malrik attempting witch bolt spell Missing Alric **Caption:** \"ATTACK ROLL - MISS!\"\n\nDialogue: Malrik: \"Damn!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 5,
-      "annotation": null,
-      "visual": "Lunara attempting Celestial lens Success! **Caption:** \"DC 15 RELIGION - SUCCESS!\"",
-      "dialogue": "Lunara: \"The stars remember the elves' sacrifice!\"",
-      "characters": {
-        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Lunara attempting Celestial lens Success! **Caption:** \"DC 15 RELIGION - SUCCESS!\"\n\nDialogue: Lunara: \"The stars remember the elves' sacrifice!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 6,
-      "annotation": null,
-      "visual": "Starlight Mephit attacking Cone of radiance hitting Prismor **Sound EFFECTS:** \"WHOOOM\" **Caption:** \"PRISMOR: SAVE SUCCESS - 3 DAMAGE, DOWN TO 6 HP!\"",
-      "dialogue": "",
-      "characters": {
-        "Starlight Mephit": "Size: Small elemental (2-3 feet) Form: Swirling star-fields and cosmic dust Body: Ethereal, composed of living starlight",
-        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)"
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Starlight Mephit: Size: Small elemental (2-3 feet) Form: Swirling star-fields and cosmic dust Body: Ethereal, composed of living starlight\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Starlight Mephit attacking Cone of radiance hitting Prismor **Sound EFFECTS:** \"WHOOOM\" **Caption:** \"PRISMOR: SAVE SUCCESS - 3 DAMAGE, DOWN TO 6 HP!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 7,
-      "annotation": null,
-      "visual": "Lord Alric preparing another spell Looking confident",
-      "dialogue": "Alric: \"You're finished! The Dawn's Crown is MINE!\"",
+      "visual": "Close on Lord Alric's sneering face Holding forged key",
+      "dialogue": "Alric: \"For a century, this citadel has been wasted on peasants and merchants. The power here belongs to those who understand it!\"",
       "characters": {
         "Lord Alric": "Race: Human noble Age: 40s Height: 6'0\" Fashionable but subtly militaristic coat Rich fabrics in dark colors (navy, black, crimson)"
       },
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lord Alric: Race: Human noble Age: 40s Height: 6'0\" Fashionable but subtly militaristic coat Rich fabrics in dark colors (navy, black, crimson)\n\nScene: Lord Alric preparing another spell Looking confident\n\nDialogue: Alric: \"You're finished! The Dawn's Crown is MINE!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lord Alric: Race: Human noble Age: 40s Height: 6'0\" Fashionable but subtly militaristic coat Rich fabrics in dark colors (navy, black, crimson)\n\nScene: Close on Lord Alric's sneering face Holding forged key\n\nDialogue: Alric: \"For a century, this citadel has been wasted on peasants and merchants. The power here belongs to those who understand it!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
-      "panel_num": 8,
-      "annotation": null,
-      "visual": "Verdant Mephit (from earlier failed check) appearing Attacking Alric from behind Made of vines and thorns **Sound EFFECTS:** \"WHIP-SLASH!\"",
+      "panel_num": 2,
+      "visual": "Alric gesturing to Orrery Crude lenses visible in wrong positions",
+      "dialogue": "Alric: \"The high elves hoarded this power. Now it's mine to command!\"",
+      "characters": {},
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nScene: Alric gesturing to Orrery Crude lenses visible in wrong positions\n\nDialogue: Alric: \"The high elves hoarded this power. Now it's mine to command!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 3,
+      "visual": "Party taking battle stances",
+      "dialogue": "Pocky: \"You're corrupting the essences! You'll destroy Everpeak!\" Alric: \"Destroy? No. RESHAPE!\"",
+      "characters": {
+        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Party taking battle stances\n\nDialogue: Pocky: \"You're corrupting the essences! You'll destroy Everpeak!\" Alric: \"Destroy? No. RESHAPE!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 4,
+      "visual": "Alric raising jagged key Muttering incantation **Sound EFFECTS:** \"VRRRRMMMMM\"",
       "dialogue": "",
-      "characters": {
-        "Verdant Mephit": "Size: Small elemental (2-3 feet) Form: Living vines and thorny brambles given shape Eyes: Glowing green pinpoints of light"
-      },
+      "characters": {},
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Verdant Mephit: Size: Small elemental (2-3 feet) Form: Living vines and thorny brambles given shape Eyes: Glowing green pinpoints of light\n\nScene: Verdant Mephit (from earlier failed check) appearing Attacking Alric from behind Made of vines and thorns **Sound EFFECTS:** \"WHIP-SLASH!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 9,
-      "annotation": null,
-      "visual": "Verdant Mephit's thorn attack hitting Alric **Caption:** \"8 DAMAGE TO ALRIC!\"",
-      "dialogue": "Alric: \"What?! You dare?!\" ",
-      "characters": {
-        "Verdant Mephit": "Size: Small elemental (2-3 feet) Form: Living vines and thorny brambles given shape Eyes: Glowing green pinpoints of light"
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Verdant Mephit: Size: Small elemental (2-3 feet) Form: Living vines and thorny brambles given shape Eyes: Glowing green pinpoints of light\n\nScene: Verdant Mephit's thorn attack hitting Alric **Caption:** \"8 DAMAGE TO ALRIC!\"\n\nDialogue: Alric: \"What?! You dare?!\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nScene: Alric raising jagged key Muttering incantation **Sound EFFECTS:** \"VRRRRMMMMM\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
-  ],
-  "page_end": 33
+  ]
 }

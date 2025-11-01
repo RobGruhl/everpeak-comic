@@ -24,22 +24,9 @@ PANELS_DIR = OUTPUT_DIR / "panels"
 PAGES_DIR = OUTPUT_DIR / "pages"
 CBZ_FILE = OUTPUT_DIR / "everpeak-citadel.cbz"
 
-# Legacy constants (now imported from layout_engine)
-GUTTER = 20
-BORDER = 3
-
-# Layout strategies for different panel counts
-LAYOUT_STRATEGIES = {
-    1: "full_page",      # Single splash panel
-    2: "vertical_half",  # Two panels stacked vertically
-    3: "vertical_third", # Three panels stacked vertically
-    4: "2x2_grid",       # Perfect 2x2 grid
-    5: "2_over_3",       # 2 wider panels top, 3 smaller bottom (best for 5)
-    6: "2x3_grid",       # Standard 2x3 grid
-    7: "3_over_4",       # 3 panels top row, 4 panels bottom row
-    8: "2x4_grid",       # 2 columns, 4 rows
-    9: "3x3_grid",       # Perfect 3x3 grid
-}
+# Simplified system: only 2 layouts
+# - Splash: 1 panel (full page)
+# - Grid 2x2: 4 panels (or fewer)
 
 
 def setup_directories():
@@ -79,7 +66,9 @@ def list_available_pages():
     return pages
 
 
-def apply_layout_2_over_3(page_img, panels, page_num, page_width, page_height):
+# Removed old layout functions - no longer needed with simplified system
+
+def apply_layout_2_over_3_REMOVED(page_img, panels, page_num, page_width, page_height):
     """Apply 2-over-3 layout: 2 wider panels on top, 3 smaller panels on bottom."""
     # Top row: 2 panels
     top_panel_width = (page_width - 3 * GUTTER) // 2
@@ -187,82 +176,53 @@ def cleanup_variants(page_num, panels):
 
 
 def assemble_page(page_data, cleanup=False):
-    """Assemble panels into a page using professional layout engine."""
+    """Assemble panels into a page using simplified layout system."""
 
     page_num = page_data['page_num']
     panels = page_data['panels']
     num_panels = len(panels)
-    is_spread = page_data.get('is_spread', False)
-    is_cover = page_data.get('is_cover', False)
-    custom_layout = page_data.get('custom_layout', None)
 
-    # Determine page dimensions
-    if is_spread:
-        page_width = SPREAD_WIDTH
-        page_height = PAGE_HEIGHT
-        page_type = "spread"
-    else:
-        page_width = PAGE_WIDTH
-        page_height = PAGE_HEIGHT
-        page_type = "cover" if is_cover else "page"
-
-    print(f"\n→ Assembling {page_type} {page_num} ({num_panels} panels){' [TWO-PAGE SPREAD]' if is_spread else ''}...")
-
-    if custom_layout:
-        print(f"  Using custom layout: {custom_layout}")
+    layout_type = "splash" if num_panels == 1 else "2x2 grid"
+    print(f"\n→ Assembling page {page_num} ({num_panels} panels, {layout_type})...")
 
     # Check if all panels have been selected
-    if not is_cover:
-        missing_panels = []
-        for panel in panels:
-            if page_num == 0:
-                panel_file = PANELS_DIR / f"cover-panel-{panel['panel_num']}.png"
-            else:
-                panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
+    missing_panels = []
+    for panel in panels:
+        panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
+        if not panel_file.exists():
+            missing_panels.append(panel['panel_num'])
 
-            if not panel_file.exists():
-                missing_panels.append(panel['panel_num'])
+    if missing_panels:
+        print(f"  ✗ Error: Missing selected panels: {missing_panels}")
+        print(f"  Run review.py to select variants first")
+        return None
 
-        if missing_panels:
-            print(f"  ✗ Error: Missing selected panels: {missing_panels}")
-            print(f"  Run review.py to select variants first")
-            return None
-
-    # Load panel images
+    # Load panel images (all 1024x1536 portrait)
     panel_images = []
     for panel in panels:
-        if page_num == 0:
-            panel_file = PANELS_DIR / f"cover-panel-{panel['panel_num']}.png"
-        else:
-            panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
-
+        panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
         if panel_file.exists():
             panel_images.append(Image.open(panel_file))
         else:
             # Create placeholder if missing
-            placeholder = Image.new('RGB', (1024, 1024), 'gray')
+            placeholder = Image.new('RGB', (1024, 1536), 'gray')
             panel_images.append(placeholder)
 
-    # Use professional layout engine
+    # Use simplified layout engine
     page_img = assemble_page_with_layout(
         panels_data=panels,
         panel_images=panel_images,
-        page_width=page_width,
-        page_height=page_height,
-        custom_layout=custom_layout
+        page_width=PAGE_WIDTH,
+        page_height=PAGE_HEIGHT
     )
 
-    # Save page with appropriate naming
-    if page_num == 0:
-        output_file = PAGES_DIR / "cover.png"
-    else:
-        output_file = PAGES_DIR / f"page-{page_num:03d}.png"
-
+    # Save page
+    output_file = PAGES_DIR / f"page-{page_num:03d}.png"
     page_img.save(output_file)
-    print(f"✓ Saved {output_file.name} ({page_width}x{page_height})")
+    print(f"✓ Saved {output_file.name} (1600x2400)")
 
-    # Cleanup variants if requested (skip for cover)
-    if cleanup and not is_cover:
+    # Cleanup variants if requested
+    if cleanup:
         cleanup_variants(page_num, panels)
 
     return output_file

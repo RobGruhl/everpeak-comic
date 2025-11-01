@@ -1,120 +1,57 @@
 {
   "page_num": 36,
-  "title": "The Alignment",
-  "panel_count": 9,
-  "is_spread": true,
+  "title": "Combat Chaos (Part 2)",
+  "panel_count": 4,
+  "is_spread": false,
   "panels": [
     {
       "panel_num": 1,
-      "annotation": "Full top",
-      "visual": "Starlight beginning to descend through aperture above Dawn's Crown alignment occurring Pure white light filling chamber **Caption:** \"Above, a shaft of purest starlight descends through the aperture, illuminating the Orrery with warm and radiant glow.\"",
+      "visual": "Pocky reaching for Mechanistic lens Arcana failing **Sound EFFECTS:** \"BZZZZT!\" **Caption:** \"DC 15 ARCANA CHECK - FAILED!\"",
       "dialogue": "",
-      "characters": {},
+      "characters": {
+        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
+      },
       "npcs": {},
-      "aspect_ratio": "splash",
+      "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nScene: Starlight beginning to descend through aperture above Dawn's Crown alignment occurring Pure white light filling chamber **Caption:** \"Above, a shaft of purest starlight descends through the aperture, illuminating the Orrery with warm and radiant glow.\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Pocky reaching for Mechanistic lens Arcana failing **Sound EFFECTS:** \"BZZZZT!\" **Caption:** \"DC 15 ARCANA CHECK - FAILED!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 2,
-      "annotation": null,
-      "visual": "Orrery's lenses all catching light Refracting into prismatic patterns Rainbow patterns on walls **Sound EFFECTS:** \"HUMMMMM\"",
-      "dialogue": "",
-      "characters": {},
+      "visual": "Gear Mephit spawning from failed attempt Made of brass gears and springs Clicking and whirring **Sound EFFECTS:** \"CLICK-WHIRR-TICK\"",
+      "dialogue": "Pocky: \"Oh no!\"",
+      "characters": {
+        "Gear Mephit": "Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components",
+        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
+      },
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nScene: Orrery's lenses all catching light Refracting into prismatic patterns Rainbow patterns on walls **Sound EFFECTS:** \"HUMMMMM\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Gear Mephit: Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Gear Mephit spawning from failed attempt Made of brass gears and springs Clicking and whirring **Sound EFFECTS:** \"CLICK-WHIRR-TICK\"\n\nDialogue: Pocky: \"Oh no!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 3,
-      "annotation": null,
-      "visual": "Chamber vibrating softly Ancient magic responding **Caption:** \"The air vibrates softly, as if the entire chamber hums with quiet gratitude.\"",
+      "visual": "Gear Mephit throwing explosive gear-bombs Party dodging **Sound EFFECTS:** \"BOOM!\"",
       "dialogue": "",
-      "characters": {},
+      "characters": {
+        "Gear Mephit": "Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components"
+      },
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nScene: Chamber vibrating softly Ancient magic responding **Caption:** \"The air vibrates softly, as if the entire chamber hums with quiet gratitude.\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Gear Mephit: Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components\n\nScene: Gear Mephit throwing explosive gear-bombs Party dodging **Sound EFFECTS:** \"BOOM!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 4,
-      "annotation": null,
-      "visual": "Remaining mephits dissipating into colored dust No longer hostile Floating harmlessly away **Sound EFFECTS:** \"whoosh...\"",
-      "dialogue": "",
-      "characters": {},
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nScene: Remaining mephits dissipating into colored dust No longer hostile Floating harmlessly away **Sound EFFECTS:** \"whoosh...\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 5,
-      "annotation": null,
-      "visual": "Drow conspirators slipping into shadows Or surrendering, uncertain",
-      "dialogue": "Drow: \"We were told this would free us from prejudice...\" Malrik: \"Not this way. Never this way.\"",
+      "visual": "Lunara attempting Nature lens Success! **Caption:** \"DC 15 NATURE CHECK - SUCCESS!\"",
+      "dialogue": "Lunara: \"The garden's wisdom flows through me!\" ",
       "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
       },
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Drow conspirators slipping into shadows Or surrendering, uncertain\n\nDialogue: Drow: \"We were told this would free us from prejudice...\" Malrik: \"Not this way. Never this way.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 6,
-      "annotation": null,
-      "visual": "Val and Pocky stirring, waking Lunara and Prismor helping them up",
-      "dialogue": "Val: \"What... what happened?\" Lunara: \"You went down. But we won.\"",
-      "characters": {
-        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books",
-        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing",
-        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)",
-        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val and Pocky stirring, waking Lunara and Prismor helping them up\n\nDialogue: Val: \"What... what happened?\" Lunara: \"You went down. But we won.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 7,
-      "annotation": null,
-      "visual": "Sorrel in dragon form, glowing in starlight Wings spread majestically",
-      "dialogue": "Sorrel: \"You have restored the balance that was lost for a century. This is your legacy.\"",
-      "characters": {
-        "Sorrel": ""
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Sorrel: \n\nScene: Sorrel in dragon form, glowing in starlight Wings spread majestically\n\nDialogue: Sorrel: \"You have restored the balance that was lost for a century. This is your legacy.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 8,
-      "annotation": null,
-      "visual": "Party gathering, battered but triumphant Looking up at aligned Orrery",
-      "dialogue": "Prismor: \"The Orrery... it's beautiful.\" Pocky: \"The lenses are aligned, but... not like before.\"",
-      "characters": {
-        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books",
-        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)"
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Party gathering, battered but triumphant Looking up at aligned Orrery\n\nDialogue: Prismor: \"The Orrery... it's beautiful.\" Pocky: \"The lenses are aligned, but... not like before.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 9,
-      "annotation": null,
-      "visual": "Close on Orrery Showing Displacement essence dominant Celestial and Nature secondary Mechanistic and Harmony minimal **Caption:** \"The lenses pulse with new alignment: DISPLACEMENT - CELESTIAL - NATURE - mechanistic - harmony\" ",
-      "dialogue": "",
-      "characters": {},
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nScene: Close on Orrery Showing Displacement essence dominant Celestial and Nature secondary Mechanistic and Harmony minimal **Caption:** \"The lenses pulse with new alignment: DISPLACEMENT - CELESTIAL - NATURE - mechanistic - harmony\" \n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Lunara attempting Nature lens Success! **Caption:** \"DC 15 NATURE CHECK - SUCCESS!\"\n\nDialogue: Lunara: \"The garden's wisdom flows through me!\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
-  ],
-  "page_end": 37
+  ]
 }

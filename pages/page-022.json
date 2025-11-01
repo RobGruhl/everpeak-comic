@@ -1,102 +1,32 @@
 {
   "page_num": 22,
-  "title": "The Call to Action",
-  "panel_count": 7,
+  "title": "The Crossroads (Part 2)",
+  "panel_count": 2,
   "is_spread": false,
   "panels": [
     {
       "panel_num": 1,
-      "annotation": null,
-      "visual": "Sorrel appearing before them Mysterious smile",
-      "dialogue": "Sorrel: \"You've done well to piece it together. But you'll need help for what comes next.\"",
+      "visual": "Another glowing net-shaped rune visible ahead Lunara pointing",
+      "dialogue": "Lunara: \"There! Another trapped rune!\"",
       "characters": {
-        "Sorrel": ""
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
       },
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Sorrel: \n\nScene: Sorrel appearing before them Mysterious smile\n\nDialogue: Sorrel: \"You've done well to piece it together. But you'll need help for what comes next.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Another glowing net-shaped rune visible ahead Lunara pointing\n\nDialogue: Lunara: \"There! Another trapped rune!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 2,
-      "annotation": null,
-      "visual": "Sorrel beginning to glow Party stepping back in surprise **Sound EFFECTS:** \"SHIMMMMMER\"",
-      "dialogue": "",
+      "visual": "Pocky firing magic missile **Sound EFFECTS:** \"ZAP ZAP ZAP!\"",
+      "dialogue": "Pocky: \"Magic Missile never misses!\" ",
       "characters": {
-        "Sorrel": ""
+        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
       },
       "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Sorrel: \n\nScene: Sorrel beginning to glow Party stepping back in surprise **Sound EFFECTS:** \"SHIMMMMMER\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 3,
-      "annotation": "Large splash",
-      "visual": "Sorrel transforming into gold dragon wyrmling Wings spread, beautiful and terrible Golden light filling corridor **Sound EFFECTS:** \"WHOOOOOOSH\"",
-      "dialogue": "",
-      "characters": {
-        "Sorrel": ""
-      },
-      "npcs": {},
-      "aspect_ratio": "splash",
+      "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Sorrel: \n\nScene: Sorrel transforming into gold dragon wyrmling Wings spread, beautiful and terrible Golden light filling corridor **Sound EFFECTS:** \"WHOOOOOOSH\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 4,
-      "annotation": null,
-      "visual": "Party's shocked reactions",
-      "dialogue": "Val: \"The halfling kid was a DRAGON?!\" Malrik: \"I knew something was off!\" Lunara: \"A gold dragon... guardian of good.\"",
-      "characters": {
-        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing",
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
-        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Party's shocked reactions\n\nDialogue: Val: \"The halfling kid was a DRAGON?!\" Malrik: \"I knew something was off!\" Lunara: \"A gold dragon... guardian of good.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 5,
-      "annotation": null,
-      "visual": "Sorrel in dragon form, speaking with ancient wisdom",
-      "dialogue": "Sorrel: \"I have watched you all. You have proven worthy. Lord Alric seeks to corrupt the Orrery for his own power.\"",
-      "characters": {
-        "Sorrel": "",
-        "Lord Alric": "Race: Human noble Age: 40s Height: 6'0\" Fashionable but subtly militaristic coat Rich fabrics in dark colors (navy, black, crimson)"
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Sorrel: \n- Lord Alric: Race: Human noble Age: 40s Height: 6'0\" Fashionable but subtly militaristic coat Rich fabrics in dark colors (navy, black, crimson)\n\nScene: Sorrel in dragon form, speaking with ancient wisdom\n\nDialogue: Sorrel: \"I have watched you all. You have proven worthy. Lord Alric seeks to corrupt the Orrery for his own power.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 6,
-      "annotation": null,
-      "visual": "Close on Sorrel's wise eyes",
-      "dialogue": "Sorrel: \"The high elves sacrificed everything to protect this place. Will you do the same?\"",
-      "characters": {
-        "Sorrel": ""
-      },
-      "npcs": {},
-      "aspect_ratio": "square",
-      "size": "1024x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Sorrel: \n\nScene: Close on Sorrel's wise eyes\n\nDialogue: Sorrel: \"The high elves sacrificed everything to protect this place. Will you do the same?\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 7,
-      "annotation": "Wide",
-      "visual": "Party standing together, determined Weapons drawn, spells readied",
-      "dialogue": "Prismor: \"We will protect Everpeak!\" ALL: \"Together!\"  ## CHAPTER 7: THE FINAL BATTLE",
-      "characters": {
-        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)"
-      },
-      "npcs": {},
-      "aspect_ratio": "wide",
-      "size": "1536x1024",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Party standing together, determined Weapons drawn, spells readied\n\nDialogue: Prismor: \"We will protect Everpeak!\" ALL: \"Together!\"  ## CHAPTER 7: THE FINAL BATTLE\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Pocky firing magic missile **Sound EFFECTS:** \"ZAP ZAP ZAP!\"\n\nDialogue: Pocky: \"Magic Missile never misses!\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
   ]
 }

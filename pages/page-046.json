@@ -1,0 +1,52 @@
+{
+  "page_num": 46,
+  "title": "The Final Push (Part 2)",
+  "panel_count": 4,
+  "is_spread": false,
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Mephits pausing, considering Aggressive stances softening **Caption:** \"DC 15 NATURE - 20!\"",
+      "dialogue": "",
+      "characters": {},
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nScene: Mephits pausing, considering Aggressive stances softening **Caption:** \"DC 15 NATURE - 20!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 2,
+      "visual": "Verdant Mephit turning fully on Alric Thorny vines wrapping him **Sound EFFECTS:** \"WHOOSH-WRAP!\"",
+      "dialogue": "",
+      "characters": {
+        "Verdant Mephit": "Size: Small elemental (2-3 feet) Form: Living vines and thorny brambles given shape Eyes: Glowing green pinpoints of light"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Verdant Mephit: Size: Small elemental (2-3 feet) Form: Living vines and thorny brambles given shape Eyes: Glowing green pinpoints of light\n\nScene: Verdant Mephit turning fully on Alric Thorny vines wrapping him **Sound EFFECTS:** \"WHOOSH-WRAP!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 3,
+      "visual": "Alric struggling against vines Barrier gone Lenses clicking into place all around",
+      "dialogue": "Alric: \"No! This isn't—the alignment is mine!\"",
+      "characters": {},
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nScene: Alric struggling against vines Barrier gone Lenses clicking into place all around\n\nDialogue: Alric: \"No! This isn't—the alignment is mine!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 4,
+      "visual": "Verdant Mephit's final strike Thorns piercing Alric **Caption:** \"FINAL DAMAGE - ALRIC FALLS!\" **Sound EFFECTS:** \"THUD\"",
+      "dialogue": "",
+      "characters": {
+        "Verdant Mephit": "Size: Small elemental (2-3 feet) Form: Living vines and thorny brambles given shape Eyes: Glowing green pinpoints of light"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Verdant Mephit: Size: Small elemental (2-3 feet) Form: Living vines and thorny brambles given shape Eyes: Glowing green pinpoints of light\n\nScene: Verdant Mephit's final strike Thorns piercing Alric **Caption:** \"FINAL DAMAGE - ALRIC FALLS!\" **Sound EFFECTS:** \"THUD\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    }
+  ]
+}
