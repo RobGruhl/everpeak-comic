@@ -246,7 +246,7 @@ async def generate_page_panels(page_data, client):
     await asyncio.gather(*tasks)
 
 
-async def generate_pages_async(page_nums, force=False):
+async def generate_pages_async(page_nums, force=False, concurrent=None, rpm=None):
     """Generate panels for specified pages."""
 
     # Check for API key
@@ -258,9 +258,13 @@ async def generate_pages_async(page_nums, force=False):
 
     client = AsyncOpenAI(api_key=api_key)
 
+    # Use provided values or defaults
+    concurrent = concurrent or MAX_CONCURRENT
+    rpm = rpm or MAX_RPM
+
     logger.info("=" * 60)
     logger.info("EVERPEAK CITADEL COMIC GENERATOR")
-    logger.info(f"Concurrent requests: {MAX_CONCURRENT} | RPM limit: {MAX_RPM}")
+    logger.info(f"Concurrent requests: {concurrent} | RPM limit: {rpm}")
     logger.info(f"Variants per panel: {VARIANTS_PER_PANEL}")
     logger.info("=" * 60)
 
@@ -360,10 +364,8 @@ Examples:
 
     args = parser.parse_args()
 
-    # Update global rate limiters and config values
-    global semaphore, rpm_limiter, MAX_CONCURRENT, MAX_RPM
-    MAX_CONCURRENT = args.concurrent
-    MAX_RPM = args.rpm
+    # Update global rate limiters
+    global semaphore, rpm_limiter
     semaphore = asyncio.Semaphore(args.concurrent)
     rpm_limiter = RPMLimiter(args.rpm)
 
@@ -376,7 +378,7 @@ Examples:
         sys.exit(1)
 
     # Run async generation
-    asyncio.run(generate_pages_async(page_nums, args.force))
+    asyncio.run(generate_pages_async(page_nums, args.force, args.concurrent, args.rpm))
 
 
 if __name__ == "__main__":
