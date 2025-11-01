@@ -90,6 +90,18 @@ def get_panel_selection(page_num, panel_num):
     return final_path.exists()
 
 
+def get_total_pages():
+    """Get total number of pages available."""
+    page_files = list(PAGES_JSON_DIR.glob("page-*.json"))
+    return len(page_files)
+
+
+def is_page_finalized(page_num):
+    """Check if a page has been finalized (assembled)."""
+    page_file = PAGES_DIR / f"page-{page_num:03d}.png"
+    return page_file.exists()
+
+
 @app.route('/image/<path:filename>')
 def serve_image(filename):
     """Serve panel images."""
@@ -117,6 +129,8 @@ def review_page(page_num):
         return f"Error: {e}", 404
 
     selections = load_selections()
+    total_pages = get_total_pages()
+    is_finalized = is_page_finalized(page_num)
 
     # Prepare panel data with variants
     panels_with_variants = []
@@ -532,11 +546,80 @@ def review_page(page_num):
         .back-to-review-btn:hover {
             background: #3a8ee5;
         }
+
+        .navigation-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            gap: 10px;
+        }
+
+        .nav-button {
+            background: #4a9eff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.2s ease;
+        }
+
+        .nav-button:hover:not(:disabled) {
+            background: #3a8ee5;
+        }
+
+        .nav-button:disabled {
+            background: #555;
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        .finalize-button {
+            background: #22c55e;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background 0.2s ease;
+        }
+
+        .finalize-button:hover:not(:disabled) {
+            background: #16a34a;
+        }
+
+        .finalize-button:disabled {
+            background: #555;
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        .finalize-button.finalized {
+            background: #666;
+            cursor: default;
+        }
+
+        .finalize-button.finalized:hover {
+            background: #666;
+        }
+
+        .page-info {
+            color: #999;
+            font-size: 13px;
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Page {{ page_num }}: {{ page_data.title }}</h1>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h1>Page {{ page_num }}: {{ page_data.title }}</h1>
+            <div class="page-info">Page {{ page_num }} of {{ total_pages }}</div>
+        </div>
         <div class="subtitle">{{ page_data.panel_count }} panels | Select your favorite variant for each panel</div>
         <div class="progress">
             <div class="progress-bar" style="width: {{ (selected_count / page_data.panel_count * 100) }}%"></div>
@@ -552,6 +635,31 @@ def review_page(page_num):
                 Preview Final Page ({{ page_data.panel_count - selected_count }} remaining)
             </button>
             {% endif %}
+        </div>
+        <div class="navigation-bar">
+            <button class="nav-button" onclick="navigatePage({{ page_num - 1 }})"
+                    {% if page_num <= 1 %}disabled{% endif %}>
+                ← Previous Page
+            </button>
+
+            {% if is_finalized %}
+            <button class="finalize-button finalized" disabled>
+                ✓ Page Finalized
+            </button>
+            {% elif selected_count >= page_data.panel_count %}
+            <button class="finalize-button" onclick="finalizePage({{ page_num }})">
+                Finalize Page & Add to Comic
+            </button>
+            {% else %}
+            <button class="finalize-button" disabled title="Select all panels to finalize">
+                Finalize Page ({{ page_data.panel_count - selected_count }} remaining)
+            </button>
+            {% endif %}
+
+            <button class="nav-button" onclick="navigatePage({{ page_num + 1 }})"
+                    {% if page_num >= total_pages %}disabled{% endif %}>
+                Next Page →
+            </button>
         </div>
     </div>
 
@@ -761,6 +869,36 @@ def review_page(page_num):
                 setTimeout(() => msg.remove(), 300);
             }, 3000);
         }
+
+        function navigatePage(pageNum) {
+            window.location.href = '/page/' + pageNum;
+        }
+
+        function finalizePage(pageNum) {
+            if (!confirm('Finalize page ' + pageNum + '? This will assemble the page and add it to the final comic.')) {
+                return;
+            }
+
+            showMessage('Finalizing page ' + pageNum + '...');
+
+            fetch('/finalize/' + pageNum, {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showMessage('✓ Page ' + pageNum + ' finalized and saved!');
+                    setTimeout(() => {
+                        location.reload();
+                    }, 1500);
+                } else {
+                    alert('Error finalizing page: ' + data.error);
+                }
+            })
+            .catch(error => {
+                alert('Error finalizing page: ' + error);
+            });
+        }
     </script>
 </body>
 </html>
@@ -773,7 +911,9 @@ def review_page(page_num):
         page_num=page_num,
         page_data=page_data,
         panels_with_variants=panels_with_variants,
-        selected_count=selected_count
+        selected_count=selected_count,
+        total_pages=total_pages,
+        is_finalized=is_finalized
     )
 
 
@@ -926,6 +1066,61 @@ def generate_more(page_num, panel_num):
         new_variants = asyncio.run(generate_additional_variants())
 
         return jsonify({'success': True, 'new_variants': len(new_variants)})
+
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/finalize/<int:page_num>', methods=['POST'])
+def finalize_page(page_num):
+    """Finalize a page by assembling it and saving to output/pages/."""
+    try:
+        # Load page data
+        page_data = load_page_data(page_num)
+        panels = page_data['panels']
+
+        # Check if all panels have been selected
+        missing_panels = []
+        for panel in panels:
+            panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
+            if not panel_file.exists():
+                missing_panels.append(panel['panel_num'])
+
+        if missing_panels:
+            return jsonify({
+                'success': False,
+                'error': f'Missing selected panels: {missing_panels}'
+            }), 400
+
+        # Load panel images
+        panel_images = []
+        for panel in panels:
+            panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
+            if panel_file.exists():
+                panel_images.append(Image.open(panel_file))
+            else:
+                # Create placeholder if missing (shouldn't happen after check above)
+                placeholder = Image.new('RGB', (1024, 1536), 'gray')
+                panel_images.append(placeholder)
+
+        # Assemble page using layout engine
+        page_img = assemble_page_with_layout(
+            panels_data=panels,
+            panel_images=panel_images,
+            page_width=PAGE_WIDTH,
+            page_height=PAGE_HEIGHT
+        )
+
+        # Save assembled page
+        PAGES_DIR.mkdir(parents=True, exist_ok=True)
+        output_file = PAGES_DIR / f"page-{page_num:03d}.png"
+        page_img.save(output_file)
+
+        return jsonify({
+            'success': True,
+            'output_file': str(output_file),
+            'message': f'Page {page_num} finalized and saved to {output_file.name}'
+        })
 
     except Exception as e:
         return jsonify({'success': False, 'error': str(e)}), 500
