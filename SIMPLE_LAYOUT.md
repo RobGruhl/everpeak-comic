@@ -76,16 +76,21 @@ The Everpeak Citadel comic now uses a radically simplified layout system with on
 
 ## Comic Structure
 
-**Current:** 56 pages, 171 panels total
+**Current:** 45 pages, 171 panels total
 
 **Breakdown:**
-- Splash pages (1 panel): ~3 pages
-- Standard pages (2-4 panels): ~53 pages
+- Splash pages (1 panel): 3 pages (pages 43-45, final panels)
+- Standard pages (4 panels): 42 pages (pages 1-42)
+
+**Sequential Packing:**
+- All panels packed sequentially (not preserving original page boundaries)
+- Strict rule: Only 1 or 4 panels per page
+- 42 pages × 4 panels + 3 pages × 1 panel = 171 panels total
 
 **From Original:**
-- Was: 26 pages (various layouts)
-- Now: 56 pages (simplified layouts)
-- Many pages were split (e.g., 6-panel page → two 4-panel and 2-panel pages)
+- Was: 26 pages (various layouts, mixed panel counts)
+- First restructure: 56 pages (simplified but allowed 2-3 panels)
+- Now: 45 pages (sequential packing, strictly 1 or 4 panels)
 
 ## Workflow
 
@@ -191,19 +196,26 @@ else:
 
 **Backups Created:**
 - `pages_backup/` - Original 26 pages with mixed aspects
-- Git commit `4bc5753` - Complex layout system
-- Git commit `c362629` - Simplified system
+- `pages_backup_sequential/` - Previous 56 pages (allowed 2-3 panels)
+- Git commit `4bc5753` - Complex layout system (26 pages)
+- Git commit `c362629` - First simplification (56 pages, 2-4 panels allowed)
+- Git commit `884adcc` - Sequential packing (45 pages, strictly 1 or 4 panels)
 
-**Restructuring:**
-- Automated by `restructure_pages.py`
-- Splits pages with >4 panels
-- Updates all aspect ratios to "tall"
-- Updates all sizes to "1024x1536"
+**Restructuring Scripts:**
+- `restructure_pages.py` - First simplification (tried to preserve pages)
+- `sequential_pack.py` - Sequential packing (ignores page boundaries)
+
+**Sequential Packing Process:**
+1. Loads all 171 panels from all pages in order
+2. Packs into groups of 4 panels (standard 2x2 grid pages)
+3. If fewer than 4 panels remain, creates splash pages (1 panel each)
+4. Result: 42 standard pages + 3 splash pages = 45 pages total
 
 **To Revert (if needed):**
 ```bash
-git revert c362629  # Undo simplification
-# Or restore from pages_backup/
+git revert 884adcc  # Undo sequential packing → back to 56 pages
+git revert c362629  # Undo first simplification → back to 26 pages
+# Or restore from pages_backup/ or pages_backup_sequential/
 ```
 
 ## Limitations & Trade-offs
