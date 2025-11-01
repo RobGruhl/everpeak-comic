@@ -10,14 +10,22 @@ import sys
 import shutil
 import subprocess
 from pathlib import Path
-from flask import Flask, render_template_string, request, jsonify, redirect, url_for
+from flask import Flask, render_template_string, request, jsonify, redirect, url_for, send_file
+from PIL import Image
+import io
 
 # Configuration
 PAGES_JSON_DIR = Path("pages")
 OUTPUT_DIR = Path("output")
 PANELS_DIR = OUTPUT_DIR / "panels"
+PAGES_DIR = OUTPUT_DIR / "pages"
 SELECTIONS_FILE = OUTPUT_DIR / "selections.json"
 VARIANTS_PER_PANEL = 3
+
+# Layout settings (from assemble.py)
+PAGE_WIDTH = 1600
+PAGE_HEIGHT = 2400
+GUTTER = 20
 
 app = Flask(__name__)
 
@@ -300,6 +308,7 @@ def review_page(page_num):
             display: flex;
             gap: 10px;
             justify-content: center;
+            margin-top: 15px;
         }
 
         .generate-more-btn {
@@ -316,6 +325,28 @@ def review_page(page_num):
 
         .generate-more-btn:hover {
             background: #777;
+        }
+
+        .preview-btn {
+            background: #4a9eff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-left: 10px;
+        }
+
+        .preview-btn:hover {
+            background: #3a8ee5;
+        }
+
+        .preview-btn:disabled {
+            background: #555;
+            cursor: not-allowed;
         }
 
         .message {
@@ -362,6 +393,140 @@ def review_page(page_num):
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        .loading-placeholder {
+            background: #1f1f1f;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 2px solid #333;
+            position: relative;
+            aspect-ratio: 1;
+        }
+
+        .loading-placeholder::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 3px solid #333;
+            border-top: 3px solid #4a9eff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        .loading-placeholder::after {
+            content: 'Generating...';
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #999;
+            font-size: 12px;
+        }
+
+        .preview-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 2000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .preview-modal.active {
+            display: flex;
+        }
+
+        .preview-content {
+            max-width: 90%;
+            max-height: 90%;
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .preview-content img {
+            max-width: 100%;
+            max-height: calc(90vh - 100px);
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+
+        .close-preview {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #666;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            z-index: 10;
+        }
+
+        .close-preview:hover {
+            background: #777;
+        }
+
+        .preview-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+        }
+
+        .panel-regen-btn {
+            background: #666;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .panel-regen-btn:hover {
+            background: #4a9eff;
+            transform: translateY(-2px);
+        }
+
+        .panel-regen-btn:active {
+            transform: translateY(0);
+        }
+
+        .back-to-review-btn {
+            background: #4a9eff;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 10px;
+        }
+
+        .back-to-review-btn:hover {
+            background: #3a8ee5;
+        }
     </style>
 </head>
 <body>
@@ -371,7 +536,42 @@ def review_page(page_num):
         <div class="progress">
             <div class="progress-bar" style="width: {{ (selected_count / page_data.panel_count * 100) }}%"></div>
         </div>
-        <div class="subtitle" style="margin-top: 8px;">Progress: {{ selected_count }}/{{ page_data.panel_count }} panels selected</div>
+        <div class="subtitle" style="margin-top: 8px;">
+            Progress: {{ selected_count }}/{{ page_data.panel_count }} panels selected
+            {% if selected_count >= page_data.panel_count %}
+            <button class="preview-btn" onclick="previewPage({{ page_num }})">
+                Preview Final Page
+            </button>
+            {% else %}
+            <button class="preview-btn" disabled title="Select all panels to enable preview">
+                Preview Final Page ({{ page_data.panel_count - selected_count }} remaining)
+            </button>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="preview-modal" id="preview-modal">
+        <div class="preview-content">
+            <button class="close-preview" onclick="closePreview()">Close</button>
+            <div id="preview-image-container">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Assembling page preview...</p>
+                </div>
+            </div>
+            <div class="preview-actions" id="preview-actions" style="display: none;">
+                {% for item in panels_with_variants %}
+                <button class="panel-regen-btn" onclick="regeneratePanel({{ page_num }}, {{ item.panel.panel_num }})">
+                    Regenerate Panel {{ item.panel.panel_num }}
+                </button>
+                {% endfor %}
+                <div style="width: 100%; margin-top: 10px; text-align: center;">
+                    <button class="back-to-review-btn" onclick="closePreview()">
+                        Back to Panel Selection
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
     {% for item in panels_with_variants %}
@@ -395,7 +595,22 @@ def review_page(page_num):
         </div>
         {% endif %}
 
-        {% if item.variants %}
+        {% if item.is_selected %}
+        <div class="variants-grid">
+            <div class="variant-card" style="border: 3px solid #4a9eff;">
+                <img src="/image/page-{{ '%03d' % page_num }}-panel-{{ item.panel.panel_num }}.png" class="variant-image" alt="Selected">
+                <div class="variant-footer">
+                    <div class="variant-number">✓ Selected (Variant {{ item.selected_variant }})</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="generate-more-btn" onclick="generateMore({{ page_num }}, {{ item.panel.panel_num }})">
+                Generate 3 More Variants to Re-select
+            </button>
+        </div>
+        {% elif item.variants %}
         <div class="variants-grid">
             {% for variant in item.variants %}
             <div class="variant-card" onclick="selectVariant({{ page_num }}, {{ item.panel.panel_num }}, {{ variant.num }})">
@@ -443,9 +658,20 @@ def review_page(page_num):
             });
         }
 
-        function generateMore(pageNum, panelNum) {
-            if (!confirm('Generate 3 more variants for panel ' + panelNum + '? This will call the OpenAI API.')) {
+        function generateMore(pageNum, panelNum, skipConfirm = false) {
+            if (!skipConfirm && !confirm('Generate 3 more variants for panel ' + panelNum + '? This will call the OpenAI API (~50 seconds per variant).')) {
                 return;
+            }
+
+            // Add loading placeholders to the grid
+            const panelSection = document.getElementById('panel-' + panelNum);
+            const grid = panelSection.querySelector('.variants-grid');
+
+            // Add 3 loading placeholders
+            for (let i = 0; i < 3; i++) {
+                const placeholder = document.createElement('div');
+                placeholder.className = 'loading-placeholder';
+                grid.appendChild(placeholder);
             }
 
             showMessage('Generating 3 more variants for panel ' + panelNum + '...');
@@ -466,7 +692,53 @@ def review_page(page_num):
             })
             .catch(error => {
                 alert('Error generating variants: ' + error);
+                location.reload(); // Reload to remove placeholders
             });
+        }
+
+        function previewPage(pageNum) {
+            const modal = document.getElementById('preview-modal');
+            const container = document.getElementById('preview-image-container');
+            const actions = document.getElementById('preview-actions');
+
+            modal.classList.add('active');
+            container.innerHTML = '<div class="loading"><div class="spinner"></div><p>Assembling page preview...</p></div>';
+            actions.style.display = 'none';
+
+            fetch('/preview/' + pageNum)
+                .then(response => response.blob())
+                .then(blob => {
+                    const url = URL.createObjectURL(blob);
+                    container.innerHTML = '<img src="' + url + '" alt="Page Preview">';
+                    actions.style.display = 'flex';
+                })
+                .catch(error => {
+                    container.innerHTML = '<p style="color: #ff6b6b;">Error generating preview: ' + error + '</p>';
+                });
+        }
+
+        function regeneratePanel(pageNum, panelNum) {
+            if (!confirm('Generate 3 more variants for Panel ' + panelNum + '?\\n\\n~50 seconds per variant (~2.5 minutes total)\\n\\nThis will close the preview and scroll to that panel.')) {
+                return;
+            }
+
+            closePreview();
+
+            // Scroll to the panel section
+            setTimeout(() => {
+                const panelSection = document.getElementById('panel-' + panelNum);
+                if (panelSection) {
+                    panelSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }, 300);
+
+            // Trigger generation (skip the second confirm since we already confirmed)
+            generateMore(pageNum, panelNum, true);
+        }
+
+        function closePreview() {
+            const modal = document.getElementById('preview-modal');
+            modal.classList.remove('active');
         }
 
         function showMessage(text) {
@@ -537,6 +809,90 @@ def select_variant(page_num, panel_num, variant_num):
         return jsonify({'success': False, 'error': str(e)}), 500
 
 
+@app.route('/preview/<int:page_num>')
+def preview_page(page_num):
+    """Generate a preview of the assembled page."""
+    try:
+        # Load page data
+        page_data = load_page_data(page_num)
+        panels = page_data['panels']
+        num_panels = len(panels)
+
+        # Check if all panels have been selected
+        missing_panels = []
+        for panel in panels:
+            panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
+            if not panel_file.exists():
+                missing_panels.append(panel['panel_num'])
+
+        if missing_panels:
+            return f"Error: Missing selected panels: {missing_panels}", 400
+
+        # Create blank page
+        page_img = Image.new('RGB', (PAGE_WIDTH, PAGE_HEIGHT), 'white')
+
+        # Simple layout logic (from assemble.py)
+        if num_panels <= 3:
+            # Vertical stack
+            panel_height = (PAGE_HEIGHT - (num_panels + 1) * GUTTER) // num_panels
+
+            for i, panel in enumerate(panels):
+                panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
+                if panel_file.exists():
+                    img = Image.open(panel_file)
+                    img = img.resize((PAGE_WIDTH - 2 * GUTTER, panel_height), Image.Resampling.LANCZOS)
+                    y = GUTTER + i * (panel_height + GUTTER)
+                    page_img.paste(img, (GUTTER, y))
+
+        elif num_panels <= 6:
+            # 2x3 grid
+            cols = 2
+            rows = (num_panels + 1) // 2
+            panel_width = (PAGE_WIDTH - (cols + 1) * GUTTER) // cols
+            panel_height = (PAGE_HEIGHT - (rows + 1) * GUTTER) // rows
+
+            for i, panel in enumerate(panels):
+                panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
+                if panel_file.exists():
+                    img = Image.open(panel_file)
+                    img = img.resize((panel_width, panel_height), Image.Resampling.LANCZOS)
+
+                    col = i % cols
+                    row = i // cols
+                    x = GUTTER + col * (panel_width + GUTTER)
+                    y = GUTTER + row * (panel_height + GUTTER)
+                    page_img.paste(img, (x, y))
+
+        else:
+            # 3-column grid
+            cols = 3
+            rows = (num_panels + 2) // 3
+            panel_width = (PAGE_WIDTH - (cols + 1) * GUTTER) // cols
+            panel_height = (PAGE_HEIGHT - (rows + 1) * GUTTER) // rows
+
+            for i, panel in enumerate(panels):
+                panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
+                if panel_file.exists():
+                    img = Image.open(panel_file)
+                    img = img.resize((panel_width, panel_height), Image.Resampling.LANCZOS)
+
+                    col = i % cols
+                    row = i // cols
+                    x = GUTTER + col * (panel_width + GUTTER)
+                    y = GUTTER + row * (panel_height + GUTTER)
+                    page_img.paste(img, (x, y))
+
+        # Return image as response
+        img_io = io.BytesIO()
+        page_img.save(img_io, 'PNG')
+        img_io.seek(0)
+
+        return send_file(img_io, mimetype='image/png')
+
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
 @app.route('/more/<int:page_num>/<int:panel_num>', methods=['POST'])
 def generate_more(page_num, panel_num):
     """Generate 3 more variants for a panel."""
@@ -547,6 +903,11 @@ def generate_more(page_num, panel_num):
 
         if not panel_data:
             return jsonify({'success': False, 'error': 'Panel not found'}), 404
+
+        # Delete the final selection if it exists (so user can re-select from new variants)
+        final_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel_num}.png"
+        if final_file.exists():
+            final_file.unlink()
 
         # Find the next available variant number
         next_variant_num = 1
@@ -625,10 +986,13 @@ def main():
         print("Run parse_script.py first to generate page JSON files")
         sys.exit(1)
 
+    # Determine port
+    port = int(os.getenv('FLASK_PORT', 5001))
+
     print(f"\n{'='*60}")
     print(f"COMIC PANEL REVIEW - PAGE {page_num}")
     print(f"{'='*60}")
-    print(f"\nOpening review interface at http://localhost:5000")
+    print(f"\nOpening review interface at http://127.0.0.1:{port}")
     print("Press Ctrl+C to stop the server\n")
 
     # Open browser
@@ -637,12 +1001,12 @@ def main():
     def open_browser():
         import time
         time.sleep(1)
-        webbrowser.open(f'http://localhost:5000/page/{page_num}')
+        webbrowser.open(f'http://127.0.0.1:{port}/page/{page_num}')
 
     threading.Thread(target=open_browser, daemon=True).start()
 
     # Run Flask app
-    app.run(debug=False, port=5000)
+    app.run(debug=False, port=port, host='127.0.0.1')
 
 
 if __name__ == "__main__":
