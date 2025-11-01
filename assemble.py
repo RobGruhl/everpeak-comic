@@ -58,7 +58,29 @@ def list_available_pages():
     return pages
 
 
-def assemble_page(page_data):
+def cleanup_variants(page_num, panels):
+    """Delete variant files for a page after successful assembly."""
+    deleted_count = 0
+
+    for panel in panels:
+        # Find all variant files (page-XXX-panel-X-v*.png)
+        pattern = f"page-{page_num:03d}-panel-{panel['panel_num']}-v*.png"
+        variant_files = list(PANELS_DIR.glob(pattern))
+
+        for variant_file in variant_files:
+            try:
+                variant_file.unlink()
+                deleted_count += 1
+            except Exception as e:
+                print(f"  ⚠ Warning: Could not delete {variant_file.name}: {e}")
+
+    if deleted_count > 0:
+        print(f"  ✓ Cleaned up {deleted_count} variant file(s)")
+
+    return deleted_count
+
+
+def assemble_page(page_data, cleanup=False):
     """Assemble panels into a page."""
 
     page_num = page_data['page_num']
@@ -140,6 +162,10 @@ def assemble_page(page_data):
     page_img.save(output_file)
     print(f"✓ Saved {output_file.name}")
 
+    # Cleanup variants if requested
+    if cleanup:
+        cleanup_variants(page_num, panels)
+
     return output_file
 
 
@@ -201,10 +227,11 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python assemble.py 1          # Assemble page 1 only
-  python assemble.py 1-5        # Assemble pages 1-5
-  python assemble.py            # Assemble all available pages
-  python assemble.py 1 --no-cbz # Assemble page without creating CBZ
+  python assemble.py 1                    # Assemble page 1 only
+  python assemble.py 1-5                  # Assemble pages 1-5
+  python assemble.py                      # Assemble all available pages
+  python assemble.py 1 --no-cbz           # Assemble page without creating CBZ
+  python assemble.py 1 --cleanup-variants # Assemble and delete variant files
         """
     )
 
@@ -225,6 +252,12 @@ Examples:
         '--output',
         type=str,
         help='Custom CBZ output filename'
+    )
+
+    parser.add_argument(
+        '--cleanup-variants',
+        action='store_true',
+        help='Delete variant files (v1, v2, etc.) after successful assembly'
     )
 
     args = parser.parse_args()
@@ -271,7 +304,7 @@ Examples:
 
     assembled_pages = []
     for page_data in pages_data:
-        result = assemble_page(page_data)
+        result = assemble_page(page_data, cleanup=args.cleanup_variants)
         if result:
             assembled_pages.append(page_data)
 
