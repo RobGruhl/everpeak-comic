@@ -10,6 +10,12 @@ import zipfile
 import argparse
 from pathlib import Path
 from PIL import Image
+from layout_engine import (
+    assemble_page_with_layout,
+    PAGE_WIDTH,
+    PAGE_HEIGHT,
+    SPREAD_WIDTH
+)
 
 # Configuration
 PAGES_JSON_DIR = Path("pages")
@@ -18,10 +24,7 @@ PANELS_DIR = OUTPUT_DIR / "panels"
 PAGES_DIR = OUTPUT_DIR / "pages"
 CBZ_FILE = OUTPUT_DIR / "everpeak-citadel.cbz"
 
-# Layout settings
-PAGE_WIDTH = 1600
-PAGE_HEIGHT = 2400
-SPREAD_WIDTH = 3200  # Two-page spread width
+# Legacy constants (now imported from layout_engine)
 GUTTER = 20
 BORDER = 3
 
@@ -184,13 +187,14 @@ def cleanup_variants(page_num, panels):
 
 
 def assemble_page(page_data, cleanup=False):
-    """Assemble panels into a page using smart layout strategies."""
+    """Assemble panels into a page using professional layout engine."""
 
     page_num = page_data['page_num']
     panels = page_data['panels']
     num_panels = len(panels)
     is_spread = page_data.get('is_spread', False)
     is_cover = page_data.get('is_cover', False)
+    custom_layout = page_data.get('custom_layout', None)
 
     # Determine page dimensions
     if is_spread:
@@ -204,11 +208,13 @@ def assemble_page(page_data, cleanup=False):
 
     print(f"\n→ Assembling {page_type} {page_num} ({num_panels} panels){' [TWO-PAGE SPREAD]' if is_spread else ''}...")
 
-    # Check if all panels have been selected (skip for cover since it won't have variants)
+    if custom_layout:
+        print(f"  Using custom layout: {custom_layout}")
+
+    # Check if all panels have been selected
     if not is_cover:
         missing_panels = []
         for panel in panels:
-            # For cover page, look for cover-panel-1.png instead of page-000-panel-1.png
             if page_num == 0:
                 panel_file = PANELS_DIR / f"cover-panel-{panel['panel_num']}.png"
             else:
@@ -222,53 +228,29 @@ def assemble_page(page_data, cleanup=False):
             print(f"  Run review.py to select variants first")
             return None
 
-    # Create blank page
-    page_img = Image.new('RGB', (page_width, page_height), 'white')
+    # Load panel images
+    panel_images = []
+    for panel in panels:
+        if page_num == 0:
+            panel_file = PANELS_DIR / f"cover-panel-{panel['panel_num']}.png"
+        else:
+            panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
 
-    # Apply layout strategy based on panel count
-    layout_strategy = LAYOUT_STRATEGIES.get(num_panels)
+        if panel_file.exists():
+            panel_images.append(Image.open(panel_file))
+        else:
+            # Create placeholder if missing
+            placeholder = Image.new('RGB', (1024, 1024), 'gray')
+            panel_images.append(placeholder)
 
-    if num_panels == 1 or is_cover:
-        # Full page splash
-        apply_standard_grid(page_img, panels, page_num, page_width, page_height, 1, 1)
-
-    elif num_panels == 2:
-        # Vertical stack (2 rows, 1 column)
-        apply_standard_grid(page_img, panels, page_num, page_width, page_height, 1, 2)
-
-    elif num_panels == 3:
-        # Vertical stack (3 rows, 1 column)
-        apply_standard_grid(page_img, panels, page_num, page_width, page_height, 1, 3)
-
-    elif num_panels == 4:
-        # 2x2 grid
-        apply_standard_grid(page_img, panels, page_num, page_width, page_height, 2, 2)
-
-    elif num_panels == 5:
-        # 2-over-3 layout (optimal for 5 panels)
-        apply_layout_2_over_3(page_img, panels, page_num, page_width, page_height)
-
-    elif num_panels == 6:
-        # 2x3 grid
-        apply_standard_grid(page_img, panels, page_num, page_width, page_height, 2, 3)
-
-    elif num_panels == 7:
-        # 3-over-4 layout (optimal for 7 panels)
-        apply_layout_3_over_4(page_img, panels, page_num, page_width, page_height)
-
-    elif num_panels == 8:
-        # 2x4 grid
-        apply_standard_grid(page_img, panels, page_num, page_width, page_height, 2, 4)
-
-    elif num_panels == 9:
-        # 3x3 grid
-        apply_standard_grid(page_img, panels, page_num, page_width, page_height, 3, 3)
-
-    else:
-        # Fallback: use 3-column grid for 10+ panels
-        cols = 3
-        rows = (num_panels + 2) // 3
-        apply_standard_grid(page_img, panels, page_num, page_width, page_height, cols, rows)
+    # Use professional layout engine
+    page_img = assemble_page_with_layout(
+        panels_data=panels,
+        panel_images=panel_images,
+        page_width=page_width,
+        page_height=page_height,
+        custom_layout=custom_layout
+    )
 
     # Save page with appropriate naming
     if page_num == 0:

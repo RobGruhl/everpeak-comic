@@ -13,6 +13,7 @@ from pathlib import Path
 from flask import Flask, render_template_string, request, jsonify, redirect, url_for, send_file
 from PIL import Image
 import io
+from layout_engine import assemble_page_with_layout
 
 # Configuration
 PAGES_JSON_DIR = Path("pages")
@@ -815,12 +816,17 @@ def select_variant(page_num, panel_num, variant_num):
 
 @app.route('/preview/<int:page_num>')
 def preview_page(page_num):
-    """Generate a preview of the assembled page."""
+    """Generate a preview of the assembled page using professional layout engine."""
     try:
         # Load page data
         page_data = load_page_data(page_num)
         panels = page_data['panels']
-        num_panels = len(panels)
+        is_spread = page_data.get('is_spread', False)
+        custom_layout = page_data.get('custom_layout', None)
+
+        # Determine page dimensions
+        page_width = 3200 if is_spread else PAGE_WIDTH
+        page_height = PAGE_HEIGHT
 
         # Check if all panels have been selected
         missing_panels = []
@@ -832,59 +838,25 @@ def preview_page(page_num):
         if missing_panels:
             return f"Error: Missing selected panels: {missing_panels}", 400
 
-        # Create blank page
-        page_img = Image.new('RGB', (PAGE_WIDTH, PAGE_HEIGHT), 'white')
+        # Load panel images
+        panel_images = []
+        for panel in panels:
+            panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
+            if panel_file.exists():
+                panel_images.append(Image.open(panel_file))
+            else:
+                # Create placeholder if missing
+                placeholder = Image.new('RGB', (1024, 1024), 'gray')
+                panel_images.append(placeholder)
 
-        # Simple layout logic (from assemble.py)
-        if num_panels <= 3:
-            # Vertical stack
-            panel_height = (PAGE_HEIGHT - (num_panels + 1) * GUTTER) // num_panels
-
-            for i, panel in enumerate(panels):
-                panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
-                if panel_file.exists():
-                    img = Image.open(panel_file)
-                    img = img.resize((PAGE_WIDTH - 2 * GUTTER, panel_height), Image.Resampling.LANCZOS)
-                    y = GUTTER + i * (panel_height + GUTTER)
-                    page_img.paste(img, (GUTTER, y))
-
-        elif num_panels <= 6:
-            # 2x3 grid
-            cols = 2
-            rows = (num_panels + 1) // 2
-            panel_width = (PAGE_WIDTH - (cols + 1) * GUTTER) // cols
-            panel_height = (PAGE_HEIGHT - (rows + 1) * GUTTER) // rows
-
-            for i, panel in enumerate(panels):
-                panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
-                if panel_file.exists():
-                    img = Image.open(panel_file)
-                    img = img.resize((panel_width, panel_height), Image.Resampling.LANCZOS)
-
-                    col = i % cols
-                    row = i // cols
-                    x = GUTTER + col * (panel_width + GUTTER)
-                    y = GUTTER + row * (panel_height + GUTTER)
-                    page_img.paste(img, (x, y))
-
-        else:
-            # 3-column grid
-            cols = 3
-            rows = (num_panels + 2) // 3
-            panel_width = (PAGE_WIDTH - (cols + 1) * GUTTER) // cols
-            panel_height = (PAGE_HEIGHT - (rows + 1) * GUTTER) // rows
-
-            for i, panel in enumerate(panels):
-                panel_file = PANELS_DIR / f"page-{page_num:03d}-panel-{panel['panel_num']}.png"
-                if panel_file.exists():
-                    img = Image.open(panel_file)
-                    img = img.resize((panel_width, panel_height), Image.Resampling.LANCZOS)
-
-                    col = i % cols
-                    row = i // cols
-                    x = GUTTER + col * (panel_width + GUTTER)
-                    y = GUTTER + row * (panel_height + GUTTER)
-                    page_img.paste(img, (x, y))
+        # Use professional layout engine (same as assemble.py)
+        page_img = assemble_page_with_layout(
+            panels_data=panels,
+            panel_images=panel_images,
+            page_width=page_width,
+            page_height=page_height,
+            custom_layout=custom_layout
+        )
 
         # Return image as response
         img_io = io.BytesIO()
