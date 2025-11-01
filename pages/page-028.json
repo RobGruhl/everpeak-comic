@@ -1,35 +1,56 @@
 {
   "page_num": 28,
-  "title": "Clues Converge (Part 2)",
-  "panel_count": 2,
+  "title": "Combat Chaos (Part 2)",
+  "panel_count": 4,
   "is_spread": false,
   "panels": [
     {
       "panel_num": 1,
-      "visual": "Val talking to frightened halfling courier",
-      "dialogue": "Courier: \"I saw them! Drow and a human noble! Going down to the deep sanctum!\" Val: \"The Elven Sanctum? But that's forbidden!\"",
+      "visual": "Gear Mephit throwing explosive gear-bombs Party dodging **Sound EFFECTS:** \"BOOM!\"",
+      "dialogue": "",
       "characters": {
-        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+        "Gear Mephit": "Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components"
       },
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val talking to frightened halfling courier\n\nDialogue: Courier: \"I saw them! Drow and a human noble! Going down to the deep sanctum!\" Val: \"The Elven Sanctum? But that's forbidden!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Gear Mephit: Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components\n\nScene: Gear Mephit throwing explosive gear-bombs Party dodging **Sound EFFECTS:** \"BOOM!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 2,
-      "visual": "Party reconvening Sharing discoveries",
-      "dialogue": "Pocky: \"They have the True Lenses!\" Malrik: \"And the frozen iron!\" Prismor: \"They're going to corrupt the Dawn's Crown alignment!\" Lunara: \"We have to stop them!\" ",
+      "visual": "Lunara attempting Nature lens Success! **Caption:** \"DC 15 NATURE CHECK - SUCCESS!\"",
+      "dialogue": "Lunara: \"The garden's wisdom flows through me!\" ",
       "characters": {
-        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)",
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
-        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing",
-        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
       },
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Party reconvening Sharing discoveries\n\nDialogue: Pocky: \"They have the True Lenses!\" Malrik: \"And the frozen iron!\" Prismor: \"They're going to corrupt the Dawn's Crown alignment!\" Lunara: \"We have to stop them!\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Lunara attempting Nature lens Success! **Caption:** \"DC 15 NATURE CHECK - SUCCESS!\"\n\nDialogue: Lunara: \"The garden's wisdom flows through me!\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 3,
+      "visual": "Malrik attempting Displacement lens Using sleight of hand **Caption:** \"DC 15 SLEIGHT OF HAND - FAILED!\"",
+      "dialogue": "",
+      "characters": {
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Malrik attempting Displacement lens Using sleight of hand **Caption:** \"DC 15 SLEIGHT OF HAND - FAILED!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 4,
+      "visual": "Blink Mephit spawning Nearly invisible, flickering **Sound EFFECTS:** \"FWIP-FWIP\"",
+      "dialogue": "",
+      "characters": {
+        "Blink Mephit": "Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Blink Mephit: Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages\n\nScene: Blink Mephit spawning Nearly invisible, flickering **Sound EFFECTS:** \"FWIP-FWIP\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
   ]
 }

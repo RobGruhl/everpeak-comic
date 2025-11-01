@@ -1,59 +1,54 @@
 {
   "page_num": 15,
-  "title": "The Descent (Part 1)",
+  "title": "First Combat - Blink Mephits (Part 2)",
   "panel_count": 4,
   "is_spread": false,
   "panels": [
     {
       "panel_num": 1,
-      "visual": "Val leading party to hidden entrance",
-      "dialogue": "Val: \"I know a faster way through the courier tunnels. But... I'm not supposed to show outsiders.\" Malrik: \"We're not outsiders. We're friends.\"",
+      "visual": "Lunara casting firebolt Mephit blinking to avoid Fire tracking it through teleports **Sound EFFECTS:** \"FWOOSH!\"",
+      "dialogue": "",
       "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
-        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
       },
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val leading party to hidden entrance\n\nDialogue: Val: \"I know a faster way through the courier tunnels. But... I'm not supposed to show outsiders.\" Malrik: \"We're not outsiders. We're friends.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Lunara casting firebolt Mephit blinking to avoid Fire tracking it through teleports **Sound EFFECTS:** \"FWOOSH!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 2,
-      "visual": "Entering tunnels Chalk symbols on walls Party descending",
-      "dialogue": "Val: \"Everyone, blindfolds on. Guild rules.\" Prismor: \"You're taking this seriously.\" Val: \"These secrets keep the guild safe.\"",
-      "characters": {
-        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)",
-        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
-      },
+      "visual": "Firebolt connecting Mephit shrieking, partially dispersed **Sound EFFECTS:** \"SKREEEEE!\"",
+      "dialogue": "",
+      "characters": {},
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Entering tunnels Chalk symbols on walls Party descending\n\nDialogue: Val: \"Everyone, blindfolds on. Guild rules.\" Prismor: \"You're taking this seriously.\" Val: \"These secrets keep the guild safe.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nScene: Firebolt connecting Mephit shrieking, partially dispersed **Sound EFFECTS:** \"SKREEEEE!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 3,
-      "visual": "Malrik attempting to peek Val noticing",
-      "dialogue": "Malrik (thought): \"Just a little look...\" Val: \"I saw that!\"",
+      "visual": "Prismor channeling poison spray Toxic mist coating mephit",
+      "dialogue": "Prismor: \"By the Ancients, begone!\"",
       "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
-        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)"
       },
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Malrik attempting to peek Val noticing\n\nDialogue: Malrik (thought): \"Just a little look...\" Val: \"I saw that!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Prismor channeling poison spray Toxic mist coating mephit\n\nDialogue: Prismor: \"By the Ancients, begone!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 4,
-      "visual": "Tunnel revealed - chalk everywhere, magical symbols Party looking around in wonder",
-      "dialogue": "Pocky: \"Fascinating! The displacement magic creates shortcuts through space!\"",
+      "visual": "Mephit dissolving into light Energy flowing back to damaged rune Rune fading **Sound EFFECTS:** \"WHOOOOSH\"",
+      "dialogue": "Pocky: \"It was bound to the tampered rune! Destroying it freed the passage!\" ",
       "characters": {
         "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
       },
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Tunnel revealed - chalk everywhere, magical symbols Party looking around in wonder\n\nDialogue: Pocky: \"Fascinating! The displacement magic creates shortcuts through space!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Mephit dissolving into light Energy flowing back to damaged rune Rune fading **Sound EFFECTS:** \"WHOOOOSH\"\n\nDialogue: Pocky: \"It was bound to the tampered rune! Destroying it freed the passage!\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
   ]
 }

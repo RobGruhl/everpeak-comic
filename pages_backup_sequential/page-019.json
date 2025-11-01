@@ -1,0 +1,56 @@
+{
+  "page_num": 19,
+  "title": "First Combat - Blink Mephits (Part 1)",
+  "panel_count": 4,
+  "is_spread": false,
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Pocky attempting to fix runes Chalk in hand, concentrating",
+      "dialogue": "Pocky: \"If I can just realign this symbol...\"",
+      "characters": {
+        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Pocky attempting to fix runes Chalk in hand, concentrating\n\nDialogue: Pocky: \"If I can just realign this symbol...\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 2,
+      "visual": "Rune sparking violently **Sound EFFECTS:** \"CRACKLE!\"",
+      "dialogue": "Pocky: \"No! It's not—\"",
+      "characters": {
+        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Rune sparking violently **Sound EFFECTS:** \"CRACKLE!\"\n\nDialogue: Pocky: \"No! It's not—\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 3,
+      "visual": "Blink Mephit materializing Nearly invisible, flickering edges Afterimages trailing **Sound EFFECTS:** \"SHHHHRRRR\" **Caption:** \"BLINK MEPHIT - DISPLACEMENT ESSENCE CORRUPTED\"",
+      "dialogue": "",
+      "characters": {
+        "Blink Mephit": "Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Blink Mephit: Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages\n\nScene: Blink Mephit materializing Nearly invisible, flickering edges Afterimages trailing **Sound EFFECTS:** \"SHHHHRRRR\" **Caption:** \"BLINK MEPHIT - DISPLACEMENT ESSENCE CORRUPTED\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 4,
+      "visual": "Val disoriented by mephit's spatial attack Reality warping around him",
+      "dialogue": "Val: \"Can't... which way is...?\"",
+      "characters": {
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val disoriented by mephit's spatial attack Reality warping around him\n\nDialogue: Val: \"Can't... which way is...?\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    }
+  ]
+}

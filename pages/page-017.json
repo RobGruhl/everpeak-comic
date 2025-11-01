@@ -1,56 +1,60 @@
 {
   "page_num": 17,
-  "title": "Investigation (Part 1)",
+  "title": "The Crossroads (Part 2)",
   "panel_count": 4,
   "is_spread": false,
   "panels": [
     {
       "panel_num": 1,
-      "visual": "Lunara shooting produce flame down corridor Fire disappearing and reappearing from behind **Sound EFFECTS:** \"*WHOOSH* *FWIP*\"",
-      "dialogue": "Lunara: \"Look! Space is warping!\"",
+      "visual": "Another glowing net-shaped rune visible ahead Lunara pointing",
+      "dialogue": "Lunara: \"There! Another trapped rune!\"",
       "characters": {
         "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
       },
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Lunara shooting produce flame down corridor Fire disappearing and reappearing from behind **Sound EFFECTS:** \"*WHOOSH* *FWIP*\"\n\nDialogue: Lunara: \"Look! Space is warping!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Another glowing net-shaped rune visible ahead Lunara pointing\n\nDialogue: Lunara: \"There! Another trapped rune!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 2,
-      "visual": "Pocky examining runes closely",
-      "dialogue": "Pocky: \"These chalk marks have been smudged. Deliberately altered.\"",
+      "visual": "Pocky firing magic missile **Sound EFFECTS:** \"ZAP ZAP ZAP!\"",
+      "dialogue": "Pocky: \"Magic Missile never misses!\" ",
       "characters": {
         "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
       },
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Pocky examining runes closely\n\nDialogue: Pocky: \"These chalk marks have been smudged. Deliberately altered.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Pocky firing magic missile **Sound EFFECTS:** \"ZAP ZAP ZAP!\"\n\nDialogue: Pocky: \"Magic Missile never misses!\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 3,
-      "visual": "Malrik investigating further Discovering pattern",
-      "dialogue": "Malrik: \"They're not trying to trap us randomly. They're steering us away from something specific.\"",
+      "visual": "Rune exploding into sparkles TWO mephits forming Malrik suddenly freed from slow effect **Sound EFFECTS:** \"CRACKLE-BOOM!\"",
+      "dialogue": "",
       "characters": {
         "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
       },
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Malrik investigating further Discovering pattern\n\nDialogue: Malrik: \"They're not trying to trap us randomly. They're steering us away from something specific.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Rune exploding into sparkles TWO mephits forming Malrik suddenly freed from slow effect **Sound EFFECTS:** \"CRACKLE-BOOM!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 4,
-      "visual": "Val pointing down unexplored corridor",
-      "dialogue": "Val: \"That direction. Whatever they're hiding is that way.\"",
+      "visual": "Both mephits attacking with spatial distortions Party dodging warped reality **Caption:** \"INITIATIVE: POCKY, VAL, PRISMOR, MALRIK, LUNARA, MEPHITS\"",
+      "dialogue": "",
       "characters": {
-        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work",
+        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books",
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing",
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
+        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)"
       },
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val pointing down unexplored corridor\n\nDialogue: Val: \"That direction. Whatever they're hiding is that way.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Both mephits attacking with spatial distortions Party dodging warped reality **Caption:** \"INITIATIVE: POCKY, VAL, PRISMOR, MALRIK, LUNARA, MEPHITS\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
   ]
 }

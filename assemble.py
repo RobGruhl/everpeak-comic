@@ -13,8 +13,7 @@ from PIL import Image
 from layout_engine import (
     assemble_page_with_layout,
     PAGE_WIDTH,
-    PAGE_HEIGHT,
-    SPREAD_WIDTH
+    PAGE_HEIGHT
 )
 
 # Configuration

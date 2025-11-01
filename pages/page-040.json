@@ -1,58 +1,57 @@
 {
   "page_num": 40,
-  "title": "Alric Strikes (Part 1)",
+  "title": "The New Era (Part 1)",
   "panel_count": 4,
   "is_spread": false,
   "panels": [
     {
       "panel_num": 1,
-      "visual": "Lord Alric pointing at glowing Pocky Eyes gleaming with malice",
-      "dialogue": "Alric: \"There you are, troublesome wizard!\"",
+      "visual": "Val in courier tunnels Passages flowing smoothly New shortcuts appearing",
+      "dialogue": "Halfling Courier: \"Val! The tunnels are amazing now! We can reach places we never could before!\"",
       "characters": {
-        "Lord Alric": "Race: Human noble Age: 40s Height: 6'0\" Fashionable but subtly militaristic coat Rich fabrics in dark colors (navy, black, crimson)",
+        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val in courier tunnels Passages flowing smoothly New shortcuts appearing\n\nDialogue: Halfling Courier: \"Val! The tunnels are amazing now! We can reach places we never could before!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+    },
+    {
+      "panel_num": 2,
+      "visual": "Pocky in observatory Stars visible and bright",
+      "dialogue": "Marge: \"The celestial essence is stronger! Think of what we can learn!\"",
+      "characters": {
+        "Marge": "Age: Middle-aged human woman (40s-50s) Height: 5'4\" Build: Slightly stooped from years of reading Modest scholar's robes in muted colors Ink-stained everywhere - fingers, sleeves, hem",
         "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
       },
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lord Alric: Race: Human noble Age: 40s Height: 6'0\" Fashionable but subtly militaristic coat Rich fabrics in dark colors (navy, black, crimson)\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Lord Alric pointing at glowing Pocky Eyes gleaming with malice\n\nDialogue: Alric: \"There you are, troublesome wizard!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
-    },
-    {
-      "panel_num": 2,
-      "visual": "Alric casting lightning bolt Electrical energy gathering **Sound EFFECTS:** \"CRACKLE-CRACKLE-CRACKLE\"",
-      "dialogue": "",
-      "characters": {},
-      "npcs": {},
-      "aspect_ratio": "tall",
-      "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nScene: Alric casting lightning bolt Electrical energy gathering **Sound EFFECTS:** \"CRACKLE-CRACKLE-CRACKLE\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Marge: Age: Middle-aged human woman (40s-50s) Height: 5'4\" Build: Slightly stooped from years of reading Modest scholar's robes in muted colors Ink-stained everywhere - fingers, sleeves, hem\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Pocky in observatory Stars visible and bright\n\nDialogue: Marge: \"The celestial essence is stronger! Think of what we can learn!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 3,
-      "visual": "LIGHTNING BOLT firing 100-foot line of electrical death Hitting Val, Pocky, Lunara, and Prismor **Sound EFFECTS:** \"KRA-KOOOOM!\"",
-      "dialogue": "",
+      "visual": "Lunara in garden Plants flourishing Marivielle beside her",
+      "dialogue": "Marivielle: \"The garden remembers your kindness, dear.\" Lunara: \"The balance is different, but it's still balance.\"",
       "characters": {
-        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books",
-        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing",
-        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)",
-        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
       },
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: LIGHTNING BOLT firing 100-foot line of electrical death Hitting Val, Pocky, Lunara, and Prismor **Sound EFFECTS:** \"KRA-KOOOOM!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Lunara in garden Plants flourishing Marivielle beside her\n\nDialogue: Marivielle: \"The garden remembers your kindness, dear.\" Lunara: \"The balance is different, but it's still balance.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 4,
-      "visual": "Val taking massive hit, going down **Caption:** \"VAL: 25 DAMAGE - DOWN TO 0 HP!\" **Sound EFFECTS:** \"ZZZZAPT!\"",
-      "dialogue": "",
+      "visual": "Malrik in marketplace Drow from embassy approaching",
+      "dialogue": "Drow Diplomat: \"You saved us from Alric's manipulation. The embassy thanks you.\" Malrik: \"Just promise to seek change through honest means.\" ",
       "characters": {
-        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
       },
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val taking massive hit, going down **Caption:** \"VAL: 25 DAMAGE - DOWN TO 0 HP!\" **Sound EFFECTS:** \"ZZZZAPT!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Malrik in marketplace Drow from embassy approaching\n\nDialogue: Drow Diplomat: \"You saved us from Alric's manipulation. The embassy thanks you.\" Malrik: \"Just promise to seek change through honest means.\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
   ]
 }

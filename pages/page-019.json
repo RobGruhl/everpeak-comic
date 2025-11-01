@@ -1,56 +1,54 @@
 {
   "page_num": 19,
-  "title": "First Combat - Blink Mephits (Part 1)",
+  "title": "Second Combat - Two Blink Mephits (Part 2)",
   "panel_count": 4,
   "is_spread": false,
   "panels": [
     {
       "panel_num": 1,
-      "visual": "Pocky attempting to fix runes Chalk in hand, concentrating",
-      "dialogue": "Pocky: \"If I can just realign this symbol...\"",
-      "characters": {
-        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
-      },
+      "visual": "Arrow striking true First mephit dissolving **Sound EFFECTS:** \"SHKREEEE!\"",
+      "dialogue": "",
+      "characters": {},
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Pocky attempting to fix runes Chalk in hand, concentrating\n\nDialogue: Pocky: \"If I can just realign this symbol...\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nScene: Arrow striking true First mephit dissolving **Sound EFFECTS:** \"SHKREEEE!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 2,
-      "visual": "Rune sparking violently **Sound EFFECTS:** \"CRACKLE!\"",
-      "dialogue": "Pocky: \"No! It's not—\"",
+      "visual": "Lunara casting spell at second mephit Nature magic binding it in place",
+      "dialogue": "Lunara: \"Nature answers my call!\"",
       "characters": {
-        "Apocalypse Winter": "Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books"
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
       },
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Apocalypse Winter: Height: 5'10\" Build: Strong but scholarly - unusual combination Hair: Dark, somewhat unkempt from hours in the library Practical wizard robes in deep blue with silver trim Leather satchel stuffed with scrolls and books\n\nScene: Rune sparking violently **Sound EFFECTS:** \"CRACKLE!\"\n\nDialogue: Pocky: \"No! It's not—\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Lunara casting spell at second mephit Nature magic binding it in place\n\nDialogue: Lunara: \"Nature answers my call!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 3,
-      "visual": "Blink Mephit materializing Nearly invisible, flickering edges Afterimages trailing **Sound EFFECTS:** \"SHHHHRRRR\" **Caption:** \"BLINK MEPHIT - DISPLACEMENT ESSENCE CORRUPTED\"",
-      "dialogue": "",
+      "visual": "Party combining attacks Second mephit destroyed Energy dissipating Passage opening clearly ahead",
+      "dialogue": "Malrik: \"Whatever they're hiding, we're getting close.\"  ## CHAPTER 6: THE REVELATION",
       "characters": {
-        "Blink Mephit": "Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages"
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
       },
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Blink Mephit: Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages\n\nScene: Blink Mephit materializing Nearly invisible, flickering edges Afterimages trailing **Sound EFFECTS:** \"SHHHHRRRR\" **Caption:** \"BLINK MEPHIT - DISPLACEMENT ESSENCE CORRUPTED\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Party combining attacks Second mephit destroyed Energy dissipating Passage opening clearly ahead\n\nDialogue: Malrik: \"Whatever they're hiding, we're getting close.\"  ## CHAPTER 6: THE REVELATION\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     },
     {
       "panel_num": 4,
-      "visual": "Val disoriented by mephit's spatial attack Reality warping around him",
-      "dialogue": "Val: \"Can't... which way is...?\"",
+      "visual": "Party emerging into new area Signs pointing to multiple locations",
+      "dialogue": "Val: \"We can reach the library from here... or the old Timber Oak Archive. Or...\"",
       "characters": {
         "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
       },
       "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Val disoriented by mephit's spatial attack Reality warping around him\n\nDialogue: Val: \"Can't... which way is...?\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
+      "prompt": "Professional comic book panel illustration.\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Party emerging into new area Signs pointing to multiple locations\n\nDialogue: Val: \"We can reach the library from here... or the old Timber Oak Archive. Or...\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality."
     }
   ]
 }
