@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo:*)",
+      "Bash(python3:*)",
+      "Bash(source:*)",
+      "Bash(pip install:*)",
+      "Bash(python generate.py:*)",
+      "Bash(identify:*)",
+      "Bash(test:*)",
+      "Bash(python parse_script.py:*)",
+      "Read(//tmp/**)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(pkill:*)",
+      "Bash(cat:*)",
+      "Bash(open:*)",
+      "Bash(brew install:*)",
+      "Bash(system_profiler:*)",
+      "Bash(fc-list:*)",
+      "Bash(wezterm ls-fonts:*)",
+      "Bash(wezterm show-keys:*)",
+      "WebFetch(domain:wezfurlong.org)",
+      "WebSearch",
+      "WebFetch(domain:platform.openai.com)",
+      "WebFetch(domain:cookbook.openai.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:community.openai.com)",
+      "Bash(for f in /Users/robgruhl/Projects/everpeak-comic/pages/*.json)",
+      "Bash(done)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
