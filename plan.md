@@ -1,11 +1,12 @@
 # Everpeak Comic Generation - Progress Report
 
-## Current Status: 93% Complete ✓
+## Current Status: 97.7% Complete ✓
 
 **Date**: November 26, 2025
 **Comic**: Everpeak Citadel: Echoes of the Dawn's Crown
 **Generator**: Google Gemini 3 Pro Image (Nano Banana Pro)
-**Output**: `output/everpeak-nanobananapro.cbz` (309.1 MB)
+**Output**: `output/everpeak-nanobananapro.cbz` (40 pages, 309.1 MB)
+**Panels**: 167/171 complete (4 remaining)
 
 ---
 
@@ -55,15 +56,17 @@ Successfully fixed all location consistency issues identified in the review:
 
 ### ✓ Panels Generated
 
-**Total**: 163/171 panels (95.3%)
+**Total**: 167/171 panels (97.7%)
 
 **Complete Pages**:
 - Pages 1-37: ✓ Complete with all location fixes
-- Pages 40-42: ✓ Complete
+- Pages 40-45: ✓ Complete
 
-**Missing Pages**:
-- Pages 38-39: 8 panels (persistent API rate limits)
-- Pages 43-45: 12 panels (incomplete from original generation)
+**Incomplete Pages**:
+- Page 38: 3/4 panels (panel 4 blocked by quota)
+- Page 39: 1/4 panels (panels 2-4 blocked by quota)
+
+**Google API Quota**: Hit 250 images/day free tier limit. Quota resets in ~24 hours.
 
 ---
 
@@ -106,61 +109,49 @@ Successfully fixed all location consistency issues identified in the review:
 
 ## Known Issues
 
-### Issue 1: Google Gemini Rate Limits (Pages 38-39)
+### Issue 1: Google Gemini Daily Quota Limit (4 panels remaining)
 
-**Status**: BLOCKED (persistent 429 errors)
-
-**Details**:
-- All attempts to generate pages 38-39 hit rate limits
-- Tried with concurrency=1, exponential backoff, 60+ second delays
-- Still receiving 429 Too Many Requests
-
-**Root cause**: Unknown Google API quota limit
-- Could be requests-per-minute
-- Could be daily quota
-- Could be account-specific throttling
-
-**Resolution options**:
-1. Wait several hours and retry (most likely to succeed)
-2. Wait 24 hours for daily quota reset
-3. Contact Google support for quota increase
-4. Use alternative API key if available
-
-**Workaround**: Comic is readable without these pages - they're in the middle of the Orrery battle but story flows from page 37 to 40.
-
-### Issue 2: Pages 43-45 Incomplete
-
-**Status**: NOT STARTED
+**Status**: QUOTA EXHAUSTED - Waiting for reset
 
 **Details**:
-- Only 1/4 panels generated for each page
-- Original generation batch timed out before reaching these pages
+- Successfully generated 167/171 panels
+- Hit Google's 250 images/day free tier limit
+- Remaining panels:
+  - Page 38: Panel 4
+  - Page 39: Panels 2, 3, 4
 
-**Resolution**: Simple retry when rate limits clear:
+**Root cause**: Free tier daily quota limit (250 images/day)
+
+**Resolution**:
+- Wait ~24 hours for quota reset
+- Quota resets at midnight Pacific Time
+- Total additional cost: ~$0.54 for 4 panels
+
+**Command to run after reset**:
 ```bash
-python generate_nanobananapro.py 43-45 --concurrent 2
+GOOGLE_API_KEY_2="$(grep GOOGLE_API_KEY_2 .env | cut -d= -f2)" python generate_nanobananapro.py 38-39 --concurrent 1
 ```
 
 ---
 
 ## Next Steps
 
-### Immediate (When Rate Limits Clear)
+### Tomorrow (After Quota Reset)
 
-1. **Retry Pages 38-39**
+1. **Generate Final 4 Panels**
    ```bash
-   # Wait 2-4 hours, then:
-   python generate_nanobananapro.py 38-39 --concurrent 1
+   # After midnight Pacific Time:
+   GOOGLE_API_KEY_2="$(grep GOOGLE_API_KEY_2 .env | cut -d= -f2)" python generate_nanobananapro.py 38-39 --concurrent 1
    ```
 
-2. **Generate Pages 43-45**
-   ```bash
-   python generate_nanobananapro.py 43-45 --concurrent 2
-   ```
-
-3. **Regenerate Complete CBZ**
+2. **Regenerate Complete 45-Page CBZ**
    ```bash
    python create_cbz_from_panels.py
+   ```
+
+3. **Verify Completion**
+   ```bash
+   python check_panels.py
    ```
 
 ### Future Enhancements
@@ -247,11 +238,11 @@ open output/everpeak-nanobananapro.cbz
 ## Statistics
 
 ### Generation Performance
-- **Total panels attempted**: 171
-- **Successfully generated**: 163 (95.3%)
-- **Failed (rate limited)**: 8 (pages 38-39)
-- **Time**: ~3 hours total
-- **Cost**: ~$22 USD
+- **Total panels**: 171
+- **Successfully generated**: 167 (97.7%)
+- **Remaining (quota limited)**: 4 (page 38 panel 4, page 39 panels 2-4)
+- **Time**: ~4 hours total (across 2 sessions)
+- **Cost**: ~$22.40 USD (167 panels × $0.134)
 
 ### Quality Metrics
 - **Resolution**: 848×1264 per panel (2:3 aspect ratio)
@@ -285,9 +276,9 @@ open output/everpeak-nanobananapro.cbz
 - [x] Fix Sorrel transformation location (pages 22-23)
 - [x] Fix Orrery battle location (pages 24-39)
 - [x] Generate panels with corrected locations
-- [x] Assemble CBZ
-- [ ] Complete pages 38-39 (blocked by rate limits)
-- [ ] Complete pages 43-45 (pending retry)
-- [ ] Final 45-page CBZ
+- [x] Assemble CBZ (40 pages)
+- [x] Generate pages 40-45
+- [ ] Complete final 4 panels (page 38-39) - **Waiting for quota reset**
+- [ ] Final 45-page complete CBZ
 
-**Current Achievement**: 93% complete, all critical content generated with correct locations applied.
+**Current Achievement**: 97.7% complete (167/171 panels). All location fixes applied successfully. Only 4 panels remaining, blocked by Google's 250 images/day free tier quota limit.
