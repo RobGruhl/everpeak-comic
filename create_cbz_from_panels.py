@@ -20,37 +20,60 @@ PAGE_WIDTH = 1696  # 2 panels wide (848x2)
 PAGE_HEIGHT = 2528  # 2 panels tall (1264x2)
 GUTTER = 0  # No gutter for tight layout
 
-def create_page_from_panels(page_num, panels_dir):
-    """Create a single page image from 4 panels arranged in 2x2 grid."""
+def create_page_from_panels(page_num, panels_dir, panel_count):
+    """Create a single page image from panels.
 
-    # Load panel images
-    panel_images = []
-    for i in range(1, 5):
-        panel_file = panels_dir / f"page-{page_num:03d}-panel-{i}.png"
-        if panel_file.exists():
-            panel_images.append(Image.open(panel_file))
-        else:
-            print(f"  ⚠️  Missing panel {i} for page {page_num}")
+    - For panel_count=1: Use single panel resized to page dimensions
+    - For panel_count=4: Arrange in 2x2 grid
+    """
+
+    if panel_count == 1:
+        # Single panel splash page - use full page size
+        panel_file = panels_dir / f"page-{page_num:03d}-panel-1.png"
+        if not panel_file.exists():
+            print(f"  ⚠️  Missing panel 1 for page {page_num}")
             return None
 
-    if len(panel_images) != 4:
+        panel_img = Image.open(panel_file)
+        # Resize to page dimensions (maintaining aspect ratio with letterboxing if needed)
+        page_img = Image.new('RGB', (PAGE_WIDTH, PAGE_HEIGHT), 'black')
+        panel_img = panel_img.resize((PAGE_WIDTH, PAGE_HEIGHT), Image.Resampling.LANCZOS)
+        page_img.paste(panel_img, (0, 0))
+        return page_img
+
+    elif panel_count == 4:
+        # Load panel images for 2x2 grid
+        panel_images = []
+        for i in range(1, 5):
+            panel_file = panels_dir / f"page-{page_num:03d}-panel-{i}.png"
+            if panel_file.exists():
+                panel_images.append(Image.open(panel_file))
+            else:
+                print(f"  ⚠️  Missing panel {i} for page {page_num}")
+                return None
+
+        if len(panel_images) != 4:
+            return None
+
+        # Create page canvas
+        page_img = Image.new('RGB', (PAGE_WIDTH, PAGE_HEIGHT), 'white')
+
+        # Arrange in 2x2 grid
+        positions = [
+            (0, 0),           # Top left
+            (848, 0),         # Top right
+            (0, 1264),        # Bottom left
+            (848, 1264)       # Bottom right
+        ]
+
+        for img, pos in zip(panel_images, positions):
+            page_img.paste(img, pos)
+
+        return page_img
+
+    else:
+        print(f"  ⚠️  Unsupported panel count {panel_count} for page {page_num}")
         return None
-
-    # Create page canvas
-    page_img = Image.new('RGB', (PAGE_WIDTH, PAGE_HEIGHT), 'white')
-
-    # Arrange in 2x2 grid
-    positions = [
-        (0, 0),           # Top left
-        (848, 0),         # Top right
-        (0, 1264),        # Bottom left
-        (848, 1264)       # Bottom right
-    ]
-
-    for img, pos in zip(panel_images, positions):
-        page_img.paste(img, pos)
-
-    return page_img
 
 def create_cbz():
     """Create CBZ file from nanobananapro panels."""
@@ -63,17 +86,27 @@ def create_cbz():
     # Create output directory
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Get list of pages
+    # Get list of pages with their panel counts from JSON
     pages_to_include = []
 
     for page_num in range(1, 46):
-        # Check if all 4 panels exist
-        panel_files = list(PANELS_DIR.glob(f"page-{page_num:03d}-panel-*.png"))
+        # Check JSON for expected panel count
+        page_file = PAGES_JSON_DIR / f"page-{page_num:03d}.json"
+        if not page_file.exists():
+            continue
 
-        if len(panel_files) == 4:
-            pages_to_include.append(page_num)
-        elif len(panel_files) > 0:
-            print(f"⚠️  Page {page_num}: {len(panel_files)}/4 panels (INCOMPLETE - skipping)")
+        with open(page_file, 'r') as f:
+            page_data = json.load(f)
+        expected_count = page_data.get('panel_count', 4)
+
+        # Check if we have the expected panels
+        panel_files = list(PANELS_DIR.glob(f"page-{page_num:03d}-panel-*.png"))
+        actual_count = len(panel_files)
+
+        if actual_count == expected_count:
+            pages_to_include.append((page_num, expected_count))
+        elif actual_count > 0:
+            print(f"⚠️  Page {page_num}: {actual_count}/{expected_count} panels (INCOMPLETE - skipping)")
         # Silently skip pages with 0 panels
 
     print(f"\n✓ Found {len(pages_to_include)} complete pages")
@@ -81,9 +114,9 @@ def create_cbz():
 
     # Create assembled pages
     assembled_pages = {}
-    for page_num in pages_to_include:
-        print(f"→ Assembling page {page_num}...")
-        page_img = create_page_from_panels(page_num, PANELS_DIR)
+    for page_num, panel_count in pages_to_include:
+        print(f"→ Assembling page {page_num} ({panel_count} panel{'s' if panel_count > 1 else ''})...")
+        page_img = create_page_from_panels(page_num, PANELS_DIR, panel_count)
 
         if page_img:
             assembled_pages[page_num] = page_img
