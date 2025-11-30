@@ -8,50 +8,50 @@
       "panel_num": 1,
       "visual": "Tunnel revealed - chalk everywhere, magical symbols Party looking around in wonder",
       "dialogue": "Pocky: \"Fascinating! The displacement magic creates shortcuts through space!\"",
-      "characters": {
-        "Apocalypse Winter": "Human wizard, young man in early 20s. 5'10\" tall, strong but scholarly build. Dark hair, somewhat unkempt from library hours. Keen blue eyes, intelligent and curious. Pale skin from indoor studying. Determined jawline, slight worry lines from concentration. Practical wizard robes in deep blue with silver trim. Leather satchel stuffed with scrolls and books. Component pouch at belt. Ink-stained fingers. Reading glasses. Carries himself with quiet determination despite youth."
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Courier Tunnels - rough-hewn stone passages carved through mountain rock. Narrow winding maze-like tunnels. Walls, ceiling, and floor COVERED in chalk runes and magical symbols - white chalk, colored chalk (red, blue, green, yellow), complex geometric patterns, arcane displacement runes, different colored marks showing different magical routes. Many runes glowing with faint magical energy - cold blue glow, some pulsing gently. Cramped passages. Dim magical lighting creating mysterious atmosphere. Occasional spatial distortions visible (warped space, light bending). Medieval fantasy dungeon with heavy magical infrastructure.\n\nCharacters:\n- Apocalypse Winter / Pocky (fascinated, examining): Human wizard, young man in early 20s, 5'10\", strong scholarly build, dark unkempt hair, keen blue eyes WIDE with fascination and wonder, pale skin, practical wizard robes in deep blue with silver trim, leather satchel with scrolls, component pouch at belt, ink-stained fingers pointing at or tracing runes in air, reading glasses on (studying the magic), expression of pure intellectual excitement\n\nScene: Wide dramatic reveal shot of the Courier Tunnels interior - blindfolds now removed. Breathtaking view of tunnel walls absolutely COVERED in intricate chalk runes and magical symbols creating a complex magical transportation network. Chalk marks in multiple colors creating layered patterns. Some runes glowing with blue magical energy. Pocky in foreground studying the runes with scholarly fascination, other party members visible in background also looking around in wonder at the incredible magical infrastructure. Tunnel stretches into distance showing multiple branching passages. Magical displacement energy visible as faint spatial warps. Underground fantasy setting with heavy arcane enchantments. Scholar's dream of ancient magical engineering.\n\nDialogue: Pocky (excited, fascinated): \"Fascinating! The displacement magic creates shortcuts through space!\"\n\nInclude speech bubble with dialogue text clearly readable.\n\nStyle: Bold ink line art, medieval fantasy setting, high fantasy atmosphere,, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy dungeon atmosphere, emphasis on magical runes and arcane infrastructure."
+      "characters": [
+        "Apocalypse Winter"
+      ],
+      "npcs": [],
+      "location": "Courier Tunnels"
     },
     {
       "panel_num": 2,
       "visual": "Val trying to lead through Suddenly finding themselves back where started **Sound EFFECTS:** \"*FWIP*\"",
       "dialogue": "Val: \"What? This should work...\"",
-      "characters": {
-        "Val": "Brass dragonborn monk, early 20s appearance. Just under 7 feet tall, lean athletic build with wiry monk strength. Warm brass/copper-bronze scales with metallic sheen. Ember-glow orange eyes, bright and expressive. Reptilian face with kind open expression. Simple monastery robes in earth tones (browns, tans) with chalk dust marks. Bare clawed feet. Prayer beads around wrist."
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Courier Tunnels - rough-hewn stone passages with chalk runes covering walls. Narrow winding maze-like tunnels. Multiple colored chalk marks showing routes. Some runes glowing faintly with cold blue magical energy. Cramped passages. Spatial distortions visible - warped space effects, reality bending. Dim magical lighting. Medieval fantasy dungeon with malfunctioning displacement magic.\n\nCharacters:\n- Val (confused, alarmed): Brass dragonborn monk, just under 7 feet, lean athletic build, warm brass/copper-bronze scales, ember-glow orange eyes WIDE with confusion and alarm, kind reptilian face showing genuine shock, earth-tone monastery robes with chalk dust, bare clawed feet, prayer beads on wrist, body language showing he just walked forward but ended up back where he started - looking around bewildered, one hand touching wall to orient himself\n\nScene: Val leading party through tunnel, confident in his navigation. BUT - dramatic moment where displacement magic FAILS - visible \"*FWIP*\" sound effect as space warps wrongly and Val (and party) suddenly find themselves back at the starting point of the passage instead of moving forward. Spatial distortion effects visible - reality rippling, tunnel twisting impossibly, chalk runes flickering erratically. Val's expression shows shock - this route should work but the magic is broken. Other party members visible in background also confused. Tunnel walls with smudged/tampered runes. Magical malfunction creating impossible space loop. Underground fantasy setting with corrupted arcane transportation.\n\nDialogue: Val (shocked, confused): \"What? This should work...\"\n\nSound Effects: Large bold \"*FWIP*\" showing spatial displacement sound.\n\nInclude speech bubble and sound effect clearly readable.\n\nStyle: Bold ink line art, medieval fantasy setting, high fantasy atmosphere,, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy dungeon atmosphere, emphasis on magical malfunction and spatial distortion."
+      "characters": [
+        "Val"
+      ],
+      "npcs": [],
+      "location": "Courier Tunnels"
     },
     {
       "panel_num": 3,
       "visual": "Trying again, different path Back at start again Party getting confused",
       "dialogue": "Lunara: \"We're going in circles!\" Val: \"No, this is wrong. Someone's tampered with the runes!\" ",
-      "characters": {
-        "Lunara": "High elf druid, Circle of the Moon. 5'8\" tall, graceful lithe athletic build. Long flowing chestnut brown hair with flowers woven in. Vibrant green eyes reflecting forest depths. Fair skin with slight tan. Classical elven beauty, pointed ears, serene expression. Practical druid robes in earthy greens and browns. Living vines and small flowers woven into clothing. Wooden staff carved with natural patterns.",
-        "Val": "Brass dragonborn monk, early 20s appearance. Just under 7 feet tall, lean athletic build. Warm brass/copper-bronze scales with metallic sheen. Ember-glow orange eyes, bright and expressive. Reptilian face with kind open expression. Simple monastery robes in earth tones with chalk dust marks. Bare clawed feet. Prayer beads around wrist."
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Courier Tunnels - rough-hewn stone passages with chalk runes and magical symbols covering walls. Narrow winding cramped tunnels. Different colored chalk marks (red, blue, green, yellow). Some runes glowing with cold blue light, others flickering erratically. SMUDGED and TAMPERED runes visible - chalk deliberately altered or erased. Maze-like passages. Dim magical lighting. Signs of sabotage. Medieval fantasy dungeon with corrupted magic.\n\nCharacters:\n- Lunara (frustrated, alarmed): High elf druid, 5'8\", graceful athletic build, long flowing chestnut hair with flowers, vibrant green eyes showing frustration and alarm, fair skin, pointed ears, practical druid robes in earthy greens and browns, living vines in clothing, wooden staff, gesturing in exasperation at being teleported back again\n- Val (angry, realizing): Brass dragonborn monk, just under 7 feet, lean build, warm brass/copper-bronze scales, ember-glow orange eyes now angry and alarmed, kind reptilian face twisted with anger at sabotage, earth-tone robes with chalk dust, bare clawed feet, prayer beads on wrist, crouching to examine wall runes closely, pointing at smudged/altered chalk marks, expression showing realization this is deliberate tampering\n\nScene: Party back at starting point AGAIN after trying different route. Growing frustration and confusion. Val crouching near tunnel wall examining the chalk runes closely, discovering they've been SMUDGED and deliberately ALTERED - finger marks in chalk, runes partially erased or redrawn wrong. Lunara standing with exasperated gesture. Other party members visible in background looking confused and concerned. Tunnel walls showing clear evidence of tampering - smudged chalk, altered symbols, wrong patterns. This is sabotage, not accident. Underground fantasy setting with malicious corruption of magical infrastructure.\n\nDialogue:\n- Lunara (frustrated): \"We're going in circles!\"\n- Val (angry, realizing): \"No, this is wrong. Someone's tampered with the runes!\"\n\nInclude speech bubbles with dialogue text clearly readable.\n\nStyle: Bold ink line art, medieval fantasy setting, high fantasy atmosphere,, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy dungeon atmosphere, emphasis on sabotage and corrupted magic."
+      "characters": [
+        "Lunara",
+        "Val"
+      ],
+      "npcs": [],
+      "location": "Courier Tunnels"
     },
     {
       "panel_num": 4,
       "visual": "Lunara shooting produce flame down corridor Fire disappearing and reappearing from behind **Sound EFFECTS:** \"*WHOOSH* *FWIP*\"",
       "dialogue": "Lunara: \"Look! Space is warping!\"",
-      "characters": {
-        "Lunara": "High elf druid, Circle of the Moon. 5'8\" tall, graceful lithe athletic build. Long flowing chestnut brown hair with flowers woven in. Vibrant green eyes reflecting forest depths. Fair skin with slight tan. Classical elven beauty, pointed ears. Practical druid robes in earthy greens and browns. Living vines and small flowers woven into clothing. Wooden staff carved with natural patterns."
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Courier Tunnels - rough-hewn stone passage stretching into distance. Narrow corridor with chalk runes on walls. Glowing magical symbols. Spatial distortions visible - reality warping, impossible geometry. Dim blue magical lighting. Medieval fantasy dungeon with broken displacement magic creating visual paradoxes.\n\nCharacters:\n- Lunara (demonstrating, alarmed): High elf druid, 5'8\", graceful athletic build, long flowing chestnut hair with flowers, vibrant green eyes showing alarm and realization, fair skin, pointed ears, practical druid robes in earthy greens and browns, living vines in clothing, one hand extended casting Produce Flame cantrip, orange-red flame magic forming in her palm and shooting forward down corridor\n\nScene: Dramatic demonstration of spatial warping. Lunara casting Produce Flame - sending ball of fire magic down the tunnel corridor ahead of party. BUT - visible spatial distortion as flame travels forward then DISAPPEARS mid-flight (warping through broken space) and REAPPEARS from BEHIND the party, coming from the opposite direction. Impossible spatial loop visualized with fire trail. Tunnel stretching ahead with flame shooting forward. Spatial rift/distortion effect in middle distance where flame vanishes. Same flame emerging from behind Lunara. Arrow or motion lines showing impossible path. Party members ducking or reacting as flame loops around. Chalk runes flickering. Reality breaking down. Visual proof that space itself is corrupted. Fantasy dungeon with catastrophic magical failure.\n\nDialogue: Lunara (alarmed, demonstrating): \"Look! Space is warping!\"\n\nSound Effects: \"*WHOOSH*\" for flame shooting forward, \"*FWIP*\" for spatial displacement.\n\nInclude speech bubble and sound effects clearly readable.\n\nStyle: Bold ink line art, medieval fantasy setting, high fantasy atmosphere,, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy dungeon atmosphere, dramatic magical effects showing impossible spatial geometry."
+      "characters": [
+        "Lunara"
+      ],
+      "npcs": [],
+      "location": "Courier Tunnels"
     }
   ]
 }

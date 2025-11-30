@@ -8,55 +8,55 @@
       "panel_num": 1,
       "visual": "Party's shocked reactions",
       "dialogue": "Val: \"The halfling kid was a DRAGON?!\" Malrik: \"I knew something was off!\" Lunara: \"A gold dragon... guardian of good.\"",
-      "characters": {
-        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing",
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest",
-        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Everpeak Citadel interior corridors - white stone hallways with high vaulted ceilings. Ancient high elven architecture with elegant arches and carved pillars. Magical lanterns providing warm light. Winter decorations (festival ribbons, banners). Spacious wide corridors. Medieval fantasy castle interior with high elven craftsmanship.\n\nCharacters:\n- Val: Brass dragonborn monk, just under 7 feet, lean athletic build, warm brass/copper-bronze scales, ember-glow orange eyes WIDE with shock, kind reptilian face showing disbelief, earth-tone monastery robes with chalk dust, bare clawed feet, prayer beads on wrist, jaw dropped expression\n- Malrik: Drow rogue, 5'6\", slim agile build, dark gray-blue drow skin, white short hair, pale lavender eyes showing shock, sharp features with eyebrows raised, dark leather armor, colorful vest, defensive stance\n- Lunara: High elf druid, 5'8\", graceful athletic build, long flowing chestnut hair with flowers, vibrant green eyes showing recognition and awe, fair skin, pointed ears, practical druid robes in earthy greens and browns, living vines in clothing, wooden staff, hand to chest in reverence\n\nScene: Party's shocked reactions to Sorrel's dragon reveal. Three characters showing different expressions - Val's comedic shock, Malrik's suspicious vindication, Lunara's reverent recognition. Citadel corridor still glowing with residual golden light from transformation. Sorrel visible in background (dragon form). Reaction panel capturing character personalities through their responses. Medieval fantasy setting.\n\nDialogue: Val: \"The halfling kid was a DRAGON?!\" Malrik: \"I knew something was off!\" Lunara: \"A gold dragon... guardian of good.\"\n\nInclude speech bubbles with dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+      "characters": [
+        "Lunara",
+        "Malrik",
+        "Val"
+      ],
+      "npcs": [],
+      "location": "Everpeak Citadel interior corridors - white stone hallways with high vaulted ceilings. Ancient high elven architecture with elegant arches and carved pillars. Magical lanterns providing warm light. Winter decorations (festival ribbons, banners). Spacious wide corridors. Medieval fantasy castle interior with high elven craftsmanship."
     },
     {
       "panel_num": 2,
       "visual": "Sorrel in dragon form, speaking with ancient wisdom",
       "dialogue": "Sorrel: \"I have watched you all. You have proven worthy. Lord Alric seeks to corrupt the Orrery for his own power.\"",
-      "characters": {
-        "Sorrel": "Small gold dragon wyrmling, about the size of a large dog, compact but majestic. Brilliant metallic gold scales that shimmer in any light, catching and reflecting magical glow. Ancient wise amber eyes, glowing with draconic intelligence and centuries of knowledge. Delicate but powerful wings spread wide - golden membranes. Reptilian features with noble bearing. Small horns curving back from head. Claws and talons visible. Young dragon but radiating power and authority. Beautiful and terrible simultaneously. Guardian of good."
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Everpeak Citadel interior corridors - white stone hallways with high vaulted ceilings. Ancient high elven architecture with elegant arches and carved pillars. Magical lanterns providing warm light. Winter decorations (festival ribbons, banners). Spacious wide corridors. Medieval fantasy castle interior with high elven craftsmanship.\n\nCharacters:\n- Sorrel (Dragon Form): Small gold dragon wyrmling, about the size of a large dog, compact but majestic. Brilliant metallic gold scales that shimmer in any light, catching and reflecting magical glow. Ancient wise amber eyes, glowing with draconic intelligence and centuries of knowledge. Delicate but powerful wings spread wide - golden membranes. Reptilian features with noble bearing. Small horns curving back from head. Claws and talons visible. Young dragon but radiating power and authority. Beautiful and terrible simultaneously. Guardian of good.\n\nScene: Close-up of Sorrel in dragon form, speaking with ancient wisdom and authority. Amber eyes glowing with intelligence. Noble draconic features. Wings partially spread. Golden scales catching magical light from corridor lanterns. Speaking seriously, explaining the threat. Ancient guardian revealing truth. Citadel corridor background with elven architecture. Majestic and powerful presence.\n\nDialogue: Sorrel: \"I have watched you all. You have proven worthy. Lord Alric seeks to corrupt the Orrery for his own power.\"\n\nInclude speech bubble with dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+      "characters": [
+        "Sorrel"
+      ],
+      "npcs": [],
+      "location": "Everpeak Citadel interior corridors - white stone hallways with high vaulted ceilings. Ancient high elven architecture with elegant arches and carved pillars. Magical lanterns providing warm light. Winter decorations (festival ribbons, banners). Spacious wide corridors. Medieval fantasy castle interior with high elven craftsmanship."
     },
     {
       "panel_num": 3,
       "visual": "Close on Sorrel's wise eyes",
       "dialogue": "Sorrel: \"The high elves sacrificed everything to protect this place. Will you do the same?\"",
-      "characters": {
-        "Sorrel": "Small gold dragon wyrmling, about the size of a large dog, compact but majestic. Brilliant metallic gold scales that shimmer in any light, catching and reflecting magical glow. Ancient wise amber eyes, glowing with draconic intelligence and centuries of knowledge. Delicate but powerful wings spread wide - golden membranes. Reptilian features with noble bearing. Small horns curving back from head. Claws and talons visible. Young dragon but radiating power and authority. Beautiful and terrible simultaneously. Guardian of good."
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Everpeak Citadel interior corridors - white stone hallways with high vaulted ceilings. Ancient high elven architecture with elegant arches and carved pillars. Magical lanterns providing warm light. Winter decorations (festival ribbons, banners). Spacious wide corridors. Medieval fantasy castle interior with high elven craftsmanship.\n\nCharacters:\n- Sorrel (Dragon Form): Small gold dragon wyrmling, about the size of a large dog, compact but majestic. Brilliant metallic gold scales that shimmer in any light, catching and reflecting magical glow. Ancient wise amber eyes, glowing with draconic intelligence and centuries of knowledge. Delicate but powerful wings spread wide - golden membranes. Reptilian features with noble bearing. Small horns curving back from head. Claws and talons visible. Young dragon but radiating power and authority. Beautiful and terrible simultaneously. Guardian of good.\n\nScene: Extreme close-up on Sorrel's wise amber dragon eyes. Ancient wisdom and centuries of knowledge visible in glowing amber irises. Dragon's reptilian eye with slit pupil, glowing softly. Surrounding golden scales. Reflection of party visible in dragon's eye. Speaking the challenge and question. Emotional weight of high elven sacrifice. Close intimate shot showing depth of wisdom. Citadel corridor softly out of focus in background.\n\nDialogue: Sorrel: \"The high elves sacrificed everything to protect this place. Will you do the same?\"\n\nInclude speech bubble with dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere, detailed eye illustration."
+      "characters": [
+        "Sorrel"
+      ],
+      "npcs": [],
+      "location": "Everpeak Citadel interior corridors - white stone hallways with high vaulted ceilings. Ancient high elven architecture with elegant arches and carved pillars. Magical lanterns providing warm light. Winter decorations (festival ribbons, banners). Spacious wide corridors. Medieval fantasy castle interior with high elven craftsmanship."
     },
     {
       "panel_num": 4,
       "visual": "Party standing together, determined Weapons drawn, spells readied",
       "dialogue": "Prismor: \"We will protect Everpeak!\" ALL: \"Together!\"  ## CHAPTER 7: THE FINAL BATTLE",
-      "characters": {
-        "Prismor": "Blue crystal dragonborn paladin, 7 feet tall, imposing presence, muscular powerful build, crystalline blue-green scales, deep sapphire eyes determined, noble bearing, plate armor with nature symbols, greatsword DRAWN and raised, forest green cape billowing",
-        "Malrik": "Drow rogue, 5'6\", slim agile build, dark gray-blue drow skin, white short hair, pale lavender eyes fierce, sharp features determined, dark leather armor, colorful vest, daggers drawn",
-        "Lunara": "High elf druid, 5'8\", graceful athletic build, long flowing chestnut hair with flowers, vibrant green eyes glowing with magic readying, fair skin, pointed ears, practical druid robes in earthy greens and browns, living vines in clothing glowing, wooden staff raised with green magic swirling",
-        "Apocalypse Winter": "Human wizard, young man in early 20s, 5'10\", strong scholarly build, dark unkempt hair, keen blue eyes determined, pale skin, deep blue wizard robes with silver trim, leather satchel, component pouch open, hands glowing with arcane blue magic readying spell",
-        "Val": "Brass dragonborn monk, just under 7 feet, lean athletic build, warm brass/copper-bronze scales, ember-glow orange eyes fierce, kind reptilian face now serious, earth-tone monastery robes, bare clawed feet in fighting stance, prayer beads glowing, fists wreathed in ki energy"
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Everpeak Citadel interior corridors - white stone hallways with high vaulted ceilings. Ancient high elven architecture with elegant arches and carved pillars. Magical lanterns providing warm light. Winter decorations (festival ribbons, banners). Spacious wide corridors. Medieval fantasy castle interior with high elven craftsmanship.\n\nCharacters:\n- Prismor: Blue crystal dragonborn paladin, 7 feet tall, imposing presence, muscular powerful build, crystalline blue-green scales, deep sapphire eyes determined, noble bearing, plate armor with nature symbols, greatsword DRAWN and raised, forest green cape billowing\n- Malrik: Drow rogue, 5'6\", slim agile build, dark gray-blue drow skin, white short hair, pale lavender eyes fierce, sharp features determined, dark leather armor, colorful vest, daggers drawn\n- Lunara: High elf druid, 5'8\", graceful athletic build, long flowing chestnut hair with flowers, vibrant green eyes glowing with magic readying, fair skin, pointed ears, practical druid robes in earthy greens and browns, living vines in clothing glowing, wooden staff raised with green magic swirling\n- Apocalypse Winter / Pocky: Human wizard, young man in early 20s, 5'10\", strong scholarly build, dark unkempt hair, keen blue eyes determined, pale skin, deep blue wizard robes with silver trim, leather satchel, component pouch open, hands glowing with arcane blue magic readying spell\n- Val: Brass dragonborn monk, just under 7 feet, lean athletic build, warm brass/copper-bronze scales, ember-glow orange eyes fierce, kind reptilian face now serious, earth-tone monastery robes, bare clawed feet in fighting stance, prayer beads glowing, fists wreathed in ki energy\n\nScene: All five party members standing together in heroic formation. Weapons drawn - Prismor's greatsword raised, Malrik's daggers ready. Spells prepared - Lunara's staff glowing green with druidic magic, Pocky's hands crackling with arcane blue energy, Val's fists wreathed in golden ki energy. Determined expressions on all faces. United stand. Heroes ready for battle. Citadel corridor with dramatic lighting from magical energies. Epic hero shot. Ready to save Everpeak.\n\nDialogue: Prismor: \"We will protect Everpeak!\" ALL: \"Together!\"\n\nInclude speech bubbles with dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere, heroic pose with magical effects."
+      "characters": [
+        "Prismor",
+        "Malrik",
+        "Lunara",
+        "Apocalypse Winter",
+        "Val"
+      ],
+      "npcs": [],
+      "location": "Everpeak Citadel interior corridors - white stone hallways with high vaulted ceilings. Ancient high elven architecture with elegant arches and carved pillars. Magical lanterns providing warm light. Winter decorations (festival ribbons, banners). Spacious wide corridors. Medieval fantasy castle interior with high elven craftsmanship."
     }
   ]
 }

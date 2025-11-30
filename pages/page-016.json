@@ -8,49 +8,49 @@
       "panel_num": 1,
       "visual": "Party reaching junction in tunnels Three paths visible",
       "dialogue": "Val: \"The library is left. But the sabotaged runes were trying to keep us from going right.\"",
-      "characters": {
-        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Courier Tunnels - rough-hewn stone passages carved through mountain rock. Narrow winding maze-like tunnels with cramped passages. Chalk runes and magical symbols covering walls in white and colored chalk (red, blue, green, yellow) showing different magical routes. Some runes glowing faintly with cold blue magical energy, others flickering showing corruption. Smudged and tampered runes visible in places - deliberate sabotage. Dim magical lighting creating mysterious atmosphere. Occasional spatial distortions visible. Medieval fantasy dungeon with corrupted displacement magic.\n\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Party reaching junction in tunnels Three paths visible\n\nDialogue: Val: \"The library is left. But the sabotaged runes were trying to keep us from going right.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+      "characters": [
+        "Val"
+      ],
+      "npcs": [],
+      "location": "Courier Tunnels"
     },
     {
       "panel_num": 2,
       "visual": "Malrik rolling dice",
       "dialogue": "Malrik: \"When in doubt, trust fortune. Odd for right, even for left.\"",
-      "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Courier Tunnels - rough-hewn stone passages carved through mountain rock. Narrow winding maze-like tunnels with cramped passages. Chalk runes and magical symbols covering walls in white and colored chalk (red, blue, green, yellow) showing different magical routes. Some runes glowing faintly with cold blue magical energy, others flickering showing corruption. Smudged and tampered runes visible in places - deliberate sabotage. Dim magical lighting creating mysterious atmosphere. Occasional spatial distortions visible. Medieval fantasy dungeon with corrupted displacement magic.\n\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Malrik rolling dice\n\nDialogue: Malrik: \"When in doubt, trust fortune. Odd for right, even for left.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+      "characters": [
+        "Malrik"
+      ],
+      "npcs": [],
+      "location": "Courier Tunnels"
     },
     {
       "panel_num": 3,
       "visual": "Dice showing odd Malrik turning right with grin",
       "dialogue": "Malrik: \"Fortune favors the bold. Right it is!\"",
-      "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Courier Tunnels - rough-hewn stone passages carved through mountain rock. Narrow winding maze-like tunnels with cramped passages. Chalk runes and magical symbols covering walls in white and colored chalk (red, blue, green, yellow) showing different magical routes. Some runes glowing faintly with cold blue magical energy, others flickering showing corruption. Smudged and tampered runes visible in places - deliberate sabotage. Dim magical lighting creating mysterious atmosphere. Occasional spatial distortions visible. Medieval fantasy dungeon with corrupted displacement magic.\n\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Dice showing odd Malrik turning right with grin\n\nDialogue: Malrik: \"Fortune favors the bold. Right it is!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+      "characters": [
+        "Malrik"
+      ],
+      "npcs": [],
+      "location": "Courier Tunnels"
     },
     {
       "panel_num": 4,
       "visual": "Walking down right passage Malrik slowing down **Sound EFFECTS:** \"...slow...mo...tion...\"",
       "dialogue": "Malrik: \"What... is... happening...?\"",
-      "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Courier Tunnels - rough-hewn stone passages carved through mountain rock. Narrow winding maze-like tunnels with cramped passages. Chalk runes and magical symbols covering walls in white and colored chalk (red, blue, green, yellow) showing different magical routes. Some runes glowing faintly with cold blue magical energy, others flickering showing corruption. Smudged and tampered runes visible in places - deliberate sabotage. Dim magical lighting creating mysterious atmosphere. Occasional spatial distortions visible. Medieval fantasy dungeon with corrupted displacement magic.\n\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Walking down right passage Malrik slowing down **Sound EFFECTS:** \"...slow...mo...tion...\"\n\nDialogue: Malrik: \"What... is... happening...?\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+      "characters": [
+        "Malrik"
+      ],
+      "npcs": [],
+      "location": "Courier Tunnels"
     }
   ]
 }

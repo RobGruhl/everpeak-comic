@@ -8,49 +8,49 @@
       "panel_num": 1,
       "visual": "Gear Mephit throwing explosive gear-bombs Party dodging **Sound EFFECTS:** \"BOOM!\"",
       "dialogue": "",
-      "characters": {
-        "Gear Mephit": "Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components"
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: The Elven Sanctum - hidden cavern deep beneath Everpeak Citadel. Massive central chamber with the Orrery at center - enormous magical device with rotating crystal spheres, suspended lenses, glowing runes, intricate clicking gears and metallic arms. Ancient high elven architecture with carved stone pillars, vaulted ceiling covered in constellation maps and celestial charts. Five alcoves housing the True Lenses for elemental essences. Magical energy crackling through air - emerald (nature), silver-blue (mechanistic), lavender (celestial), golden (harmony), shifting prisms (displacement). Sense of ancient power and sacrifice. Ruins and scars from century-old battle visible on walls and floor. Cathedral-like scale with reverent atmosphere. Medieval high fantasy sanctum with high elven precision engineering.\n\n\nCharacters:\n- Gear Mephit: Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components\n\nScene: Gear Mephit throwing explosive gear-bombs Party dodging **Sound EFFECTS:** \"BOOM!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+      "characters": [
+        "Gear Mephit"
+      ],
+      "npcs": [],
+      "location": "The Elven Sanctum"
     },
     {
       "panel_num": 2,
       "visual": "Lunara attempting Nature lens Success! **Caption:** \"DC 15 NATURE CHECK - SUCCESS!\"",
       "dialogue": "Lunara: \"The garden's wisdom flows through me!\" ",
-      "characters": {
-        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: The Elven Sanctum - hidden cavern deep beneath Everpeak Citadel. Massive central chamber with the Orrery at center - enormous magical device with rotating crystal spheres, suspended lenses, glowing runes, intricate clicking gears and metallic arms. Ancient high elven architecture with carved stone pillars, vaulted ceiling covered in constellation maps and celestial charts. Five alcoves housing the True Lenses for elemental essences. Magical energy crackling through air - emerald (nature), silver-blue (mechanistic), lavender (celestial), golden (harmony), shifting prisms (displacement). Sense of ancient power and sacrifice. Ruins and scars from century-old battle visible on walls and floor. Cathedral-like scale with reverent atmosphere. Medieval high fantasy sanctum with high elven precision engineering.\n\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Lunara attempting Nature lens Success! **Caption:** \"DC 15 NATURE CHECK - SUCCESS!\"\n\nDialogue: Lunara: \"The garden's wisdom flows through me!\" \n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+      "characters": [
+        "Lunara"
+      ],
+      "npcs": [],
+      "location": "The Elven Sanctum"
     },
     {
       "panel_num": 3,
       "visual": "Malrik attempting Displacement lens Using sleight of hand **Caption:** \"DC 15 SLEIGHT OF HAND - FAILED!\"",
       "dialogue": "",
-      "characters": {
-        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: The Elven Sanctum - hidden cavern deep beneath Everpeak Citadel. Massive central chamber with the Orrery at center - enormous magical device with rotating crystal spheres, suspended lenses, glowing runes, intricate clicking gears and metallic arms. Ancient high elven architecture with carved stone pillars, vaulted ceiling covered in constellation maps and celestial charts. Five alcoves housing the True Lenses for elemental essences. Magical energy crackling through air - emerald (nature), silver-blue (mechanistic), lavender (celestial), golden (harmony), shifting prisms (displacement). Sense of ancient power and sacrifice. Ruins and scars from century-old battle visible on walls and floor. Cathedral-like scale with reverent atmosphere. Medieval high fantasy sanctum with high elven precision engineering.\n\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Malrik attempting Displacement lens Using sleight of hand **Caption:** \"DC 15 SLEIGHT OF HAND - FAILED!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+      "characters": [
+        "Malrik"
+      ],
+      "npcs": [],
+      "location": "The Elven Sanctum"
     },
     {
       "panel_num": 4,
       "visual": "Blink Mephit spawning Nearly invisible, flickering **Sound EFFECTS:** \"FWIP-FWIP\"",
       "dialogue": "",
-      "characters": {
-        "Blink Mephit": "Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages"
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: The Elven Sanctum - hidden cavern deep beneath Everpeak Citadel. Massive central chamber with the Orrery at center - enormous magical device with rotating crystal spheres, suspended lenses, glowing runes, intricate clicking gears and metallic arms. Ancient high elven architecture with carved stone pillars, vaulted ceiling covered in constellation maps and celestial charts. Five alcoves housing the True Lenses for elemental essences. Magical energy crackling through air - emerald (nature), silver-blue (mechanistic), lavender (celestial), golden (harmony), shifting prisms (displacement). Sense of ancient power and sacrifice. Ruins and scars from century-old battle visible on walls and floor. Cathedral-like scale with reverent atmosphere. Medieval high fantasy sanctum with high elven precision engineering.\n\n\nCharacters:\n- Blink Mephit: Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages\n\nScene: Blink Mephit spawning Nearly invisible, flickering **Sound EFFECTS:** \"FWIP-FWIP\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+      "characters": [
+        "Blink Mephit"
+      ],
+      "npcs": [],
+      "location": "The Elven Sanctum"
     }
   ]
 }

@@ -8,49 +8,49 @@
       "panel_num": 1,
       "visual": "Pocky attempting to fix runes Chalk in hand, concentrating",
       "dialogue": "Pocky: \"If I can just realign this symbol...\"",
-      "characters": {
-        "Apocalypse Winter": "Human wizard, young man in early 20s. 5'10\" tall, strong but scholarly build. Dark hair, somewhat unkempt from library hours. Keen blue eyes, intelligent and curious. Pale skin from indoor studying. Determined jawline, slight worry lines from concentration. Practical wizard robes in deep blue with silver trim. Leather satchel stuffed with scrolls and books. Component pouch at belt. Ink-stained fingers. Reading glasses. Carries himself with quiet determination despite youth."
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Courier Tunnels - rough-hewn stone passages carved through mountain rock. Narrow winding maze-like tunnels with cramped passages. Chalk runes and magical symbols covering walls in white and colored chalk (red, blue, green, yellow) showing different magical routes. Some runes glowing faintly with cold blue magical energy, others flickering erratically showing corruption. Smudged and tampered runes visible in places - deliberate sabotage. Dim magical lighting creating mysterious ominous atmosphere. Occasional spatial distortions visible. Medieval fantasy dungeon with corrupted displacement magic.\n\nCharacters:\n- Apocalypse Winter / Pocky (concentrating, attempting fix): Human wizard, young man in early 20s. 5'10\" tall, strong but scholarly build. Dark hair, somewhat unkempt from library hours. Keen blue eyes, intelligent and curious. Pale skin from indoor studying. Determined jawline, slight worry lines from concentration. Practical wizard robes in deep blue with silver trim. Leather satchel stuffed with scrolls and books. Component pouch at belt. Ink-stained fingers. Reading glasses. Carries himself with quiet determination despite youth. Crouching at tunnel wall, chalk in hand (white or colored chalk), keen blue eyes narrowed in concentration, brow furrowed with effort, one hand extended touching/redrawing rune symbol, trying to realign corrupted displacement magic, ink-stained fingers working carefully.\n\nScene: Close-up of Pocky attempting to fix the tampered runes. He's crouching at tunnel wall with piece of chalk in hand, carefully trying to redraw or realign the smudged displacement symbol to restore proper function. Expression shows intense concentration and worry - this is delicate magical work. Hand extended touching wall, chalk making marks. Corrupted rune visible - partially smudged with Pocky's attempted corrections. Soft blue magical glow beginning to form as he works. Sweat on brow despite cool tunnel. Other party members watching tensely in background. Fantasy dungeon with risky magical repair attempt.\n\nDialogue: Pocky (concentrating, hopeful): \"If I can just realign this symbol...\"\n\nInclude speech bubble with dialogue text clearly readable.\n\nStyle: Bold ink line art, medieval fantasy setting, high fantasy atmosphere,, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy dungeon atmosphere, underground tunnel setting, tense magical repair attempt."
+      "characters": [
+        "Apocalypse Winter"
+      ],
+      "npcs": [],
+      "location": "Courier Tunnels"
     },
     {
       "panel_num": 2,
       "visual": "Rune sparking violently **Sound EFFECTS:** \"CRACKLE!\"",
-      "dialogue": "Pocky: \"No! It's not—\"",
-      "characters": {
-        "Apocalypse Winter": "Human wizard, young man in early 20s. 5'10\" tall, strong but scholarly build. Dark hair, somewhat unkempt from library hours. Keen blue eyes, intelligent and curious. Pale skin from indoor studying. Determined jawline, slight worry lines from concentration. Practical wizard robes in deep blue with silver trim. Leather satchel stuffed with scrolls and books. Component pouch at belt. Ink-stained fingers. Reading glasses. Carries himself with quiet determination despite youth."
-      },
-      "npcs": {},
+      "dialogue": "Pocky: \"No! It's not\u2014\"",
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Courier Tunnels - rough-hewn stone passages carved through mountain rock. Narrow winding maze-like tunnels with cramped passages. Chalk runes and magical symbols covering walls in white and colored chalk (red, blue, green, yellow) showing different magical routes. Some runes glowing faintly with cold blue magical energy, others flickering erratically showing corruption. Smudged and tampered runes visible in places - deliberate sabotage. Dim magical lighting creating mysterious ominous atmosphere. Occasional spatial distortions visible. Medieval fantasy dungeon with corrupted displacement magic.\n\nCharacters:\n- Apocalypse Winter / Pocky (alarmed, jerking back): Human wizard, young man in early 20s. 5'10\" tall, strong but scholarly build. Dark hair, somewhat unkempt from library hours. Keen blue eyes, intelligent and curious. Pale skin from indoor studying. Determined jawline, slight worry lines from concentration. Practical wizard robes in deep blue with silver trim. Leather satchel stuffed with scrolls and books. Component pouch at belt. Ink-stained fingers. Reading glasses. Carries himself with quiet determination despite youth. Recoiling backward from wall as rune sparks violently, keen blue eyes WIDE with alarm, mouth open shouting warning, one arm raised shielding face, other hand dropping chalk, robes billowing from magical backlash energy.\n\nScene: Dramatic moment as Pocky's repair attempt goes WRONG - the corrupted rune SPARKS violently with wild magical energy. Bright crackling electrical-like magical discharge shooting from the rune symbol - blue-white lightning-like energy arcing outward. Pocky jerking backward in alarm, dropping chalk, shielding himself. Rune glowing dangerously bright - angry red and orange colors mixing with blue showing corruption is deeper than expected. Chunks of chalk or stone dust flying from wall. Other party members in background diving for cover or raising shields. Magical trap or defense mechanism triggered. Fantasy dungeon with dangerous arcane backlash.\n\nDialogue: Pocky (alarmed, warning cut off): \"No! It's not—\"\n\nSound Effects: Large bold \"CRACKLE!\" showing magical electrical discharge.\n\nInclude speech bubble and sound effect clearly readable.\n\nStyle: Bold ink line art, medieval fantasy setting, high fantasy atmosphere,, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy dungeon atmosphere, underground tunnel setting, dramatic magical explosion effect."
+      "characters": [
+        "Apocalypse Winter"
+      ],
+      "npcs": [],
+      "location": "Courier Tunnels"
     },
     {
       "panel_num": 3,
       "visual": "Blink Mephit materializing Nearly invisible, flickering edges Afterimages trailing **Sound EFFECTS:** \"SHHHHRRRR\" **Caption:** \"BLINK MEPHIT - DISPLACEMENT ESSENCE CORRUPTED\"",
       "dialogue": "",
-      "characters": {
-        "Blink Mephit": "Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages"
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Courier Tunnels - rough-hewn stone passages carved through mountain rock. Narrow winding maze-like tunnels with cramped passages. Chalk runes and magical symbols covering walls in white and colored chalk (red, blue, green, yellow) showing different magical routes. Some runes glowing faintly with cold blue magical energy, others flickering erratically showing corruption. Smudged and tampered runes visible in places - deliberate sabotage. Dim magical lighting creating mysterious ominous atmosphere. Occasional spatial distortions visible. Medieval fantasy dungeon with corrupted displacement magic.\n\nCreatures:\n- Blink Mephit (materializing, hostile): Small elemental corrupted by displaced essence, about 2-3 feet tall. Form nearly INVISIBLE - edges flicker and shimmer like mirage or heat distortion. Translucent wings leaving shimmering afterimages. Body phases in and out of visibility - sometimes solid, sometimes ghostly transparent. Eyes visible as glowing points. Distorted warped appearance. Malevolent presence. Displacement essence corrupted into hostile creature.\n\nScene: Dramatic reveal of Blink Mephit materializing from the magical sparks. The corrupted displacement magic summoned this guardian creature. Mephit appearing in mid-air near the damaged rune - NEARLY INVISIBLE with only flickering edges visible, like looking through heat shimmer. Multiple ghostly afterimages trailing behind it showing displacement nature. Translucent wings barely visible. Glowing eyes. Tunnel air distorting around creature. Pocky and party reacting in alarm. Magical summoning complete - guardian activated. Fantasy dungeon combat about to begin.\n\nCaption: \"BLINK MEPHIT - DISPLACEMENT ESSENCE CORRUPTED\" (in dramatic caption box)\n\nSound Effects: \"SHHHHRRRR\" showing displacement/phasing sound.\n\nInclude caption and sound effect clearly readable.\n\nStyle: Bold ink line art, medieval fantasy setting, high fantasy atmosphere,, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy dungeon atmosphere, underground tunnel setting, creature horror reveal, emphasis on nearly-invisible threat."
+      "characters": [
+        "Blink Mephit"
+      ],
+      "npcs": [],
+      "location": "Courier Tunnels"
     },
     {
       "panel_num": 4,
       "visual": "Val disoriented by mephit's spatial attack Reality warping around him",
       "dialogue": "Val: \"Can't... which way is...?\"",
-      "characters": {
-        "Val": "Brass dragonborn monk, early 20s appearance. Just under 7 feet tall, lean athletic build with wiry monk strength. Warm brass/copper-bronze scales with metallic sheen. Ember-glow orange eyes, bright and expressive. Reptilian face with kind open expression, shorter snout. Simple monastery robes in earth tones (browns, tans) with chalk dust marks. Bare clawed feet. Prayer beads around wrist. Always in motion, expressive hand gestures."
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Courier Tunnels - rough-hewn stone passages carved through mountain rock. Narrow winding maze-like tunnels with cramped passages. Chalk runes and magical symbols covering walls in white and colored chalk (red, blue, green, yellow) showing different magical routes. Some runes glowing faintly with cold blue magical energy, others flickering erratically showing corruption. Smudged and tampered runes visible in places - deliberate sabotage. Dim magical lighting creating mysterious ominous atmosphere. Occasional spatial distortions visible. Medieval fantasy dungeon with corrupted displacement magic.\n\nCharacters:\n- Val (disoriented, confused): Brass dragonborn monk, early 20s appearance. Just under 7 feet tall, lean athletic build with wiry monk strength. Warm brass/copper-bronze scales with metallic sheen. Ember-glow orange eyes, bright and expressive. Reptilian face with kind open expression, shorter snout. Simple monastery robes in earth tones (browns, tans) with chalk dust marks. Bare clawed feet. Prayer beads around wrist. Always in motion, expressive hand gestures. Stumbling, off-balance, ember-glow orange eyes unfocused and confused, kind reptilian face twisted with disorientation, one hand reaching out trying to find wall or ground, other hand to head, brass/copper-bronze scales, monk robes disheveled, lost sense of direction completely.\n\nScene: Val being hit by Blink Mephit's spatial displacement attack. Reality WARPING around him - tunnel walls bending impossibly, floor and ceiling twisting, multiple overlapping images of same space, Val seeing several directions at once, spatial geometry breaking down. Val stumbling and disoriented, can't tell which way is up or forward, reaching blindly for support. Visible distortion effects - wavy lines, duplicated images, kaleidoscope geometry, Escher-like impossible angles. Blink Mephit barely visible in background (flickering transparent form). Other party members shouting but Val can't orient to their voices. Displacement magic attacking Val's sense of space and direction - his courier navigation abilities completely scrambled. Fantasy dungeon combat with reality-warping magical attack.\n\nDialogue: Val (disoriented, confused): \"Can't... which way is...?\"\n\nInclude speech bubble with dialogue text clearly readable.\n\nStyle: Bold ink line art, medieval fantasy setting, high fantasy atmosphere,, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy dungeon atmosphere, underground tunnel setting, emphasis on spatial distortion and disorientation effects."
+      "characters": [
+        "Val"
+      ],
+      "npcs": [],
+      "location": "Courier Tunnels"
     }
   ]
 }

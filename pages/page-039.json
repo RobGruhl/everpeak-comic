@@ -8,48 +8,48 @@
       "panel_num": 1,
       "visual": "Party gathering, battered but triumphant Looking up at aligned Orrery",
       "dialogue": "Prismor: \"The Orrery... it's beautiful.\" Pocky: \"The lenses are aligned, but... not like before.\"",
-      "characters": {
-        "Apocalypse Winter": "Human wizard, young man in early 20s. 5'10\" tall, strong but scholarly build. Dark hair, somewhat unkempt from library hours. Keen blue eyes, intelligent and curious. Pale skin from indoor studying. Determined jawline, slight worry lines from concentration. Practical wizard robes in deep blue with silver trim. Leather satchel stuffed with scrolls and books. Component pouch at belt. Ink-stained fingers. Reading glasses. Carries himself with quiet determination despite youth.",
-        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)"
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: The Elven Sanctum - hidden cavern deep beneath citadel. Massive central chamber with the Orrery at center - enormous magical device with rotating crystal spheres, glowing runes, clicking gears. Ancient high elven architecture - carved pillars, vaulted ceiling with constellation maps. Five alcoves housing True Lenses for elemental essences. Magical energy crackling through air. Sense of ancient power and sacrifice. Ruins of century-old battle visible. Medieval high fantasy sanctum.\n\n\nCharacters:\n- Apocalypse Winter: Human wizard, young man in early 20s. 5'10\" tall, strong but scholarly build. Dark hair, somewhat unkempt from library hours. Keen blue eyes, intelligent and curious. Pale skin from indoor studying. Determined jawline, slight worry lines from concentration. Practical wizard robes in deep blue with silver trim. Leather satchel stuffed with scrolls and books. Component pouch at belt. Ink-stained fingers. Reading glasses. Carries himself with quiet determination despite youth.\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Party gathering, battered but triumphant Looking up at aligned Orrery\n\nDialogue: Prismor: \"The Orrery... it's beautiful.\" Pocky: \"The lenses are aligned, but... not like before.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+      "characters": [
+        "Apocalypse Winter",
+        "Prismor"
+      ],
+      "npcs": [],
+      "location": "The Elven Sanctum"
     },
     {
       "panel_num": 2,
       "visual": "Close on Orrery Showing Displacement essence dominant Celestial and Nature secondary Mechanistic and Harmony minimal **Caption:** \"The lenses pulse with new alignment: DISPLACEMENT - CELESTIAL - NATURE - mechanistic - harmony\" ",
       "dialogue": "",
-      "characters": {},
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: The Elven Sanctum - hidden cavern deep beneath citadel. Massive central chamber with the Orrery at center - enormous magical device with rotating crystal spheres, glowing runes, clicking gears. Ancient high elven architecture - carved pillars, vaulted ceiling with constellation maps. Five alcoves housing True Lenses for elemental essences. Magical energy crackling through air. Sense of ancient power and sacrifice. Ruins of century-old battle visible. Medieval high fantasy sanctum.\n\n\nScene: Close on Orrery Showing Displacement essence dominant Celestial and Nature secondary Mechanistic and Harmony minimal **Caption:** \"The lenses pulse with new alignment: DISPLACEMENT - CELESTIAL - NATURE - mechanistic - harmony\" \n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+      "characters": [],
+      "npcs": [],
+      "location": "The Elven Sanctum"
     },
     {
       "panel_num": 3,
       "visual": "Party emerging from sanctum Dawn breaking over mountains Winter Festival continuing above **Caption:** \"Dawn breaks over Everpeak. The Winter Festival continues, unaware of how close disaster came.\"",
       "dialogue": "",
-      "characters": {
-        "Val": "Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work"
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: The Elven Sanctum - hidden cavern deep beneath citadel. Massive central chamber with the Orrery at center - enormous magical device with rotating crystal spheres, glowing runes, clicking gears. Ancient high elven architecture - carved pillars, vaulted ceiling with constellation maps. Five alcoves housing True Lenses for elemental essences. Magical energy crackling through air. Sense of ancient power and sacrifice. Ruins of century-old battle visible. Medieval high fantasy sanctum.\n\n\nCharacters:\n- Val: Height: Just under 7 feet tall Build: Lean and athletic, with the wiry strength of a monk Scales: Warm brass/copper-bronze color with a subtle metallic sheen that catches light Simple monastery robes in earth tones (browns, tans) Robes have subtle wear marks and chalk dust from courier work\n\nScene: Party emerging from sanctum Dawn breaking over mountains Winter Festival continuing above **Caption:** \"Dawn breaks over Everpeak. The Winter Festival continues, unaware of how close disaster came.\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+      "characters": [
+        "Val"
+      ],
+      "npcs": [],
+      "location": "The Elven Sanctum"
     },
     {
       "panel_num": 4,
       "visual": "Barth meeting them at forge Noticing forge working smoothly again",
       "dialogue": "Barth: \"The mechanistic essence... it's diminished, but stable. I can work with this.\"",
-      "characters": {
-        "Barth": "Height: 5'8\" Build: Lean but muscular from forge work Skin: Dark gray drow complexion Heavy leather blacksmith's apron, dusted with metal shavings Simple tunic and sturdy work pants underneath"
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: The Elven Sanctum - hidden cavern deep beneath citadel. Massive central chamber with the Orrery at center - enormous magical device with rotating crystal spheres, glowing runes, clicking gears. Ancient high elven architecture - carved pillars, vaulted ceiling with constellation maps. Five alcoves housing True Lenses for elemental essences. Magical energy crackling through air. Sense of ancient power and sacrifice. Ruins of century-old battle visible. Medieval high fantasy sanctum.\n\n\nCharacters:\n- Barth: Height: 5'8\" Build: Lean but muscular from forge work Skin: Dark gray drow complexion Heavy leather blacksmith's apron, dusted with metal shavings Simple tunic and sturdy work pants underneath\n\nScene: Barth meeting them at forge Noticing forge working smoothly again\n\nDialogue: Barth: \"The mechanistic essence... it's diminished, but stable. I can work with this.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+      "characters": [
+        "Barth"
+      ],
+      "npcs": [],
+      "location": "The Elven Sanctum"
     }
   ]
 }

@@ -8,55 +8,55 @@
       "panel_num": 1,
       "visual": "Forge fair with Barth's display Prismor and Malrik approaching Smoke, fire, metalwork displayed",
       "dialogue": "Barth: \"Prismor! Malrik! Come, try your hand at the forge!\"",
-      "characters": {
-        "Barth": "Drow blacksmith. 5'8\" tall, lean but muscular build from years of forge work. Dark gray drow skin. Long hair tied back tightly, streaked with gray. Deep red eyes (typical drow). Weathered face with faint scar over one cheek, steady gaze. Calloused scarred hands from metalwork. Heavy leather blacksmith's apron dusted with metal shavings. Simple tunic and sturdy work pants underneath. Stands upright despite years of forge work.",
-        "Malrik": "Drow rogue, young adult. 5'6\" tall, slim agile acrobat's build. Dark gray-blue drow skin. White hair kept short and practical. Pale lavender eyes, sharp and observant. Sharp cheekbones, mischievous smile. Dark leather armor, well-maintained but not flashy. Street performer's colorful vest underneath. Multiple hidden pockets. Deck of cards always within reach. Quick fluid movements.",
-        "Prismor": "Blue crystal dragonborn paladin, middle-aged. 7 feet tall, imposing presence, muscular powerful warrior's physique. Crystalline blue scales with hints of green, gem-like quality. Deep sapphire blue eyes, wise and contemplative. Noble dignified reptilian features. Plate armor with crystalline accents, Oath of the Ancients symbols (leaves, vines) etched in armor. Greatsword on back. Forest green cape. Perfect military posture."
-      },
-      "npcs": {
-        "Festival crowd": "Medieval fantasy onlookers at forge fair - mix of dwarves in heavy work clothes admiring the metalwork, human craftsmen examining displays, a few elves watching with interest. All in medieval fantasy attire appropriate for craftspeople and festival-goers."
-      },
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Everpeak Citadel Forge Fair area. Large open courtyard or plaza converted into smithing demonstration area. Winter festival setting with decorative banners and festival stalls nearby. Barth's forge setup prominent - working forge with glowing hot coals (orange-red heat glow), anvil, smithing tools displayed on table, metalwork samples on display (swords, tools, decorative pieces). Smoke rising from forge. Snow on ground but area warmed by forge heat. White stone architecture of citadel visible in background. Medieval fantasy setting.\n\nCharacters:\n- Barth (at forge, welcoming): Drow blacksmith, 5'8\", lean muscular build from forge work, dark gray drow skin, long hair tied back with gray streaks, deep red eyes, weathered face with scar on cheek, steady confident gaze, calloused scarred hands, heavy leather blacksmith's apron dusted with metal shavings, simple tunic and sturdy work pants, standing upright at his forge with welcoming gesture\n- Prismor (approaching, right): Blue crystal dragonborn paladin, 7 feet tall, imposing muscular build, crystalline blue-green scales (gem-like), deep sapphire eyes, noble bearing, plate armor with nature symbols, greatsword on back, forest green cape, perfect military posture, approaching with interest\n- Malrik (approaching, with Prismor): Drow rogue, 5'6\", slim agile build, dark gray-blue drow skin, white short hair, pale lavender eyes, sharp features, charming smile, dark leather armor, colorful street performer's vest, deck of cards visible, fluid movements\n\nCrowd/NPCs: Medieval fantasy festival-goers watching forge demonstration - dwarves in heavy work clothes admiring metalwork, human craftsmen examining displays, a few elves watching. All in medieval fantasy attire.\n\nScene: Wide establishing shot of the Forge Fair. Barth's impressive forge display in center - forge glowing with heat, smoke rising, metalwork samples displayed. Barth standing at forge with welcoming gesture toward approaching Prismor and Malrik. Fire and smoke creating dramatic lighting. Other festival-goers watching demonstrations. Winter setting with festival decorations. Warm inviting atmosphere of craftsmanship and festival entertainment.\n\nDialogue: Barth (welcoming, friendly): \"Prismor! Malrik! Come, try your hand at the forge!\"\n\nInclude speech bubble with dialogue text clearly readable.\n\nStyle: Bold ink line art, medieval fantasy setting, high fantasy atmosphere,, vibrant colors, dynamic composition, sequential art style, graphic novel quality. Wide cinematic establishing shot with dramatic forge lighting."
+      "characters": [
+        "Barth",
+        "Malrik",
+        "Prismor"
+      ],
+      "npcs": [
+        "Festival crowd"
+      ],
+      "location": "Barth's Forge"
     },
     {
       "panel_num": 2,
       "visual": "Close on Barth's concerned expression",
       "dialogue": "Barth: \"Though I must warn you... the mechanistic essence isn't cooperating today. And some of my frozen iron has gone missing.\"",
-      "characters": {
-        "Barth": "Drow blacksmith. 5'8\" tall, lean but muscular build from years of forge work. Dark gray drow skin. Long hair tied back tightly, streaked with gray. Deep red eyes (typical drow). Weathered face with faint scar over one cheek, steady gaze. Calloused scarred hands from metalwork. Heavy leather blacksmith's apron dusted with metal shavings. Simple tunic and sturdy work pants underneath. Stands upright despite years of forge work."
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Forge Fair area, close-up at Barth's forge.\n\nCharacters:\n- Barth (concerned, worried): Drow blacksmith, 5'8\", lean muscular build, dark gray drow skin, long hair tied back with gray streaks, deep RED drow eyes showing concern and worry, weathered face with scar on cheek, steady but troubled expression, brow furrowed, calloused scarred hands, heavy leather blacksmith's apron with metal shavings, simple tunic underneath\n\nScene: Close-up shot of Barth's face and upper body. Expression shows genuine concern and worry - furrowed brow, troubled eyes, slight frown. He's confiding something serious. Forge glow visible in background casting warm orange light on his face. Smoke wisps visible. Tools and forge visible but blurred in background. Focus on his worried expression and body language. A master craftsman troubled by something wrong with his craft.\n\nDialogue: Barth (concerned, lowering voice): \"Though I must warn you... the mechanistic essence isn't cooperating today. And some of my frozen iron has gone missing.\"\n\nInclude speech bubble with dialogue text clearly readable.\n\nStyle: Bold ink line art, medieval fantasy setting, high fantasy atmosphere,, vibrant colors, dynamic composition, sequential art style, graphic novel quality. Dramatic close-up emphasizing emotion and concern."
+      "characters": [
+        "Barth"
+      ],
+      "npcs": [],
+      "location": "Barth's Forge"
     },
     {
       "panel_num": 3,
       "visual": "Malrik examining forge area Prismor's hand on greatsword",
       "dialogue": "Malrik: \"Missing? That's concerning. Who would steal from you?\" Barth: \"I've seen cloaked figures. Nobles I don't recognize. Drow I've never met.\"",
-      "characters": {
-        "Barth": "Drow blacksmith. 5'8\" tall, lean but muscular build from years of forge work. Dark gray drow skin. Long hair tied back tightly, streaked with gray. Deep red eyes (typical drow). Weathered face with faint scar over one cheek, steady gaze. Calloused scarred hands from metalwork. Heavy leather blacksmith's apron dusted with metal shavings.",
-        "Malrik": "Drow rogue, young adult. 5'6\" tall, slim agile acrobat's build. Dark gray-blue drow skin. White hair kept short and practical. Pale lavender eyes, sharp and observant. Sharp cheekbones, mischievous smile. Dark leather armor, well-maintained but not flashy. Street performer's colorful vest underneath. Multiple hidden pockets. Quick fluid movements.",
-        "Prismor": "Blue crystal dragonborn paladin, middle-aged. 7 feet tall, imposing presence, muscular powerful warrior's physique. Crystalline blue scales with hints of green, gem-like quality. Deep sapphire blue eyes, wise and contemplative. Noble dignified reptilian features. Plate armor with crystalline accents, Oath of the Ancients symbols (leaves, vines) etched in armor. Greatsword on back. Forest green cape."
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Forge Fair area around Barth's forge and metalwork displays.\n\nCharacters:\n- Malrik (investigating, alert): Drow rogue, 5'6\", slim agile build, dark gray-blue drow skin, white short hair, pale lavender eyes sharp and observant (scanning area for clues), sharp features, serious expression replacing usual smile, dark leather armor, colorful vest, crouched or leaning to examine forge area, one hand touching/examining tools or workspace, detective mode activated\n- Prismor (alert, protective): Blue crystal dragonborn paladin, 7 feet tall, imposing muscular build, crystalline blue-green scales, deep sapphire eyes narrowed with concern, noble features, plate armor with nature symbols, greatsword visible on back with one HAND RESTING ON HILT (ready for danger), forest green cape, protective warrior stance, standing tall and alert\n- Barth (background, explaining): Drow blacksmith at forge, troubled expression, gesturing as he explains\n\nScene: Malrik in detective mode, crouched or leaning to carefully examine the forge area - looking at tools, workspace, searching for clues or signs of tampering. His sharp rogue's eyes scanning everything. Prismor standing behind/beside him in protective warrior stance, one hand resting on his greatsword hilt - alert for danger, ready to defend if needed. Body language shows both are taking this seriously. Barth in background explaining. Forge glowing. Winter festival setting.\n\nDialogue:\n- Malrik (concerned, investigating): \"Missing? That's concerning. Who would steal from you?\"\n- Barth (troubled): \"I've seen cloaked figures. Nobles I don't recognize. Drow I've never met.\"\n\nInclude speech bubbles with dialogue text clearly readable.\n\nStyle: Bold ink line art, medieval fantasy setting, high fantasy atmosphere,, vibrant colors, dynamic composition, sequential art style, graphic novel quality. Investigation and tension building."
+      "characters": [
+        "Barth",
+        "Malrik",
+        "Prismor"
+      ],
+      "npcs": [],
+      "location": "Barth's Forge"
     },
     {
       "panel_num": 4,
       "visual": "Pocky arriving at forge, overhearing",
       "dialogue": "Pocky: \"Did you say frozen iron? That's mechanistic essence metal... crucial for the alignment!\"",
-      "characters": {
-        "Apocalypse Winter": "Human wizard, young man in early 20s. 5'10\" tall, strong but scholarly build. Dark hair, somewhat unkempt from library hours. Keen blue eyes, intelligent and curious. Pale skin from indoor studying. Determined jawline, slight worry lines from concentration. Practical wizard robes in deep blue with silver trim. Leather satchel stuffed with scrolls and books. Component pouch at belt. Ink-stained fingers. Reading glasses. Carries himself with quiet determination despite youth."
-      },
-      "npcs": {},
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "prompt": "Professional comic book panel illustration.\n\nLocation: Forge Fair area, approaching Barth's forge.\n\nCharacters:\n- Apocalypse Winter / Pocky (arriving, urgent): Human wizard, young man in early 20s, 5'10\", strong but scholarly build, dark unkempt hair, keen blue eyes wide with realization and alarm, pale skin, determined jawline, practical wizard robes in deep blue with silver trim, leather satchel stuffed with scrolls bouncing as he arrives quickly, component pouch at belt, ink-stained fingers, reading glasses (on or hanging from chain), arriving with quick urgent strides, one finger raised in alarm/recognition, expression showing he's just connected important dots\n\nScene: Pocky arriving at the forge area in mid-stride, having overheard the conversation about frozen iron. Body language shows urgency - fast walking or slight run, satchel swinging, robes swirling with movement. Expression shows sudden alarmed realization - eyes wide, mouth opening to speak urgently, finger pointing up in \"I know what this means!\" gesture. He's just connected crucial information about the mechanistic essence metal. Forge visible in background with Barth and others. Winter festival setting.\n\nDialogue: Pocky (urgent, alarmed realization): \"Did you say frozen iron? That's mechanistic essence metal... crucial for the alignment!\"\n\nInclude speech bubble with dialogue text clearly readable.\n\nStyle: Bold ink line art, medieval fantasy setting, high fantasy atmosphere,, vibrant colors, dynamic composition, sequential art style, graphic novel quality. Dynamic arrival with sense of urgency and revelation."
+      "characters": [
+        "Apocalypse Winter"
+      ],
+      "npcs": [],
+      "location": "Barth's Forge"
     }
   ]
 }
