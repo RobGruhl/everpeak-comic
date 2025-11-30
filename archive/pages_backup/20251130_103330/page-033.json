@@ -1,0 +1,54 @@
+{
+  "page_num": 33,
+  "title": "Turning the Tide (Part 1)",
+  "panel_count": 4,
+  "is_spread": false,
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Malrik attempting Displacement lens Sleight of hand flowing perfectly **Caption:** \"DC 15 SLEIGHT OF HAND - SUCCESS!\" **Sound EFFECTS:** \"CLICK!\"",
+      "dialogue": "",
+      "characters": {
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nLocation: The Elven Sanctum - hidden cavern deep beneath Everpeak Citadel. Massive central chamber with the Orrery at center - enormous magical device with rotating crystal spheres, suspended lenses, glowing runes, intricate clicking gears and metallic arms. Ancient high elven architecture with carved stone pillars, vaulted ceiling covered in constellation maps and celestial charts. Five alcoves housing the True Lenses for elemental essences. Magical energy crackling through air - emerald (nature), silver-blue (mechanistic), lavender (celestial), golden (harmony), shifting prisms (displacement). Sense of ancient power and sacrifice. Ruins and scars from century-old battle visible on walls and floor. Cathedral-like scale with reverent atmosphere. Medieval high fantasy sanctum with high elven precision engineering.\n\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Malrik attempting Displacement lens Sleight of hand flowing perfectly **Caption:** \"DC 15 SLEIGHT OF HAND - SUCCESS!\" **Sound EFFECTS:** \"CLICK!\"\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+    },
+    {
+      "panel_num": 2,
+      "visual": "Displacement lens aligning Spatial energy flowing correctly Another crack in Alric's barrier",
+      "dialogue": "",
+      "characters": {},
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nLocation: The Elven Sanctum - hidden cavern deep beneath Everpeak Citadel. Massive central chamber with the Orrery at center - enormous magical device with rotating crystal spheres, suspended lenses, glowing runes, intricate clicking gears and metallic arms. Ancient high elven architecture with carved stone pillars, vaulted ceiling covered in constellation maps and celestial charts. Five alcoves housing the True Lenses for elemental essences. Magical energy crackling through air - emerald (nature), silver-blue (mechanistic), lavender (celestial), golden (harmony), shifting prisms (displacement). Sense of ancient power and sacrifice. Ruins and scars from century-old battle visible on walls and floor. Cathedral-like scale with reverent atmosphere. Medieval high fantasy sanctum with high elven precision engineering.\n\n\nScene: Displacement lens aligning Spatial energy flowing correctly Another crack in Alric's barrier\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+    },
+    {
+      "panel_num": 3,
+      "visual": "Malrik attempting witch bolt spell Missing Alric **Caption:** \"ATTACK ROLL - MISS!\"",
+      "dialogue": "Malrik: \"Damn!\"",
+      "characters": {
+        "Malrik": "Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nLocation: The Elven Sanctum - hidden cavern deep beneath Everpeak Citadel. Massive central chamber with the Orrery at center - enormous magical device with rotating crystal spheres, suspended lenses, glowing runes, intricate clicking gears and metallic arms. Ancient high elven architecture with carved stone pillars, vaulted ceiling covered in constellation maps and celestial charts. Five alcoves housing the True Lenses for elemental essences. Magical energy crackling through air - emerald (nature), silver-blue (mechanistic), lavender (celestial), golden (harmony), shifting prisms (displacement). Sense of ancient power and sacrifice. Ruins and scars from century-old battle visible on walls and floor. Cathedral-like scale with reverent atmosphere. Medieval high fantasy sanctum with high elven precision engineering.\n\n\nCharacters:\n- Malrik: Height: 5'6\" Build: Slim, agile, acrobat's build Skin: Dark gray-blue drow complexion Dark leather armor, well-maintained but not flashy Street performer's clothing underneath - colorful vest\n\nScene: Malrik attempting witch bolt spell Missing Alric **Caption:** \"ATTACK ROLL - MISS!\"\n\nDialogue: Malrik: \"Damn!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+    },
+    {
+      "panel_num": 4,
+      "visual": "Lunara attempting Celestial lens Success! **Caption:** \"DC 15 RELIGION - SUCCESS!\"",
+      "dialogue": "Lunara: \"The stars remember the elves' sacrifice!\"",
+      "characters": {
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nLocation: The Elven Sanctum - hidden cavern deep beneath Everpeak Citadel. Massive central chamber with the Orrery at center - enormous magical device with rotating crystal spheres, suspended lenses, glowing runes, intricate clicking gears and metallic arms. Ancient high elven architecture with carved stone pillars, vaulted ceiling covered in constellation maps and celestial charts. Five alcoves housing the True Lenses for elemental essences. Magical energy crackling through air - emerald (nature), silver-blue (mechanistic), lavender (celestial), golden (harmony), shifting prisms (displacement). Sense of ancient power and sacrifice. Ruins and scars from century-old battle visible on walls and floor. Cathedral-like scale with reverent atmosphere. Medieval high fantasy sanctum with high elven precision engineering.\n\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Lunara attempting Celestial lens Success! **Caption:** \"DC 15 RELIGION - SUCCESS!\"\n\nDialogue: Lunara: \"The stars remember the elves' sacrifice!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "page_num": 10,
+  "title": "Lunara Investigates (Part 1)",
+  "panel_count": 4,
+  "is_spread": false,
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Arriving at balcony garden Lush impossible greenery Warm sunlight despite snow",
+      "dialogue": "Party: \"Wow...\" Marivielle: \"Lunara! Welcome, dears!\"",
+      "characters": {
+        "Lunara": "Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nLocation: Balcony Garden Café - impossible sunny terrace high in snow-covered mountains. Lush greenery everywhere - flowering vines, potted exotic plants, herbs growing. Magical warmth despite winter outside. Wooden tables and chairs with nature carvings. Stone balcony railing overlooks snow-covered citadel below. Sunlight streaming through leaves creating dappled shadows. High fantasy garden oasis. NO modern items. Medieval fantasy aesthetic.\n\n\nCharacters:\n- Lunara: Height: 5'8\" Build: Graceful and lithe, natural athleticism Hair: Long, flowing chestnut brown with flowers woven in Practical druid robes in earthy greens and browns Living vines and small flowers woven into clothing\n\nScene: Arriving at balcony garden Lush impossible greenery Warm sunlight despite snow\n\nDialogue: Party: \"Wow...\" Marivielle: \"Lunara! Welcome, dears!\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+    },
+    {
+      "panel_num": 2,
+      "visual": "Marivielle serving hot tea at garden table Worried expression beneath smile",
+      "dialogue": "Marivielle: \"I'm so glad you're here. The plants have been... troubled.\"",
+      "characters": {},
+      "npcs": {
+        "Marivielle Greenbough": "Half-elf woman, middle-aged (appears late 30s but likely older). 5'6\" tall, warm welcoming presence. Auburn hair with silver streaks, tied back practically. Bright hazel eyes, laugh lines. Fair skin with light freckles. Simple but elegant fantasy café proprietor clothing - earth-tone dress with apron, nature-themed embroidery. Wooden serving tray. Kind smile that doesn't quite hide current worry."
+      },
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nLocation: Balcony Garden Café - impossible sunny terrace in winter. Lush greenery everywhere, flowering vines, potted exotic plants. Magical warmth. Wooden tables and chairs with nature carvings. Stone balcony railing overlooks snow-covered citadel below. Sunlight streaming through leaves. High fantasy garden oasis.\n\nCharacters:\n- Marivielle Greenbough (café owner): Half-elf woman, middle-aged, 5'6\", auburn hair with silver streaks tied back, bright hazel eyes, laugh lines, fair skin with freckles, earth-tone dress with apron and nature embroidery, wooden serving tray with steaming teapot and ceramic cups, kind smile hiding current worry\n\nScene: Marivielle serving hot herbal tea at a garden table. She's pouring tea from an ornate ceramic teapot into hand-crafted cups. Worried expression beneath her welcoming smile. Surrounded by the magical garden's lush plants. Fantasy medieval aesthetic - NO modern items.\n\nDialogue: Marivielle: \"I'm so glad you're here. The plants have been... troubled.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, medieval fantasy setting, high fantasy atmosphere,, vibrant colors, dynamic composition, sequential art style, graphic novel quality, high fantasy setting, medieval fantasy atmosphere."
+    },
+    {
+      "panel_num": 3,
+      "visual": "Close on Marivielle's face, serious expression, garden background",
+      "dialogue": "Marivielle: \"A noble came through late at night. With drow I'd never seen. They spoke of 'keys' and 'alignment' and 'lenses.'\"",
+      "characters": {},
+      "npcs": {
+        "Marivielle Greenbough": "Half-elf woman, middle-aged (appears late 30s but likely older). 5'6\" tall, warm welcoming presence. Auburn hair with silver streaks, tied back practically. Bright hazel eyes, laugh lines. Fair skin with light freckles. Simple but elegant fantasy café proprietor clothing - earth-tone dress with apron, nature-themed embroidery. Now showing serious, concerned expression."
+      },
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nLocation: Balcony Garden Café - magical sunny terrace with lush plants, flowering vines, exotic greenery in background softly out of focus. High fantasy garden setting.\n\nCharacters:\n- Marivielle Greenbough: Half-elf woman, middle-aged, auburn hair with silver streaks tied back, bright hazel eyes showing concern, fair skin with freckles, earth-tone dress with apron and nature embroidery, serious worried expression\n\nScene: Close-up shot of Marivielle's face, serious and troubled expression. Her usual warmth replaced by genuine concern. Garden plants visible but blurred in background. Dramatic lighting showing the gravity of her revelation. Fantasy medieval aesthetic.\n\nDialogue: Marivielle: \"A noble came through late at night. With drow I'd never seen. They spoke of 'keys' and 'alignment' and 'lenses.'\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, medieval fantasy setting, high fantasy atmosphere,, vibrant colors, dynamic composition, sequential art style, graphic novel quality, high fantasy setting, medieval fantasy atmosphere, dramatic close-up composition."
+    },
+    {
+      "panel_num": 4,
+      "visual": "Party exchanging concerned glances",
+      "dialogue": "Prismor: \"This noble - what did he look like?\" Marivielle: \"Fashionable but cold. Militaristic coat. Crimson emblem. Chin always up.\"",
+      "characters": {
+        "Prismor": "Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)"
+      },
+      "npcs": {},
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "prompt": "Professional comic book panel illustration.\n\nLocation: Balcony Garden Café - impossible sunny terrace high in snow-covered mountains. Lush greenery everywhere - flowering vines, potted exotic plants, herbs growing. Magical warmth despite winter outside. Wooden tables and chairs with nature carvings. Stone balcony railing overlooks snow-covered citadel below. Sunlight streaming through leaves creating dappled shadows. High fantasy garden oasis. NO modern items. Medieval fantasy aesthetic.\n\n\nCharacters:\n- Prismor: Height: 7 feet tall, imposing presence Build: Muscular and powerful, warrior's physique Scales: Crystalline blue with hints of green, almost gem-like quality Plate armor with crystalline accents that match his scales Oath of the Ancients symbols etched into armor (leaves, vines, natural motifs)\n\nScene: Party exchanging concerned glances\n\nDialogue: Prismor: \"This noble - what did he look like?\" Marivielle: \"Fashionable but cold. Militaristic coat. Crimson emblem. Chin always up.\"\n\nInclude speech bubbles with the dialogue text clearly readable.\n\nStyle: Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality, medieval fantasy setting, high fantasy atmosphere."
+    }
+  ]
+}
