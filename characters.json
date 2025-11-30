@@ -1,0 +1,158 @@
+{
+  "Val": {
+    "name": "Val",
+    "full_description": "Brass dragonborn monk, early 20s appearance. Just under 7 feet tall, lean athletic build with wiry monk strength. Warm brass/copper-bronze scales with metallic sheen. Ember-glow orange eyes, bright and expressive. Reptilian face with kind open expression, shorter snout. Simple monastery robes in earth tones (browns, tans) with chalk dust marks. Bare clawed feet. Prayer beads around wrist. Always in motion, expressive hand gestures.",
+    "description_components": {
+      "visual": "Brass dragonborn monk, early 20s appearance. Just under 7 feet tall, lean athletic build with wiry monk strength. Warm brass/copper-bronze scales with metallic sheen. Ember-glow orange eyes, bright and expressive. Reptilian face with kind open expression, shorter snout. Simple monastery robes in earth tones (browns, tans) with chalk dust marks. Bare clawed feet. Prayer beads around wrist. Always in motion, expressive hand gestures."
+    }
+  },
+  "Prismor": {
+    "name": "Prismor",
+    "race": "Blue crystal dragonborn",
+    "class": "Paladin (Oath of the Ancients)",
+    "age_appearance": "Middle-aged (40s-50s in dragonborn years)",
+    "reference_image": "output/references/prismor-reference.png",
+    "full_description": "Blue crystal dragonborn paladin, middle-aged. 7 feet tall, imposing presence, muscular powerful warrior's physique. FACE: Dragonborn reptilian head with noble dignified features. Deep sapphire blue eyes - wise and contemplative. Defined snout and jaw with clear dragonborn facial structure. Visible facial expressions. SCALES: Crystalline blue scales with hints of forest green, gem-like translucent quality that catches and refracts light. Maintains dragonborn anatomy - NOT a faceless crystal elemental. ARMOR: Silver/dull steel plate mail base with forest green vine decorations. The vines appear to be growing ON the silver armor but are PART OF the armor itself with three-dimensional sculptural quality. Silver/steel base metal visible between green vine ornamentation. Crystalline accents on armor. Greatsword on back. Forest green cape. Perfect military posture, protective warrior bearing.",
+    "description_components": {
+      "head_face": "Dragonborn reptilian head with noble dignified features. Deep sapphire blue eyes - wise and contemplative - EYES MUST BE VISIBLE. Defined snout and jaw with dragonborn anatomy. Capable of visible facial expressions. Head covered in crystalline blue scales with gem-like translucent quality. Scales catch and refract light with internal prismatic effects. Maintains clear dragonborn facial structure - this is a person with a face, NOT a faceless crystal elemental or rock monster.",
+      "body_build": "7 feet tall, imposing presence. Muscular, powerful warrior's physique.",
+      "scales_skin": "Crystalline blue scales with hints of forest green throughout body. Gem-like quality to scales but clearly organic dragonborn anatomy. Scales have subtle light refraction but body maintains dragonborn form.",
+      "armor_clothing": "Silver/dull steel plate mail base - realistic medieval fantasy metal armor. Heavy plate armor covering chest, shoulders, arms. Forest green vines, leaves, and Oath of the Ancients nature motifs appear to be GROWING ON the silver armor but are PART OF the armor itself. Vines have three-dimensional sculptural quality integrated into the metal - realistic vine details that look like living plants but are crafted metal. Silver/steel base metal visible between and beneath green vine ornamentation. Crystalline accents on armor. Professional craftsmanship showing nature magic and master smithing. Greatsword strapped to back.",
+      "accessories": "Forest green cape or cloak draped over shoulders (can vary by scene).",
+      "personality_bearing": "Perfect military posture. Noble paladin bearing, protective stance when near others. Warrior presence. Thoughtful, measured movements."
+    }
+  },
+  "Marge": {
+    "name": "Marge",
+    "full_description": "Age: Middle-aged human woman (40s-50s) Height: 5'4\" Build: Slightly stooped from years of reading Modest scholar's robes in muted colors Ink-stained everywhere - fingers, sleeves, hem",
+    "description_components": {
+      "visual": "Age: Middle-aged human woman (40s-50s) Height: 5'4\" Build: Slightly stooped from years of reading Modest scholar's robes in muted colors Ink-stained everywhere - fingers, sleeves, hem"
+    }
+  },
+  "Apocalypse Winter": {
+    "name": "Apocalypse Winter",
+    "full_description": "Human wizard, young man in early 20s. 5'10\" tall, strong but scholarly build. Dark hair, somewhat unkempt from library hours. Keen blue eyes, intelligent and curious. Pale skin from indoor studying. Determined jawline, slight worry lines from concentration. Practical wizard robes in deep blue with silver trim. Leather satchel stuffed with scrolls and books. Component pouch at belt. Ink-stained fingers. Reading glasses. Carries himself with quiet determination despite youth.",
+    "description_components": {
+      "visual": "Human wizard, young man in early 20s. 5'10\" tall, strong but scholarly build. Dark hair, somewhat unkempt from library hours. Keen blue eyes, intelligent and curious. Pale skin from indoor studying. Determined jawline, slight worry lines from concentration. Practical wizard robes in deep blue with silver trim. Leather satchel stuffed with scrolls and books. Component pouch at belt. Ink-stained fingers. Reading glasses. Carries himself with quiet determination despite youth."
+    }
+  },
+  "Lunara": {
+    "name": "Lunara",
+    "full_description": "High elf druid, Circle of the Moon. 5'8\" tall, graceful lithe athletic build. Long flowing chestnut brown hair with flowers woven in. Vibrant green eyes reflecting forest depths. Fair skin with slight tan. Classical elven beauty, pointed ears, serene expression. Practical druid robes in earthy greens and browns. Living vines and small flowers woven into clothing. Wooden staff carved with natural patterns. Bare feet or simple leather sandals.",
+    "description_components": {
+      "visual": "High elf druid, Circle of the Moon. 5'8\" tall, graceful lithe athletic build. Long flowing chestnut brown hair with flowers woven in. Vibrant green eyes reflecting forest depths. Fair skin with slight tan. Classical elven beauty, pointed ears, serene expression. Practical druid robes in earthy greens and browns. Living vines and small flowers woven into clothing. Wooden staff carved with natural patterns. Bare feet or simple leather sandals."
+    }
+  },
+  "Malrik": {
+    "name": "Malrik",
+    "full_description": "Drow rogue, young adult. 5'6\" tall, slim agile acrobat's build. Dark gray-blue drow skin. White hair kept short and practical. Pale lavender eyes, sharp and observant. Sharp cheekbones, mischievous charming smile. Dark leather armor, well-maintained but not flashy. Street performer's colorful vest underneath. Multiple hidden pockets. Deck of playing cards always within reach. Quick fluid movements.",
+    "description_components": {
+      "visual": "Drow rogue, young adult. 5'6\" tall, slim agile acrobat's build. Dark gray-blue drow skin. White hair kept short and practical. Pale lavender eyes, sharp and observant. Sharp cheekbones, mischievous charming smile. Dark leather armor, well-maintained but not flashy. Street performer's colorful vest underneath. Multiple hidden pockets. Deck of playing cards always within reach. Quick fluid movements."
+    }
+  },
+  "Fantasy Crowd": {
+    "name": "Fantasy Crowd",
+    "full_description": "Diverse medieval fantasy crowd - various fantasy races including high elves in elegant robes, stout dwarves in winter furs and chainmail, humans in colorful medieval festival attire, halflings in practical traveling clothes, a few dragonborn in ceremonial garb. Winter cloaks, fur trim, festival ribbons and decorations. Excited expressions, pointing at ceremony. NO modern clothing, NO suits or ties.",
+    "description_components": {
+      "visual": "Diverse medieval fantasy crowd - various fantasy races including high elves in elegant robes, stout dwarves in winter furs and chainmail, humans in colorful medieval festival attire, halflings in practical traveling clothes, a few dragonborn in ceremonial garb. Winter cloaks, fur trim, festival ribbons and decorations. Excited expressions, pointing at ceremony. NO modern clothing, NO suits or ties."
+    }
+  },
+  "Well-dressed gambler": {
+    "name": "Well-dressed gambler",
+    "full_description": "Human merchant or minor noble, middle-aged man. Fine medieval clothing - velvet doublet in deep burgundy, fur-trimmed cloak, well-crafted leather boots. Carries coin purse openly. Prosperous but not arrogant. Friendly expression, willing to gamble for fun. NO modern suit or tie.",
+    "description_components": {
+      "visual": "Human merchant or minor noble, middle-aged man. Fine medieval clothing - velvet doublet in deep burgundy, fur-trimmed cloak, well-crafted leather boots. Carries coin purse openly. Prosperous but not arrogant. Friendly expression, willing to gamble for fun. NO modern suit or tie."
+    }
+  },
+  "Sorrel (halfling disguise)": {
+    "name": "Sorrel (halfling disguise)",
+    "full_description": "Small halfling child appearance (actually gold dragon wyrmling in disguise). 3'2\" tall, appears around 10 years old. Sandy-blond hair, slightly messy. Warm AMBER eyes with hints of gold (the subtle giveaway - ancient wisdom visible in child's eyes). Slightly oversized travel cloak, simple halfling garb. Small unassuming build. Shy posture - feet turned inward, arms often behind back. BUT - eyes show curiosity mixed with ancient wisdom beyond apparent age. Watching with intense intelligent interest.",
+    "description_components": {
+      "visual": "Small halfling child appearance (actually gold dragon wyrmling in disguise). 3'2\" tall, appears around 10 years old. Sandy-blond hair, slightly messy. Warm AMBER eyes with hints of gold (the subtle giveaway - ancient wisdom visible in child's eyes). Slightly oversized travel cloak, simple halfling garb. Small unassuming build. Shy posture - feet turned inward, arms often behind back. BUT - eyes show curiosity mixed with ancient wisdom beyond apparent age. Watching with intense intelligent interest."
+    }
+  },
+  "Barth": {
+    "name": "Barth",
+    "full_description": "Drow blacksmith. 5'8\" tall, lean but muscular build from years of forge work. Dark gray drow skin. Long hair tied back tightly, streaked with gray. Deep red eyes (typical drow). Weathered face with faint scar over one cheek, steady gaze. Calloused scarred hands from metalwork. Heavy leather blacksmith's apron dusted with metal shavings. Simple tunic and sturdy work pants underneath. Stands upright despite years of forge work.",
+    "description_components": {
+      "visual": "Drow blacksmith. 5'8\" tall, lean but muscular build from years of forge work. Dark gray drow skin. Long hair tied back tightly, streaked with gray. Deep red eyes (typical drow). Weathered face with faint scar over one cheek, steady gaze. Calloused scarred hands from metalwork. Heavy leather blacksmith's apron dusted with metal shavings. Simple tunic and sturdy work pants underneath. Stands upright despite years of forge work."
+    }
+  },
+  "Festival crowd": {
+    "name": "Festival crowd",
+    "full_description": "Medieval fantasy onlookers at forge fair - mix of dwarves in heavy work clothes admiring the metalwork, human craftsmen examining displays, a few elves watching with interest. All in medieval fantasy attire appropriate for craftspeople and festival-goers.",
+    "description_components": {
+      "visual": "Medieval fantasy onlookers at forge fair - mix of dwarves in heavy work clothes admiring the metalwork, human craftsmen examining displays, a few elves watching with interest. All in medieval fantasy attire appropriate for craftspeople and festival-goers."
+    }
+  },
+  "Halfling courier": {
+    "name": "Halfling courier",
+    "full_description": "Small halfling, 3-4 feet tall. Young adult, energetic and excitable. Practical courier clothing - sturdy travel clothes in earth tones, courier's satchel, winter cloak. Breathless from running. Worried excited expression. Fellow member of courier guild.",
+    "description_components": {
+      "visual": "Small halfling, 3-4 feet tall. Young adult, energetic and excitable. Practical courier clothing - sturdy travel clothes in earth tones, courier's satchel, winter cloak. Breathless from running. Worried excited expression. Fellow member of courier guild."
+    }
+  },
+  "Race contestants": {
+    "name": "Race contestants",
+    "full_description": "Various fantasy races preparing sleds - humans in winter gear, dwarves checking equipment, a few elves, all in medieval fantasy winter attire appropriate for mountain sled racing.",
+    "description_components": {
+      "visual": "Various fantasy races preparing sleds - humans in winter gear, dwarves checking equipment, a few elves, all in medieval fantasy winter attire appropriate for mountain sled racing."
+    }
+  },
+  "Gambler": {
+    "name": "Gambler",
+    "full_description": "Human man, middle-aged, prosperous merchant or craftsman. Medieval winter clothing - warm wool cloak, fur trim, decent quality but not noble. Coin purse visible at belt. Friendly enthusiastic expression, enjoys betting on races for fun. Confident smile.",
+    "description_components": {
+      "visual": "Human man, middle-aged, prosperous merchant or craftsman. Medieval winter clothing - warm wool cloak, fur trim, decent quality but not noble. Coin purse visible at belt. Friendly enthusiastic expression, enjoys betting on races for fun. Confident smile."
+    }
+  },
+  "Marivielle Greenbough": {
+    "name": "Marivielle Greenbough",
+    "full_description": "Half-elf woman, middle-aged (appears late 30s but likely older). 5'6\" tall, warm welcoming presence. Auburn hair with silver streaks, tied back practically. Bright hazel eyes, laugh lines. Fair skin with light freckles. Simple but elegant fantasy caf\u00e9 proprietor clothing - earth-tone dress with apron, nature-themed embroidery. Wooden serving tray. Kind smile that doesn't quite hide current worry.",
+    "description_components": {
+      "visual": "Half-elf woman, middle-aged (appears late 30s but likely older). 5'6\" tall, warm welcoming presence. Auburn hair with silver streaks, tied back practically. Bright hazel eyes, laugh lines. Fair skin with light freckles. Simple but elegant fantasy caf\u00e9 proprietor clothing - earth-tone dress with apron, nature-themed embroidery. Wooden serving tray. Kind smile that doesn't quite hide current worry."
+    }
+  },
+  "Blink Mephit": {
+    "name": "Blink Mephit",
+    "full_description": "Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages",
+    "description_components": {
+      "visual": "Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages"
+    }
+  },
+  "Sorrel": {
+    "name": "Sorrel",
+    "full_description": "Small gold dragon wyrmling, about the size of a large dog, compact but majestic. Brilliant metallic gold scales that shimmer in any light, catching and reflecting magical glow. Ancient wise amber eyes, glowing with draconic intelligence and centuries of knowledge. Delicate but powerful wings spread wide - golden membranes. Reptilian features with noble bearing. Small horns curving back from head. Claws and talons visible. Young dragon but radiating power and authority. Beautiful and terrible simultaneously. Guardian of good.",
+    "description_components": {
+      "visual": "Small gold dragon wyrmling, about the size of a large dog, compact but majestic. Brilliant metallic gold scales that shimmer in any light, catching and reflecting magical glow. Ancient wise amber eyes, glowing with draconic intelligence and centuries of knowledge. Delicate but powerful wings spread wide - golden membranes. Reptilian features with noble bearing. Small horns curving back from head. Claws and talons visible. Young dragon but radiating power and authority. Beautiful and terrible simultaneously. Guardian of good."
+    }
+  },
+  "Lord Alric": {
+    "name": "Lord Alric",
+    "full_description": "Race: Human noble Age: 40s Height: 6'0\" Fashionable but subtly militaristic coat Rich fabrics in dark colors (navy, black, crimson)",
+    "description_components": {
+      "visual": "Race: Human noble Age: 40s Height: 6'0\" Fashionable but subtly militaristic coat Rich fabrics in dark colors (navy, black, crimson)"
+    }
+  },
+  "Gear Mephit": {
+    "name": "Gear Mephit",
+    "full_description": "Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components",
+    "description_components": {
+      "visual": "Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components"
+    }
+  },
+  "Starlight Mephit": {
+    "name": "Starlight Mephit",
+    "full_description": "Size: Small elemental (2-3 feet) Form: Swirling star-fields and cosmic dust Body: Ethereal, composed of living starlight",
+    "description_components": {
+      "visual": "Size: Small elemental (2-3 feet) Form: Swirling star-fields and cosmic dust Body: Ethereal, composed of living starlight"
+    }
+  },
+  "Verdant Mephit": {
+    "name": "Verdant Mephit",
+    "full_description": "Size: Small elemental (2-3 feet) Form: Living vines and thorny brambles given shape Eyes: Glowing green pinpoints of light",
+    "description_components": {
+      "visual": "Size: Small elemental (2-3 feet) Form: Living vines and thorny brambles given shape Eyes: Glowing green pinpoints of light"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "comic_aesthetic": {
+    "name": "Everpeak Citadel House Style",
+    "description": "High fantasy graphic novel with bold ink work and vibrant colors",
+    "base_style": "Professional comic book panel illustration.",
+    "art_style": "Bold ink line art, vibrant colors, dynamic composition, sequential art style, graphic novel quality.",
+    "setting_tone": "Medieval fantasy setting, high fantasy atmosphere.",
+    "visual_quality": "High detail, professional comic book illustration quality.",
+
+    "color_palette": {
+      "Val": "Warm coppers/golds",
+      "Prismor": "Cool blues/crystals with green accents",
+      "Apocalypse Winter": "Deep blues/silvers",
+      "Lunara": "Greens/browns",
+      "Malrik": "Purple/grays",
+      "essence_effects": "Multi-colored based on essence type",
+      "magical_energy": "Visible colored light"
+    },
+
+    "lighting_notes": "Dramatic fantasy lighting. Winter/snow contrasted with magical warmth. Each essence has distinct color coding.",
+
+    "important_restrictions": [
+      "NO modern items",
+      "NO anachronistic clothing (suits, ties, etc.)",
+      "Medieval fantasy aesthetic only"
+    ]
+  },
+
+  "dialogue_rendering": {
+    "instruction": "Include speech bubbles with dialogue text clearly readable.",
+    "bubble_types": {
+      "speech": "Standard speech bubbles for dialogue",
+      "thought": "Cloud-style thought bubbles (indicated by 'thought bubble:' in dialogue)",
+      "sound_effects": "Large bold lettering integrated into scene",
+      "captions": "Rectangular caption boxes for narration"
+    },
+    "lettering_style": {
+      "magical_effects": "Flowing, ethereal lettering",
+      "combat": "Bold, sharp lettering",
+      "sound_effects": "Large, dynamic, integrated with action"
+    }
+  },
+
+  "composition_guidelines": {
+    "character_focus": "Characters should be clearly visible and identifiable",
+    "action_clarity": "Dynamic but readable action sequences",
+    "background_detail": "Detailed environments that support but don't overwhelm characters",
+    "panel_flow": "Clear visual flow supporting sequential storytelling"
+  },
+
+  "character_rendering": {
+    "consistency_priority": "Maintain character recognition across panels",
+    "expression_detail": "Clear, expressive faces showing emotion",
+    "body_language": "Character personality shown through posture and movement",
+    "equipment_accuracy": "Consistent armor, clothing, and equipment details"
+  }
+}
