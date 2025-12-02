@@ -24,9 +24,12 @@
   },
   "Marge": {
     "name": "Marge",
-    "full_description": "Age: Middle-aged human woman (40s-50s) Height: 5'4\" Build: Slightly stooped from years of reading Modest scholar's robes in muted colors Ink-stained everywhere - fingers, sleeves, hem",
+    "role": "Head Librarian",
+    "race": "Human",
+    "age_appearance": "Middle-aged (40s-50s)",
     "description_components": {
-      "visual": "Age: Middle-aged human woman (40s-50s) Height: 5'4\" Build: Slightly stooped from years of reading Modest scholar's robes in muted colors Ink-stained everywhere - fingers, sleeves, hem"
+      "physical": "Middle-aged human woman. Slightly stooped shoulders from poring over books. Modest robes stained with ink. Wears half-moon spectacles on a chain around her neck. Keeps a quill tucked behind her ear.",
+      "personality_bearing": "Kindly, scholarly. Adjusts spectacles frequently when emphasizing a point. Taps finger on nearest surface when in deep thought. Always eager to share knowledge."
     }
   },
   "Apocalypse Winter": {
@@ -73,9 +76,11 @@
   },
   "Barth": {
     "name": "Barth",
-    "full_description": "Drow blacksmith. 5'8\" tall, lean but muscular build from years of forge work. Dark gray drow skin. Long hair tied back tightly, streaked with gray. Deep red eyes (typical drow). Weathered face with faint scar over one cheek, steady gaze. Calloused scarred hands from metalwork. Heavy leather blacksmith's apron dusted with metal shavings. Simple tunic and sturdy work pants underneath. Stands upright despite years of forge work.",
+    "role": "Drow Blacksmith",
+    "race": "Drow",
     "description_components": {
-      "visual": "Drow blacksmith. 5'8\" tall, lean but muscular build from years of forge work. Dark gray drow skin. Long hair tied back tightly, streaked with gray. Deep red eyes (typical drow). Weathered face with faint scar over one cheek, steady gaze. Calloused scarred hands from metalwork. Heavy leather blacksmith's apron dusted with metal shavings. Simple tunic and sturdy work pants underneath. Stands upright despite years of forge work."
+      "physical": "Lean, muscular drow with dark gray skin and a faint scar over one cheek. Hair tied back tightly. Wears a heavy leather apron dusted with metal shavings. Stands upright, arms often crossed or hands on hips.",
+      "personality_bearing": "Stoic, thoughtful. Taps anvil lightly when worried. Speaks slowly and deliberately - each word is measured. Inspects hands frequently, rubbing metallic dust off them. Polite but subdued - direct eye contact can be intense."
     }
   },
   "Festival crowd": {
@@ -113,46 +118,57 @@
       "visual": "Half-elf woman, middle-aged (appears late 30s but likely older). 5'6\" tall, warm welcoming presence. Auburn hair with silver streaks, tied back practically. Bright hazel eyes, laugh lines. Fair skin with light freckles. Simple but elegant fantasy caf\u00e9 proprietor clothing - earth-tone dress with apron, nature-themed embroidery. Wooden serving tray. Kind smile that doesn't quite hide current worry."
     }
   },
-  "Blink Mephit": {
-    "name": "Blink Mephit",
-    "full_description": "Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages",
-    "description_components": {
-      "visual": "Size: Small elemental (about 2-3 feet tall) Form: Nearly invisible, edges flicker like a mirage Wings: Translucent, leave shimmering afterimages"
-    }
-  },
-  "Sorrel": {
-    "name": "Sorrel",
-    "full_description": "Small gold dragon wyrmling, about the size of a large dog, compact but majestic. Brilliant metallic gold scales that shimmer in any light, catching and reflecting magical glow. Ancient wise amber eyes, glowing with draconic intelligence and centuries of knowledge. Delicate but powerful wings spread wide - golden membranes. Reptilian features with noble bearing. Small horns curving back from head. Claws and talons visible. Young dragon but radiating power and authority. Beautiful and terrible simultaneously. Guardian of good.",
-    "description_components": {
-      "visual": "Small gold dragon wyrmling, about the size of a large dog, compact but majestic. Brilliant metallic gold scales that shimmer in any light, catching and reflecting magical glow. Ancient wise amber eyes, glowing with draconic intelligence and centuries of knowledge. Delicate but powerful wings spread wide - golden membranes. Reptilian features with noble bearing. Small horns curving back from head. Claws and talons visible. Young dragon but radiating power and authority. Beautiful and terrible simultaneously. Guardian of good."
-    }
-  },
   "Lord Alric": {
     "name": "Lord Alric",
-    "full_description": "Race: Human noble Age: 40s Height: 6'0\" Fashionable but subtly militaristic coat Rich fabrics in dark colors (navy, black, crimson)",
+    "role": "Antagonist",
+    "race": "Human noble",
+    "age_appearance": "40s",
     "description_components": {
-      "visual": "Race: Human noble Age: 40s Height: 6'0\" Fashionable but subtly militaristic coat Rich fabrics in dark colors (navy, black, crimson)"
-    }
-  },
-  "Gear Mephit": {
-    "name": "Gear Mephit",
-    "full_description": "Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components",
-    "description_components": {
-      "visual": "Size: Small elemental (2-3 feet) Form: Clockwork and gears fused into creature shape Surface: Polished brass and iron components"
-    }
-  },
-  "Starlight Mephit": {
-    "name": "Starlight Mephit",
-    "full_description": "Size: Small elemental (2-3 feet) Form: Swirling star-fields and cosmic dust Body: Ethereal, composed of living starlight",
-    "description_components": {
-      "visual": "Size: Small elemental (2-3 feet) Form: Swirling star-fields and cosmic dust Body: Ethereal, composed of living starlight"
+      "physical": "Human noble, 6'0\" tall, lean aristocratic build. Dark hair with gray at temples, slicked back. Cold gray-blue calculating eyes. Sharp, angular face with permanent sneer. Chin always elevated, arrogant posture.",
+      "clothing": "Fashionable but subtly militaristic coat in rich dark fabrics (navy, black, crimson). Crimson emblem on coat (house symbol). Ornate rings on fingers. Carries a forged 'key' of dull metal.",
+      "personality_bearing": "Condescending expression. Gestures with pointed fingers when commanding. Eyes constantly assessing, calculating. Power-hungry aura."
     }
   },
   "Verdant Mephit": {
     "name": "Verdant Mephit",
-    "full_description": "Size: Small elemental (2-3 feet) Form: Living vines and thorny brambles given shape Eyes: Glowing green pinpoints of light",
+    "type": "Small elemental (Nature Essence)",
     "description_components": {
-      "visual": "Size: Small elemental (2-3 feet) Form: Living vines and thorny brambles given shape Eyes: Glowing green pinpoints of light"
+      "visual": "Small, fey-like imp woven from vines, leaves, and moss. About 2-3 feet tall. Flowers bloom around its feet. When angered, thorny vines lash out viciously. Faint pollen drifts in its wake. Appears mischievous yet protective of natural spaces."
+    }
+  },
+  "Gear Mephit": {
+    "name": "Gear Mephit",
+    "type": "Small elemental (Mechanistic Essence)",
+    "description_components": {
+      "visual": "Tiny mechanical imp assembled from interlocking brass gears and metal plates. About 2-3 feet tall. Steam hisses from its joints, moves with steady clockwork efficiency. Clanks and whirrs, occasionally emitting soft ticking. Robotic and methodical."
+    }
+  },
+  "Starlight Mephit": {
+    "name": "Starlight Mephit",
+    "type": "Small elemental (Celestial Essence)",
+    "description_components": {
+      "visual": "Luminous, ethereal figure composed of swirling star-fields and cosmic dust. About 2-3 feet tall. Glides silently, trailing motes of radiance. Eyes shimmer with otherworldly light. Sheds dim light in 10-foot radius. Otherworldly and serene."
+    }
+  },
+  "Blink Mephit": {
+    "name": "Blink Mephit",
+    "type": "Small elemental (Displacement Essence)",
+    "description_components": {
+      "visual": "Nearly invisible creature whose edges flicker like a mirage. About 2-3 feet tall. Each flap of wings leaves shimmering afterimage. Footsteps echo from unexpected directions. Elusive trickster appearance."
+    }
+  },
+  "Melody Mephit": {
+    "name": "Melody Mephit",
+    "type": "Small elemental (Harmony Essence)",
+    "description_components": {
+      "visual": "Pastel swirl of colored sound waves. About 2-3 feet tall. Form hums with gentle chords, drifting like a dancer. Every movement leaves sparkling motes and faint echoes behind. Eerie and mesmerizing."
+    }
+  },
+  "Sorrel - Dragon Form": {
+    "name": "Sorrel - Dragon Form",
+    "type": "Gold Dragon Wyrmling",
+    "description_components": {
+      "visual": "Small gold dragon wyrmling, about the size of a large dog. Brilliant metallic gold scales that shimmer in any light. Ancient, wise amber eyes glowing with draconic intelligence. Delicate but powerful wings spread wide with golden membranes. Reptilian features with noble bearing. Small horns curving back from head. Claws and talons visible. Regal bearing despite small size. Guardian of good."
     }
   }
 }
