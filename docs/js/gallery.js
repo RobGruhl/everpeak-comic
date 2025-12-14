@@ -65,38 +65,57 @@ class CharacterGallery {
         container.innerHTML = filtered.map(char => {
             const role = this.extractRole(char);
             const race = this.extractRace(char);
+            const detailUrl = this.getDetailUrl(char);
 
             return `
                 <div class="character-card" data-category="${char.category}">
                     <h3>${char.name}</h3>
                     ${role ? `<p class="role">${role}</p>` : ''}
                     ${race ? `<p class="race">${race}</p>` : ''}
-                    <button class="expand-btn" data-character="${char.name}">
-                        View Full Description
-                    </button>
+                    ${detailUrl ?
+                        `<a href="${detailUrl}" class="expand-btn">View Full Details</a>` :
+                        `<button class="expand-btn" data-character="${char.name}">View Full Description</button>`
+                    }
                 </div>
             `;
         }).join('');
 
-        // Add click handlers
-        container.querySelectorAll('.expand-btn').forEach(btn => {
+        // Add click handlers for cards without detail pages (fallback to modal)
+        container.querySelectorAll('.expand-btn[data-character]').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 const charName = btn.dataset.character;
                 this.showCharacterModal(charName);
             });
         });
+    }
 
-        // Also make cards clickable
-        container.querySelectorAll('.character-card').forEach(card => {
-            card.addEventListener('click', (e) => {
-                const btn = card.querySelector('.expand-btn');
-                if (btn) {
-                    const charName = btn.dataset.character;
-                    this.showCharacterModal(charName);
-                }
-            });
-        });
+    getDetailUrl(char) {
+        const urlMap = {
+            // Main party characters
+            'Val': 'characters/val.html',
+            'Prismor': 'characters/prismor.html',
+            'Apocalypse Winter': 'characters/apocalypse_winter.html',
+            'Lunara': 'characters/lunara.html',
+            'Malrik': 'characters/malrik.html',
+
+            // NPCs
+            'Sorrel - Halfling': 'npcs/sorrel_halfling.html',
+            'Sorrel - Dragon Form': 'npcs/sorrel_dragon.html',
+            'Marge': 'npcs/marge.html',
+            'Barth': 'npcs/barth.html',
+            'Marivielle Greenbough': 'npcs/marivielle.html',
+            'Lord Alric': 'npcs/lord_alric.html',
+
+            // Monsters/Creatures
+            'Verdant Mephit': 'monsters/verdant_mephit.html',
+            'Gear Mephit': 'monsters/gear_mephit.html',
+            'Starlight Mephit': 'monsters/starlight_mephit.html',
+            'Blink Mephit': 'monsters/blink_mephit.html',
+            'Melody Mephit': 'monsters/melody_mephit.html'
+        };
+
+        return urlMap[char.name] || null;
     }
 
     extractRole(char) {
@@ -266,36 +285,48 @@ class LocationGallery {
             return;
         }
 
-        container.innerHTML = locations.map(([name, data]) => `
-            <div class="character-card location-card">
-                <h3>${data.name || name}</h3>
-                ${data.description_components?.type ?
-                    `<p class="role">${data.description_components.type}</p>` : ''}
-                <button class="expand-btn" data-location="${name}">
-                    View Full Description
-                </button>
-            </div>
-        `).join('');
+        container.innerHTML = locations.map(([name, data]) => {
+            const detailUrl = this.getDetailUrl(name);
 
-        // Add click handlers
-        container.querySelectorAll('.expand-btn').forEach(btn => {
+            return `
+                <div class="character-card location-card">
+                    <h3>${data.name || name}</h3>
+                    ${data.description_components?.type ?
+                        `<p class="role">${data.description_components.type}</p>` : ''}
+                    ${detailUrl ?
+                        `<a href="${detailUrl}" class="expand-btn">View Full Details</a>` :
+                        `<button class="expand-btn" data-location="${name}">View Full Description</button>`
+                    }
+                </div>
+            `;
+        }).join('');
+
+        // Add click handlers for locations without detail pages (fallback to modal)
+        container.querySelectorAll('.expand-btn[data-location]').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 const locName = btn.dataset.location;
                 this.showLocationModal(locName);
             });
         });
+    }
 
-        // Make cards clickable
-        container.querySelectorAll('.location-card').forEach(card => {
-            card.addEventListener('click', (e) => {
-                const btn = card.querySelector('.expand-btn');
-                if (btn) {
-                    const locName = btn.dataset.location;
-                    this.showLocationModal(locName);
-                }
-            });
-        });
+    getDetailUrl(locationName) {
+        const urlMap = {
+            'Everpeak Citadel Exterior': 'locations/everpeak_citadel_exterior.html',
+            'Festival Marketplace': 'locations/festival_marketplace.html',
+            'Grand Courtyard': 'locations/grand_courtyard.html',
+            'The Grand Library': 'locations/the_grand_library.html',
+            'The Observatory': 'locations/the_observatory.html',
+            'Courier Tunnels': 'locations/courier_tunnels.html',
+            'Balcony Garden Café': 'locations/balcony_garden_café.html',
+            "Barth's Forge": 'locations/barths_forge.html',
+            'Sled Race Course': 'locations/sled_race_course.html',
+            'The Elven Sanctum': 'locations/the_elven_sanctum.html',
+            'Mountain Path': 'locations/mountain_path.html'
+        };
+
+        return urlMap[locationName] || null;
     }
 
     setupModal() {
