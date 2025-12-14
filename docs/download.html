@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download - Everpeak Citadel</title>
+    <meta name="description" content="Download Everpeak Citadel comic for offline reading">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .download-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .page-header h1 {
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            color: var(--text-secondary);
+            font-size: 18px;
+        }
+
+        .download-section {
+            margin-bottom: 30px;
+            padding: 30px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            border: 2px solid var(--border-color);
+        }
+
+        .download-section h2 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        .download-item {
+            background: var(--bg-hover);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .download-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .download-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .download-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--text-primary);
+        }
+
+        .download-size {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .download-description {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .download-btn:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(74, 144, 226, 0.4);
+        }
+
+        .download-btn.coming-soon {
+            background: var(--bg-disabled);
+            color: var(--text-disabled);
+            cursor: not-allowed;
+        }
+
+        .download-btn.coming-soon:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        .info-box {
+            background: var(--bg-secondary);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        .info-box h3 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 15px;
+        }
+
+        .info-box li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .info-box li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .reader-apps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .reader-app {
+            background: var(--bg-hover);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .reader-app h4 {
+            color: var(--accent-color);
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .reader-app p {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .download-container {
+                padding: 20px 15px;
+            }
+
+            .download-section {
+                padding: 20px;
+            }
+
+            .download-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .reader-apps {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">Everpeak Citadel</h1>
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link">Read</a>
+                <a href="characters.html" class="nav-link">Characters</a>
+                <a href="locations.html" class="nav-link">Locations</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="download.html" class="nav-link active">Download</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="download-container">
+        <div class="page-header">
+            <h1>Download Comic</h1>
+            <p>Get the full comic for offline reading</p>
+        </div>
+
+        <div class="info-box">
+            <h3>What is CBZ format?</h3>
+            <p>
+                CBZ is a standard comic book archive format (basically a ZIP file with images). It's supported by all major comic reader applications and preserves the original image quality.
+            </p>
+            <p style="margin-top: 10px;">
+                <strong>Benefits:</strong>
+            </p>
+            <ul>
+                <li>Read offline on any device</li>
+                <li>Full-resolution images</li>
+                <li>Works with your favorite comic reader app</li>
+                <li>Includes metadata (title, page count, etc.)</li>
+            </ul>
+        </div>
+
+        <div class="download-section">
+            <h2>Available Downloads</h2>
+
+            <div class="download-item">
+                <div class="download-header">
+                    <div>
+                        <div class="download-title">Everpeak Citadel - Complete Comic</div>
+                        <div class="download-size">337 MB • 46 Pages</div>
+                    </div>
+                </div>
+                <p class="download-description">
+                    The complete Everpeak Citadel story in high-resolution CBZ format. Includes all 46 pages from cover to conclusion.
+                </p>
+                <a href="#" class="download-btn coming-soon" onclick="alert('GitHub Release coming soon! Deploy the site first, then create the release.'); return false;">
+                    Download CBZ (Coming Soon)
+                </a>
+            </div>
+
+            <div class="download-item">
+                <div class="download-header">
+                    <div>
+                        <div class="download-title">Nano Banana Pro Edition</div>
+                        <div class="download-size">358 MB • 46 Pages</div>
+                    </div>
+                </div>
+                <p class="download-description">
+                    Alternative version with enhanced panel variations and refined artwork using the Nano Banana Pro generator.
+                </p>
+                <a href="#" class="download-btn coming-soon" onclick="alert('GitHub Release coming soon! Deploy the site first, then create the release.'); return false;">
+                    Download CBZ (Coming Soon)
+                </a>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <h2>Recommended Comic Readers</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                These free applications provide the best reading experience for CBZ files:
+            </p>
+
+            <div class="reader-apps">
+                <div class="reader-app">
+                    <h4>Windows</h4>
+                    <p>CDisplayEx, Sumatra PDF, ComicRack</p>
+                </div>
+                <div class="reader-app">
+                    <h4>macOS</h4>
+                    <p>Simple Comic, YACReader, ComicZeal</p>
+                </div>
+                <div class="reader-app">
+                    <h4>Linux</h4>
+                    <p>Comix, MComix, YACReader</p>
+                </div>
+                <div class="reader-app">
+                    <h4>iOS</h4>
+                    <p>Chunky, YACReader, Comic Zeal</p>
+                </div>
+                <div class="reader-app">
+                    <h4>Android</h4>
+                    <p>Tachiyomi, Perfect Viewer, ComiCat</p>
+                </div>
+                <div class="reader-app">
+                    <h4>Web</h4>
+                    <p>Calibre (with web server)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h3>Prefer Reading Online?</h3>
+            <p>
+                You can also read the comic directly in your browser with our web reader. No downloads required!
+            </p>
+            <p style="margin-top: 15px;">
+                <a href="index.html" class="download-btn">Start Reading Online</a>
+            </p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 Everpeak Citadel | AI-generated comic | Created with OpenAI and Google Gemini</p>
+    </footer>
+</body>
+</html>

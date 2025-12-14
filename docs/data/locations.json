@@ -1,0 +1,141 @@
+{
+  "Everpeak Citadel Exterior": {
+    "name": "Everpeak Citadel Exterior",
+    "description_components": {
+      "location_context": "Massive mountain fortress built atop converging ley lines.",
+      "architecture": "Carved from white stone with multiple crystalline towers reaching skyward. Ancient high elven architecture mixed with newer additions. Grand courtyards, winding paths and staircases carved into mountain.",
+      "surroundings": "Snow-capped peaks surrounding. Terrace gardens on impossible ledges.",
+      "atmosphere": "Festival decorations - ribbons, lanterns, banners. Smoke from chimneys and forges. Winter setting with snow.",
+      "lighting_magic": "Magical lights and lanterns visible. Faint glowing ley lines visible in mountain."
+    },
+    "full_description": "Massive mountain fortress carved from white stone with multiple crystalline towers reaching skyward. Built atop converging ley lines (faint glowing lines visible in mountain). Snow-capped peaks surrounding. Ancient high elven architecture mixed with newer additions. Magical lights and lanterns visible. Grand courtyards, terrace gardens on impossible ledges, winding paths and staircases carved into mountain. Festival decorations - ribbons, lanterns, banners. Smoke from chimneys and forges. Winter setting with snow."
+  },
+
+  "Festival Marketplace": {
+    "name": "Festival Marketplace",
+    "description_components": {
+      "location_context": "Everpeak Citadel festival marketplace.",
+      "key_features": "Bustling stalls selling winter goods, crafts, food. Wooden stalls with awnings. Colorful medieval fantasy vendors.",
+      "atmosphere": "Festive, busy atmosphere. Festival decorations everywhere - ribbons, garlands, lanterns.",
+      "people": "Crowds of various fantasy races (elves, dwarves, humans, halflings, dragonborn). People in warm cloaks.",
+      "setting": "Winter setting - snow on ground. Medieval fantasy architecture.",
+      "lighting": "Warm lighting from lanterns and magical lights."
+    },
+    "full_description": "Everpeak Citadel festival marketplace. Bustling stalls selling winter goods, crafts, food. Colorful medieval fantasy vendors. Wooden stalls with awnings. Festival decorations everywhere - ribbons, garlands, lanterns. Crowds of various fantasy races (elves, dwarves, humans, halflings, dragonborn). Winter setting - snow on ground, people in warm cloaks. Medieval fantasy architecture. Warm lighting from lanterns and magical lights. Festive, busy atmosphere."
+  },
+
+  "Grand Courtyard": {
+    "name": "Grand Courtyard",
+    "description_components": {
+      "location_context": "Everpeak Citadel grand courtyard. Large open space at center of citadel.",
+      "architecture": "White stone paving. Surrounding buildings with elegant high elven architecture. Soaring elegant design. View of crystalline towers above.",
+      "purpose": "Space for ceremonies and gatherings. Crowds can gather here.",
+      "atmosphere": "Winter festival setting - decorated with banners and lights. Snow dusting the stone.",
+      "style": "Medieval fantasy architecture."
+    },
+    "full_description": "Everpeak Citadel grand courtyard. Large open space at center of citadel. White stone paving. Surrounding buildings with elegant high elven architecture. Space for ceremonies and gatherings. Winter festival setting - decorated with banners and lights. Snow dusting the stone. Crowds can gather here. View of crystalline towers above. Medieval fantasy architecture with soaring elegant design."
+  },
+
+  "The Grand Library": {
+    "name": "The Grand Library",
+    "description_components": {
+      "location_context": "The Grand Library - scholar's paradise.",
+      "architecture": "Soaring ceilings supported by ornate columns. High elven architecture - elegant carved wood and stone. Mezzanine levels.",
+      "key_features": "Endless shelves of ancient tomes and scrolls stretching floor to ceiling. Wooden ladders on rails to reach high shelves. Reading desks. Ancient manuscripts, star-charts, arcane diagrams visible.",
+      "atmosphere": "Quiet, reverent atmosphere. Dust motes floating in light shafts. Smell of old parchment and ink.",
+      "lighting": "Tall arched windows filtering light onto reading tables. Floating magical lights providing illumination."
+    },
+    "full_description": "The Grand Library - soaring ceilings with endless shelves of ancient tomes and scrolls. Tall arched windows filtering light onto reading tables. Floating magical lights providing illumination. Wooden ladders on rails to reach high shelves. Dust motes in air. Scholar's paradise with books floor to ceiling. Ancient manuscripts, star-charts, arcane diagrams visible. Quiet, reverent atmosphere. High elven architecture - elegant carved wood and stone. Medieval fantasy grand library. Smell of old parchment and ink."
+  },
+
+  "The Observatory": {
+    "name": "The Observatory",
+    "description_components": {
+      "location_context": "Small domed chamber accessed from library mezzanine. Intimate space for astronomical study.",
+      "architecture": "Glass ceiling showing sky. Domed structure. High elven precision engineering.",
+      "key_features": "Ancient magical telescope at center - brass and crystal construction. Celestial maps and charts on walls.",
+      "atmosphere": "Recently restored from dusty forgotten state.",
+      "lighting": "Gentle starlight filtering through dome. Stars visible at night through glass ceiling.",
+      "style": "Medieval fantasy observatory."
+    },
+    "full_description": "Small domed chamber accessed from library mezzanine. Glass ceiling showing sky (stars visible at night). Ancient magical telescope at center - brass and crystal construction. Celestial maps and charts on walls. Recently restored from dusty forgotten state. Gentle starlight filtering through dome. Intimate space for astronomical study. High elven precision engineering. Medieval fantasy observatory."
+  },
+
+  "Courier Tunnels": {
+    "name": "Courier Tunnels",
+    "description_components": {
+      "location_context": "Rough-hewn stone passages beneath Everpeak Citadel. Working courier infrastructure carved through mountain.",
+      "architecture": "Cramped ceiling, winding, maze-like tunnels. Rough stone walls.",
+      "key_features": "Chalk runes and symbols covering every surface - different colored chalk marks showing different routes. Some runes glow faintly with magical energy.",
+      "atmosphere": "Evidence of tampering - smudged and tampered runes in key locations.",
+      "lighting": "Dim magical lighting (cold blue glow).",
+      "magic": "Evidence of displacement magic - spatial distortions in some areas.",
+      "style": "Medieval fantasy magical transportation network."
+    },
+    "full_description": "Rough-hewn stone passages beneath Everpeak Citadel. Chalk runes and symbols covering every surface - different colored chalk marks showing different routes. Some runes glow faintly with magical energy. Cramped ceiling, winding, maze-like tunnels. Dim magical lighting (cold blue glow). Evidence of displacement magic - spatial distortions in some areas. Smudged and tampered runes in key locations. Working courier infrastructure carved through mountain. Medieval fantasy magical transportation network."
+  },
+
+  "Balcony Garden Café": {
+    "name": "Balcony Garden Café",
+    "description_components": {
+      "location_context": "Impossible sunny terrace high in snow-covered mountains. Peaceful sanctuary.",
+      "key_features": "Lush greenery everywhere - flowering vines, potted exotic plants, herbs growing in garden beds. Rich magical soil. Small rustic wood café building.",
+      "furniture": "Wooden tables and chairs with nature carvings.",
+      "atmosphere": "Magical warmth despite winter outside. Peaceful, serene.",
+      "views": "Stone balcony railing overlooks snow-covered citadel below.",
+      "lighting": "Sunlight streaming through leaves creating dappled shadows.",
+      "restrictions": "NO modern items.",
+      "style": "Medieval fantasy garden oasis."
+    },
+    "full_description": "Impossible sunny terrace high in snow-covered mountains. Lush greenery everywhere - flowering vines, potted exotic plants, herbs growing in garden beds. Magical warmth despite winter outside. Wooden tables and chairs with nature carvings. Stone balcony railing overlooks snow-covered citadel below. Sunlight streaming through leaves creating dappled shadows. Small rustic wood café building. Rich magical soil. Peaceful sanctuary. Medieval fantasy garden oasis. NO modern items."
+  },
+
+  "Barth's Forge": {
+    "name": "Barth's Forge",
+    "description_components": {
+      "location_context": "Hot glowing forge at the Forge Fair. Drow blacksmith's workspace.",
+      "key_features": "Large brick forge with burning coals. Metal anvil. Smithing tools - hammers, tongs, quenching barrel.",
+      "atmosphere": "Workshop atmosphere with metal shavings and coal dust.",
+      "action": "Sparks flying, metal glowing red-hot.",
+      "setting": "Winter festival setting outside but forge is hot. Weapons and metalwork on display.",
+      "style": "Medieval fantasy forge setting."
+    },
+    "full_description": "Hot glowing forge at the Forge Fair. Large brick forge with burning coals, metal anvil, smithing tools. Drow blacksmith's workspace. Medieval fantasy forge setting. Sparks flying, metal glowing red-hot. Hammers, tongs, quenching barrel. Winter festival setting outside but forge is hot. Weapons and metalwork on display. Workshop atmosphere with metal shavings and coal dust."
+  },
+
+  "Sled Race Course": {
+    "name": "Sled Race Course",
+    "description_components": {
+      "location_context": "Everpeak Citadel sled race starting area. High on mountain slope.",
+      "views": "Dramatic view DOWN the mountain showing winding sled race course carved into snowy mountainside. Snow-covered mountain landscape. White stone citadel visible in background/above.",
+      "key_features": "Starting line area with multiple wooden sleds lined up.",
+      "atmosphere": "Winter festival setting with decorative flags and banners marking the course. Clear winter day with dramatic mountain vistas.",
+      "style": "Medieval fantasy winter sports setting."
+    },
+    "full_description": "Everpeak Citadel sled race starting area. High on mountain slope with dramatic view DOWN the mountain showing winding sled race course carved into snowy mountainside. Starting line area with multiple wooden sleds lined up. Winter festival setting with decorative flags and banners marking the course. Snow-covered mountain landscape. White stone citadel visible in background/above. Clear winter day with dramatic mountain vistas. Medieval fantasy winter sports setting."
+  },
+
+  "The Elven Sanctum": {
+    "name": "The Elven Sanctum",
+    "description_components": {
+      "location_context": "Hidden cavern deep beneath Everpeak Citadel. Massive central chamber.",
+      "architecture": "Ancient high elven architecture with carved stone pillars. Vaulted ceiling covered in constellation maps and celestial charts. Cathedral-like scale. Medieval high fantasy sanctum with high elven precision engineering.",
+      "key_features": "The Orrery at center - enormous magical device with rotating crystal spheres, suspended lenses, glowing runes, intricate clicking gears and metallic arms. Five alcoves housing the True Lenses for elemental essences.",
+      "atmosphere": "Sense of ancient power and sacrifice. Reverent atmosphere. Ruins and scars from century-old battle visible on walls and floor.",
+      "lighting_magic": "Magical energy crackling through air - emerald (nature), silver-blue (mechanistic), lavender (celestial), golden (harmony), shifting prisms (displacement)."
+    },
+    "full_description": "Hidden cavern deep beneath Everpeak Citadel. Massive central chamber with the Orrery at center - enormous magical device with rotating crystal spheres, suspended lenses, glowing runes, intricate clicking gears and metallic arms. Ancient high elven architecture with carved stone pillars, vaulted ceiling covered in constellation maps and celestial charts. Five alcoves housing the True Lenses for elemental essences. Magical energy crackling through air - emerald (nature), silver-blue (mechanistic), lavender (celestial), golden (harmony), shifting prisms (displacement). Sense of ancient power and sacrifice. Ruins and scars from century-old battle visible on walls and floor. Cathedral-like scale with reverent atmosphere. Medieval high fantasy sanctum with high elven precision engineering."
+  },
+
+  "Mountain Path": {
+    "name": "Mountain Path",
+    "description_components": {
+      "location_context": "Snowy mountain path leading to Everpeak Citadel.",
+      "terrain": "Steep winding trail carved into mountainside. Snow-covered rocks and pine trees.",
+      "views": "White stone citadel visible above.",
+      "atmosphere": "Winter mountain setting - cold, windy, dramatic vistas.",
+      "style": "Medieval fantasy mountain trail."
+    },
+    "full_description": "Snowy mountain path leading to Everpeak Citadel. Steep winding trail carved into mountainside. Snow-covered rocks and pine trees. White stone citadel visible above. Winter mountain setting - cold, windy, dramatic vistas. Medieval fantasy mountain trail."
+  }
+}
