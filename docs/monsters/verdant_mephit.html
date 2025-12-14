@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdant Mephit - Nature Essence Elemental</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/detail-page.css">
+    <style>
+        .stat-block {
+            background: var(--bg-secondary);
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .stat-row {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 10px;
+            background: var(--bg-primary);
+            border-radius: 4px;
+        }
+        .stat-item strong {
+            display: block;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">Everpeak Citadel</h1>
+            <nav class="site-nav">
+                <a href="../index.html" class="nav-link">Read</a>
+                <a href="../characters.html" class="nav-link active">Characters</a>
+                <a href="../locations.html" class="nav-link">Locations</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <a href="../download.html" class="nav-link">Download</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="detail-container">
+        <nav class="breadcrumb">
+            <a href="../characters.html">← Back to Characters</a>
+        </nav>
+
+        <div class="detail-header">
+            <div class="portrait">
+                <img src="../images/monsters/verdant-mephit.png" alt="Verdant Mephit" onerror="this.src='../images/placeholder.png'">
+            </div>
+            <div class="header-info">
+                <h1>Verdant Mephit</h1>
+                <h2 class="subtitle">Nature Essence Elemental</h2>
+                <div class="quick-stats">
+                    <span class="stat"><strong>Type:</strong> Small Elemental (Neutral)</span>
+                    <span class="stat"><strong>CR:</strong> 1/2 (100 XP)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-content">
+            <section class="detail-section">
+                <h3>Description</h3>
+                <div class="section-content">
+                    A small, fey-like imp woven from vines, leaves, and moss. Flowers bloom around its feet, but when angered, thorny vines lash out viciously. It appears mischievous yet protective of natural spaces. These mephits are manifestations of disturbed Nature Essence found in ancient elven structures, particularly in gardens and sanctuaries where natural magic has been corrupted or disrupted.
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h3>Stat Block</h3>
+                <div class="stat-block">
+                    <p><strong>Armor Class:</strong> 12<br>
+                    <strong>Hit Points:</strong> 21 (6d6)<br>
+                    <strong>Speed:</strong> 30 ft., fly 30 ft.</p>
+
+                    <div class="stat-row">
+                        <div class="stat-item"><strong>STR</strong><span>8 (-1)</span></div>
+                        <div class="stat-item"><strong>DEX</strong><span>15 (+2)</span></div>
+                        <div class="stat-item"><strong>CON</strong><span>10 (+0)</span></div>
+                        <div class="stat-item"><strong>INT</strong><span>7 (-2)</span></div>
+                        <div class="stat-item"><strong>WIS</strong><span>12 (+1)</span></div>
+                        <div class="stat-item"><strong>CHA</strong><span>10 (+0)</span></div>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        **Skills:** Perception +3, Stealth +4<br>
+**Damage Immunities:** Poison<br>
+**Condition Immunities:** Poisoned<br>
+**Senses:** Darkvision 60 ft., passive Perception 13<br>
+**Languages:** Sylvan, Terran (understands but can't speak)
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h3>Abilities & Actions</h3>
+                <div class="section-content abilities">
+                    **Verdant Body:** The mephit's form is composed of living plant matter; faint pollen drifts in its wake.<br><br>
+
+**Thorn Strike (Ranged Attack):** <br>
+*Ranged Weapon Attack:* +4 to hit, range 30/60 ft., one target<br>
+*Hit:* 5 (1d6 + 2) piercing damage<br><br>
+
+**Roots of Wrath (Action):**<br>
+The mephit slams a clawed vine into the ground, forcing each creature in a 10-foot radius to make a Strength or Dexterity saving throw (DC 13). On a failure, a creature becomes Restrained by thick, writhing vines. A Restrained creature can use its action to repeat the save, freeing itself on a success. The vines remain for up to 1d4 rounds or until the mephit is destroyed. This area also becomes difficult terrain for all creatures except the Verdant Mephit.<br><br>
+
+**Bloomstrike (Ranged Vine Lash):**<br>
+*Ranged Weapon Attack:* +4 to hit, range 30 ft., one target<br>
+*Hit:* 6 (1d6 + 2) slashing damage plus 3 (1d4) poison damage<br>
+*Special:* If the target is Large or smaller, the mephit may pull the target 10 feet closer or push it 10 feet away (like a *thorn whip* effect).<br><br>
+
+**Growth Spurt (Bonus Action; Recharge 5-6):**<br>
+The mephit channels a surge of Nature Essence, regaining 1d6+2 hit points. The area around it briefly flourishes with blossoms; allied plant creatures within 10 feet either regain 1d4 hit points or have advantage on their next attack.
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h3>Combat Tactics</h3>
+                <div class="section-content">
+                    **Playful Guardian:** Attacks only if it senses "unnatural" intrusion.<br><br>
+**Tactical Approach:** Prefers to entangle foes with Roots of Wrath, then whip them from short range with Bloomstrike or yank them into hazards. Uses Growth Spurt to sustain itself in extended combat.<br><br>
+**Environment:** Found in corrupted gardens, nature sanctuaries, or areas where Nature Essence has been disturbed.
+                </div>
+            </section>
+        </div>
+
+        <div class="navigation-footer">
+            <a href="../characters.html" class="btn-secondary">← All Characters</a>
+            <a href="../index.html" class="btn-primary">Start Reading →</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 Everpeak Citadel | AI-generated comic</p>
+    </footer>
+</body>
+</html>

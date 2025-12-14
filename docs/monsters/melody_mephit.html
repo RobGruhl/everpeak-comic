@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody Mephit - Harmony Essence Elemental</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/detail-page.css">
+    <style>
+        .stat-block {
+            background: var(--bg-secondary);
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .stat-row {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 10px;
+            background: var(--bg-primary);
+            border-radius: 4px;
+        }
+        .stat-item strong {
+            display: block;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">Everpeak Citadel</h1>
+            <nav class="site-nav">
+                <a href="../index.html" class="nav-link">Read</a>
+                <a href="../characters.html" class="nav-link active">Characters</a>
+                <a href="../locations.html" class="nav-link">Locations</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <a href="../download.html" class="nav-link">Download</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="detail-container">
+        <nav class="breadcrumb">
+            <a href="../characters.html">← Back to Characters</a>
+        </nav>
+
+        <div class="detail-header">
+            <div class="portrait">
+                <img src="../images/monsters/melody-mephit.png" alt="Melody Mephit" onerror="this.src='../images/placeholder.png'">
+            </div>
+            <div class="header-info">
+                <h1>Melody Mephit</h1>
+                <h2 class="subtitle">Harmony Essence Elemental</h2>
+                <div class="quick-stats">
+                    <span class="stat"><strong>Type:</strong> Small Elemental (Neutral)</span>
+                    <span class="stat"><strong>CR:</strong> 1/2 (100 XP)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-content">
+            <section class="detail-section">
+                <h3>Description</h3>
+                <div class="section-content">
+                    A pastel swirl of colored sound waves. Its form hums with gentle chords, drifting like a dancer. Every movement leaves sparkling motes and faint echoes behind. These mephits manifest when Harmony Essence is disrupted, appearing in concert halls and places of musical magic.
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h3>Stat Block</h3>
+                <div class="stat-block">
+                    <p><strong>Armor Class:</strong> 11<br>
+                    <strong>Hit Points:</strong> 19 (5d6-5)<br>
+                    <strong>Speed:</strong> 30 ft., fly 30 ft.</p>
+
+                    <div class="stat-row">
+                        <div class="stat-item"><strong>STR</strong><span>8 (-1)</span></div>
+                        <div class="stat-item"><strong>DEX</strong><span>12 (+1)</span></div>
+                        <div class="stat-item"><strong>CON</strong><span>8 (-1)</span></div>
+                        <div class="stat-item"><strong>INT</strong><span>10 (+0)</span></div>
+                        <div class="stat-item"><strong>WIS</strong><span>10 (+0)</span></div>
+                        <div class="stat-item"><strong>CHA</strong><span>14 (+2)</span></div>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        **Damage Resistances:** Thunder; Bludgeoning, Piercing, and Slashing from nonmagical attacks<br>
+**Condition Immunities:** Deafened<br>
+**Senses:** Darkvision 60 ft., passive Perception 10<br>
+**Languages:** Auran, Aquan (understands but can't speak)
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h3>Abilities & Actions</h3>
+                <div class="section-content abilities">
+                    **Harmonic Aura:** Creatures within 10 ft. of the mephit have disadvantage on Charisma (Deception) checks due to the mephit's resonating hum.<br><br>
+
+**Sonic Strike (Ranged Attack):**<br>
+The mephit releases a focused burst of discordant sound.<br>
+*Ranged Weapon Attack:* +4 to hit, range 30/60 ft., one target<br>
+*Hit:* 5 (1d6 + 2) thunder damage<br><br>
+
+**Resonant Pulse (Action):**<br>
+The mephit emits a 15-foot sphere of harmonic energy (centered on itself). Each creature in the area makes a Charisma save (DC 13) or takes 5 (2d4) thunder damage and must drop any held item or lose concentration on a spell. On a success, half damage and no extra effect.<br><br>
+
+**Discordant Duet (Bonus Action; Recharge 5-6):**<br>
+The mephit conjures a harmonic echo that sings out of key. Enemies within 10 ft. have disadvantage on Perception checks and spell attack rolls for 1 round. Allies can use verbal communication (e.g., the Help action) from 10 ft. further away, as the mephit's supportive resonance amplifies calls.<br><br>
+
+**Harmony Chain (Reaction):**<br>
+If there is another Melody Mephit or an allied "musical" entity nearby, they can chain their energies. When an ally hits a creature with an attack, the mephit spends its reaction to cause psychic feedback, dealing an extra 3 (1d6) thunder or psychic damage.
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h3>Combat Tactics</h3>
+                <div class="section-content">
+                    **Eerie & Mesmerizing:** Attempts to subdue enemies with dissonant chords rather than raw violence.<br><br>
+**Tactical Approach:** Uses Resonant Pulse to break concentration and force weapon drops, then follows up with Sonic Strike. Discordant Duet disrupts enemy coordination while aiding allies.<br><br>
+**Environment:** Found in concert halls, music chambers, or areas where Harmony Essence has been corrupted.
+                </div>
+            </section>
+        </div>
+
+        <div class="navigation-footer">
+            <a href="../characters.html" class="btn-secondary">← All Characters</a>
+            <a href="../index.html" class="btn-primary">Start Reading →</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 Everpeak Citadel | AI-generated comic</p>
+    </footer>
+</body>
+</html>

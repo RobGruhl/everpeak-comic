@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear Mephit - Mechanistic Essence Elemental</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/detail-page.css">
+    <style>
+        .stat-block {
+            background: var(--bg-secondary);
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .stat-row {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 10px;
+            background: var(--bg-primary);
+            border-radius: 4px;
+        }
+        .stat-item strong {
+            display: block;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">Everpeak Citadel</h1>
+            <nav class="site-nav">
+                <a href="../index.html" class="nav-link">Read</a>
+                <a href="../characters.html" class="nav-link active">Characters</a>
+                <a href="../locations.html" class="nav-link">Locations</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <a href="../download.html" class="nav-link">Download</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="detail-container">
+        <nav class="breadcrumb">
+            <a href="../characters.html">← Back to Characters</a>
+        </nav>
+
+        <div class="detail-header">
+            <div class="portrait">
+                <img src="../images/monsters/gear-mephit.png" alt="Gear Mephit" onerror="this.src='../images/placeholder.png'">
+            </div>
+            <div class="header-info">
+                <h1>Gear Mephit</h1>
+                <h2 class="subtitle">Mechanistic Essence Elemental</h2>
+                <div class="quick-stats">
+                    <span class="stat"><strong>Type:</strong> Small Elemental (Neutral)</span>
+                    <span class="stat"><strong>CR:</strong> 1/2 (100 XP)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-content">
+            <section class="detail-section">
+                <h3>Description</h3>
+                <div class="section-content">
+                    A tiny, mechanical imp assembled from interlocking brass gears and metal plates. Steam hisses from its joints, and it moves with steady clockwork efficiency. These mephits manifest when Mechanistic Essence is disrupted, particularly in forges, workshops, or areas with complex machinery.
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h3>Stat Block</h3>
+                <div class="stat-block">
+                    <p><strong>Armor Class:</strong> 13 (metallic plates)<br>
+                    <strong>Hit Points:</strong> 22 (5d6+5)<br>
+                    <strong>Speed:</strong> 20 ft., fly 30 ft. (clumsy)</p>
+
+                    <div class="stat-row">
+                        <div class="stat-item"><strong>STR</strong><span>10 (+0)</span></div>
+                        <div class="stat-item"><strong>DEX</strong><span>14 (+2)</span></div>
+                        <div class="stat-item"><strong>CON</strong><span>12 (+1)</span></div>
+                        <div class="stat-item"><strong>INT</strong><span>7 (-2)</span></div>
+                        <div class="stat-item"><strong>WIS</strong><span>10 (+0)</span></div>
+                        <div class="stat-item"><strong>CHA</strong><span>8 (-1)</span></div>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        **Damage Resistances:** Bludgeoning, Piercing, and Slashing from nonmagical attacks<br>
+**Condition Immunities:** Poisoned<br>
+**Senses:** Darkvision 60 ft., passive Perception 10<br>
+**Languages:** Understands Terran and one planar language (cannot speak)
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h3>Abilities & Actions</h3>
+                <div class="section-content abilities">
+                    **Clockwork Frame:** The mephit's mechanical body clanks and whirrs, occasionally emitting a soft ticking.<br><br>
+
+**Serrated Blade (Melee Attack):**<br>
+The mephit attacks with a spinning saw-like appendage of whirring gears.<br>
+*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target<br>
+*Hit:* 6 (1d8 + 2) slashing damage<br><br>
+
+**Gear Grenades (Action):**<br>
+The mephit hurls a whirring orb to a point within 30 ft. After 1 round, the grenade explodes in a 10-foot radius, dealing 7 (2d6) piercing damage; creatures in the area can attempt a Dexterity save (DC 13) for half damage. On a failed save, a creature is also Slowed (speed reduced by 10 ft.) until the end of its next turn.<br><br>
+
+**Clockwork Counter (Reaction; Recharge 4-6):**<br>
+When hit by a melee attack, the mephit's chassis emits a teeth-rattling gear-grind. The attacker must make a Dexterity save (DC 13) or take 4 (1d6) thunder damage and be pushed 10 ft. away. This can also shatter fragile objects in the area or rattle allies.<br><br>
+
+**Precision Overdrive (Bonus Action):**<br>
+The mephit targets one creature (ally or enemy) within 30 ft. with a sudden burst of mechanical insight. If targeting an ally, that ally has advantage on its next attack or skill check before the end of its next turn. If targeting an enemy, the mephit attempts to cause an "overload": the enemy has disadvantage on its next attack roll.
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h3>Combat Tactics</h3>
+                <div class="section-content">
+                    **Robotic & Efficient:** Methodical, focusing on disabling threats.<br><br>
+**Tactical Approach:** Tosses gear grenades into clustered foes, then uses Clockwork Counter to deter melee attackers. Uses Precision Overdrive strategically to swing combat in its favor.<br><br>
+**Environment:** Found in forges, workshops, mechanical puzzles, or areas with disrupted Mechanistic Essence.
+                </div>
+            </section>
+        </div>
+
+        <div class="navigation-footer">
+            <a href="../characters.html" class="btn-secondary">← All Characters</a>
+            <a href="../index.html" class="btn-primary">Start Reading →</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 Everpeak Citadel | AI-generated comic</p>
+    </footer>
+</body>
+</html>

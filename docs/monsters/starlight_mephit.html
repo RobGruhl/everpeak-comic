@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starlight Mephit - Celestial Essence Elemental</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/detail-page.css">
+    <style>
+        .stat-block {
+            background: var(--bg-secondary);
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .stat-row {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 10px;
+            background: var(--bg-primary);
+            border-radius: 4px;
+        }
+        .stat-item strong {
+            display: block;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">Everpeak Citadel</h1>
+            <nav class="site-nav">
+                <a href="../index.html" class="nav-link">Read</a>
+                <a href="../characters.html" class="nav-link active">Characters</a>
+                <a href="../locations.html" class="nav-link">Locations</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <a href="../download.html" class="nav-link">Download</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="detail-container">
+        <nav class="breadcrumb">
+            <a href="../characters.html">← Back to Characters</a>
+        </nav>
+
+        <div class="detail-header">
+            <div class="portrait">
+                <img src="../images/monsters/starlight-mephit.png" alt="Starlight Mephit" onerror="this.src='../images/placeholder.png'">
+            </div>
+            <div class="header-info">
+                <h1>Starlight Mephit</h1>
+                <h2 class="subtitle">Celestial Essence Elemental</h2>
+                <div class="quick-stats">
+                    <span class="stat"><strong>Type:</strong> Small Elemental (Neutral)</span>
+                    <span class="stat"><strong>CR:</strong> 1/2 (100 XP)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-content">
+            <section class="detail-section">
+                <h3>Description</h3>
+                <div class="section-content">
+                    A luminous, ethereal figure composed of swirling star-fields and cosmic dust. It glides silently, trailing motes of radiance behind it. Its eyes shimmer with otherworldly light. These mephits appear when Celestial Essence is disturbed, particularly in observatories or places aligned with celestial magic.
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h3>Stat Block</h3>
+                <div class="stat-block">
+                    <p><strong>Armor Class:</strong> 11<br>
+                    <strong>Hit Points:</strong> 20 (5d6)<br>
+                    <strong>Speed:</strong> 30 ft., fly 30 ft.</p>
+
+                    <div class="stat-row">
+                        <div class="stat-item"><strong>STR</strong><span>8 (-1)</span></div>
+                        <div class="stat-item"><strong>DEX</strong><span>12 (+1)</span></div>
+                        <div class="stat-item"><strong>CON</strong><span>10 (+0)</span></div>
+                        <div class="stat-item"><strong>INT</strong><span>8 (-1)</span></div>
+                        <div class="stat-item"><strong>WIS</strong><span>11 (+0)</span></div>
+                        <div class="stat-item"><strong>CHA</strong><span>12 (+1)</span></div>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        **Damage Resistances:** Radiant; Nonmagical attacks that are not silvered<br>
+**Condition Immunities:** Blinded<br>
+**Senses:** Darkvision 60 ft., passive Perception 10<br>
+**Languages:** Auran, Celestial (understands but can't speak)
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h3>Abilities & Actions</h3>
+                <div class="section-content abilities">
+                    **Luminous Form:** The mephit sheds dim light in a 10-foot radius, which it can brighten or dim as a bonus action.<br><br>
+
+**Astral Ray (Ranged Attack):**<br>
+The mephit fires a concentrated beam of starlight.<br>
+*Ranged Weapon Attack:* +4 to hit, range 40/120 ft., one target<br>
+*Hit:* 5 (1d6 + 2) radiant damage<br><br>
+
+**Cosmic Radiance (Action):**<br>
+The mephit channels celestial power in a 20-foot cone of sparkling starlight. Creatures in the area must succeed on a Constitution save (DC 13) or take 7 (2d6) radiant damage. A creature that fails also glows (shedding dim light in a 5-foot radius) for 1 minute, giving advantage on the next attack against it. On a success, half damage and no glow.<br><br>
+
+**Stellar Veil (Bonus Action; Recharge 5-6):**<br>
+The mephit creates a 10-foot-radius zone of twilight centered on itself. For 1 round, this area becomes lightly obscured to normal vision (disadvantage on Perception checks). Allies with darkvision or celestial-based senses see normally. The mephit often uses this to reposition or help an ally close in unseen.<br><br>
+
+**Glimpse of Infinity (Reaction):**<br>
+When an enemy within 15 ft. casts a spell or uses an ability that requires a saving throw, the mephit warps fate, imposing disadvantage on that save. Flavored as the mephit briefly bending cosmic threads to hinder success.
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h3>Combat Tactics</h3>
+                <div class="section-content">
+                    **Otherworldly & Serene:** Communicates in soft, musical hums; unleashes radiant fury when threatened.<br><br>
+**Tactical Approach:** Punishes clustered foes with Cosmic Radiance and uses Stellar Veil to protect itself or allies. Glimpse of Infinity can turn the tide of magical combat.<br><br>
+**Environment:** Found in observatories, celestial chambers, or areas where Celestial Essence has been disrupted.
+                </div>
+            </section>
+        </div>
+
+        <div class="navigation-footer">
+            <a href="../characters.html" class="btn-secondary">← All Characters</a>
+            <a href="../index.html" class="btn-primary">Start Reading →</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 Everpeak Citadel | AI-generated comic</p>
+    </footer>
+</body>
+</html>
