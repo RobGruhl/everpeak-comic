@@ -11,7 +11,9 @@
       "aspect_ratio": "tall",
       "size": "1024x1536",
       "characters": [],
-      "npcs": [],
+      "npcs": [
+        "Alric"
+      ],
       "location": "The Elven Sanctum"
     },
     {
@@ -21,7 +23,9 @@
       "aspect_ratio": "tall",
       "size": "1024x1536",
       "characters": [],
-      "npcs": [],
+      "npcs": [
+        "Alric"
+      ],
       "location": "The Elven Sanctum"
     },
     {
@@ -43,7 +47,9 @@
       "aspect_ratio": "tall",
       "size": "1024x1536",
       "characters": [],
-      "npcs": [],
+      "npcs": [
+        "Sorrel - Dragon Form"
+      ],
       "location": "The Elven Sanctum"
     }
   ]

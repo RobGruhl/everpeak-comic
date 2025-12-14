@@ -10,7 +10,10 @@ import zipfile
 import argparse
 from pathlib import Path
 from PIL import Image
-from layout_engine import (
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from utilities.layout_engine import (
     assemble_page_with_layout,
     PAGE_WIDTH,
     PAGE_HEIGHT

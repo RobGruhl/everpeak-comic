@@ -65,14 +65,14 @@
     "name": "Courier Tunnels",
     "description_components": {
       "location_context": "Rough-hewn stone passages beneath Everpeak Citadel. Working courier infrastructure carved through mountain.",
-      "architecture": "Cramped, winding, maze-like tunnels. Rough stone walls.",
-      "key_features": "Chalk runes and symbols covering every surface - different colored chalk marks showing different routes. Some runes glow faintly with magical energy. 'Danger Do Not Go' warnings in various colors.",
+      "architecture": "Cramped ceiling, winding, maze-like tunnels. Rough stone walls.",
+      "key_features": "Chalk runes and symbols covering every surface - different colored chalk marks showing different routes. Some runes glow faintly with magical energy.",
       "atmosphere": "Evidence of tampering - smudged and tampered runes in key locations.",
       "lighting": "Dim magical lighting (cold blue glow).",
       "magic": "Evidence of displacement magic - spatial distortions in some areas.",
       "style": "Medieval fantasy magical transportation network."
     },
-    "full_description": "Rough-hewn stone passages beneath Everpeak Citadel. Chalk runes and symbols covering every surface - different colored chalk marks showing different routes. Some runes glow faintly with magical energy. Cramped, winding, maze-like tunnels. Dim magical lighting (cold blue glow). Evidence of displacement magic - spatial distortions in some areas. Smudged and tampered runes in key locations. 'Danger Do Not Go' warnings in various colors. Working courier infrastructure carved through mountain. Medieval fantasy magical transportation network."
+    "full_description": "Rough-hewn stone passages beneath Everpeak Citadel. Chalk runes and symbols covering every surface - different colored chalk marks showing different routes. Some runes glow faintly with magical energy. Cramped ceiling, winding, maze-like tunnels. Dim magical lighting (cold blue glow). Evidence of displacement magic - spatial distortions in some areas. Smudged and tampered runes in key locations. Working courier infrastructure carved through mountain. Medieval fantasy magical transportation network."
   },
 
   "Balcony Garden Café": {

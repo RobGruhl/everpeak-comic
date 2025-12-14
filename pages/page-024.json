@@ -10,10 +10,10 @@
       "dialogue": "",
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "characters": [
-        "Lord Alric"
+      "characters": [],
+      "npcs": [
+        "Alric"
       ],
-      "npcs": [],
       "location": "The Elven Sanctum"
     },
     {
@@ -22,10 +22,10 @@
       "dialogue": "Alric: \"For a century, this citadel has been wasted on peasants and merchants. The power here belongs to those who understand it!\"",
       "aspect_ratio": "tall",
       "size": "1024x1536",
-      "characters": [
-        "Lord Alric"
+      "characters": [],
+      "npcs": [
+        "Alric"
       ],
-      "npcs": [],
       "location": "The Elven Sanctum"
     },
     {
@@ -35,7 +35,9 @@
       "aspect_ratio": "tall",
       "size": "1024x1536",
       "characters": [],
-      "npcs": [],
+      "npcs": [
+        "Alric"
+      ],
       "location": "The Elven Sanctum"
     },
     {
@@ -47,7 +49,9 @@
       "characters": [
         "Apocalypse Winter"
       ],
-      "npcs": [],
+      "npcs": [
+        "Alric"
+      ],
       "location": "The Elven Sanctum"
     }
   ]

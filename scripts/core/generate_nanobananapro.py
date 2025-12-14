@@ -221,12 +221,20 @@ def assemble_prompt(panel_data, characters_db, locations_db, style_db=None):
     """Dynamically assemble prompt from panel data and reference databases."""
     parts = []
 
+    # Check for cover-specific style override
+    cover_style = panel_data.get('cover_style')
+
     # Base style
-    if style_db and 'comic_aesthetic' in style_db:
-        parts.append(style_db['comic_aesthetic'].get('base_style', 'Professional comic book panel illustration.'))
+    if cover_style:
+        # For covers, use cover-specific styling instead of base style
+        parts.append(cover_style)
+        parts.append("")
     else:
-        parts.append("Professional comic book panel illustration.")
-    parts.append("")
+        if style_db and 'comic_aesthetic' in style_db:
+            parts.append(style_db['comic_aesthetic'].get('base_style', 'Professional comic book panel illustration.'))
+        else:
+            parts.append("Professional comic book panel illustration.")
+        parts.append("")
 
     # Location
     location_name = panel_data.get('location')
@@ -259,8 +267,8 @@ def assemble_prompt(panel_data, characters_db, locations_db, style_db=None):
     if dialogue:
         parts.append(f"Dialogue: {dialogue}\n")
 
-    # Style
-    if style_db and 'comic_aesthetic' in style_db:
+    # Style (only for non-cover panels)
+    if not cover_style and style_db and 'comic_aesthetic' in style_db:
         aesthetic = style_db['comic_aesthetic']
         if aesthetic.get('art_style'):
             parts.append(f"Style: {aesthetic['art_style']}")

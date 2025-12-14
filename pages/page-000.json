@@ -1,0 +1,26 @@
+{
+  "page_num": 0,
+  "title": "Cover",
+  "panel_count": 1,
+  "is_spread": false,
+  "is_cover": true,
+  "panels": [
+    {
+      "panel_num": 1,
+      "visual": "Dynamic heroic group shot of the five adventurers standing together against the backdrop of Everpeak Citadel. Val in center-front, brass scales gleaming, monk stance. Prismor to the left, towering in crystalline armor with greatsword. Apocalypse Winter to the right with arcane tome and magical energy swirling. Lunara beside Pocky with nature magic emanating, staff in hand. Malrik in foreground shadow, dual daggers ready. Behind them, the massive white stone citadel rises into winter sky with crystalline towers catching light. The Dawn's Crown celestial alignment glows brilliantly above. Epic, dramatic composition with heroes in action-ready poses. Snow and magical energy swirling. BOLD LARGE TITLE TEXT overlaid at top in fantasy comic book lettering: 'EVERPEAK CITADEL' with subtitle below: 'Echoes of the Dawn's Crown'",
+      "dialogue": "",
+      "aspect_ratio": "tall",
+      "size": "1024x1536",
+      "characters": [
+        "Val",
+        "Prismor",
+        "Apocalypse Winter",
+        "Lunara",
+        "Malrik"
+      ],
+      "npcs": [],
+      "location": "Everpeak Citadel Exterior",
+      "cover_style": "Epic fantasy comic book cover illustration. Bold dramatic composition with dynamic poses. Rich, vibrant colors with high contrast. Detailed character rendering. Heroic group shot composition. Fantasy adventure aesthetic. Professional comic book cover art with cinematic lighting. LARGE BOLD TITLE TEXT: 'EVERPEAK CITADEL' in prominent fantasy lettering overlaid at top of image, with subtitle 'Echoes of the Dawn's Crown' below in elegant script. Title should be very prominent and readable, using dramatic fantasy comic book font styling."
+    }
+  ]
+}
