@@ -66,16 +66,22 @@ class CharacterGallery {
             const role = this.extractRole(char);
             const race = this.extractRace(char);
             const detailUrl = this.getDetailUrl(char);
+            const thumbnail = this.getThumbnail(char);
+            const summary = this.getSummary(char);
 
             return `
                 <div class="character-card" data-category="${char.category}">
-                    <h3>${char.name}</h3>
-                    ${role ? `<p class="role">${role}</p>` : ''}
-                    ${race ? `<p class="race">${race}</p>` : ''}
-                    ${detailUrl ?
-                        `<a href="${detailUrl}" class="expand-btn">View Full Details</a>` :
-                        `<button class="expand-btn" data-character="${char.name}">View Full Description</button>`
-                    }
+                    ${thumbnail ? `<img src="${thumbnail}" alt="${char.name}" class="card-thumbnail" onerror="this.src='images/placeholder.png'">` : ''}
+                    <div class="card-content">
+                        <h3>${char.name}</h3>
+                        ${role ? `<p class="role">${role}</p>` : ''}
+                        ${race ? `<p class="race">${race}</p>` : ''}
+                        ${summary ? `<p class="summary">${summary}</p>` : ''}
+                        ${detailUrl ?
+                            `<a href="${detailUrl}" class="expand-btn">View Full Details</a>` :
+                            `<button class="expand-btn" data-character="${char.name}">View Full Description</button>`
+                        }
+                    </div>
                 </div>
             `;
         }).join('');
@@ -116,6 +122,62 @@ class CharacterGallery {
         };
 
         return urlMap[char.name] || null;
+    }
+
+    getThumbnail(char) {
+        const thumbnailMap = {
+            // Main party characters
+            'Val': 'images/characters/val-portrait.png',
+            'Prismor': 'images/characters/prismor-portrait.png',
+            'Apocalypse Winter': 'images/characters/apocalypse-winter-portrait.png',
+            'Lunara': 'images/characters/lunara-portrait.png',
+            'Malrik': 'images/characters/malrik-portrait.png',
+
+            // NPCs
+            'Sorrel - Halfling': 'images/npcs/sorrel-halfling-portrait.png',
+            'Sorrel - Dragon Form': 'images/npcs/sorrel-dragon-portrait.png',
+            'Marge': 'images/npcs/marge-portrait.png',
+            'Barth': 'images/npcs/barth-portrait.png',
+            'Marivielle Greenbough': 'images/npcs/marivielle-portrait.png',
+            'Lord Alric': 'images/npcs/lord-alric-portrait.png',
+
+            // Monsters/Creatures
+            'Verdant Mephit': 'images/monsters/verdant-mephit.png',
+            'Gear Mephit': 'images/monsters/gear-mephit.png',
+            'Starlight Mephit': 'images/monsters/starlight-mephit.png',
+            'Blink Mephit': 'images/monsters/blink-mephit.png',
+            'Melody Mephit': 'images/monsters/melody-mephit.png'
+        };
+
+        return thumbnailMap[char.name] || null;
+    }
+
+    getSummary(char) {
+        const summaryMap = {
+            // Main party characters
+            'Val': 'Friendly brass dragonborn courier and monk who delivers messages throughout Everpeak Citadel.',
+            'Prismor': 'Noble blue crystal dragonborn paladin, veteran defender of Everpeak and mentor to younger settlers.',
+            'Apocalypse Winter': 'Young human wizard and scholar obsessed with uncovering the mysteries of the Dawn\'s Crown alignment.',
+            'Lunara': 'Ancient high elf druid who tends Everpeak\'s magical gardens and maintains Nature Essence balance.',
+            'Malrik': 'Charming drow rogue and street performer who found acceptance and purpose in Everpeak.',
+
+            // NPCs
+            'Sorrel - Halfling': 'Curious "halfling child" who observes the party with unusual wisdom. Secretly a gold dragon wyrmling.',
+            'Sorrel - Dragon Form': 'Small but majestic gold dragon wyrmling, ancient guardian testing the party\'s worth.',
+            'Marge': 'Kindly head librarian and keeper of Everpeak\'s incomplete historical records.',
+            'Barth': 'Stoic drow blacksmith troubled by theft of mysterious frozen iron from his forge.',
+            'Marivielle Greenbough': 'Nurturing half-elf café owner who maintains an impossible garden oasis.',
+            'Lord Alric': 'Ambitious noble antagonist seeking to control Mechanistic Essence for personal dominance.',
+
+            // Monsters/Creatures
+            'Verdant Mephit': 'Small nature elemental composed of vines, leaves, and thorny branches. Appears when Nature Essence is disturbed.',
+            'Gear Mephit': 'Tiny mechanical imp of interlocking gears and metal plates. Manifests from disrupted Mechanistic Essence.',
+            'Starlight Mephit': 'Luminous ethereal figure of swirling star-fields and cosmic dust. Emerges when Celestial Essence is disturbed.',
+            'Blink Mephit': 'Nearly invisible creature that flickers like a mirage. Haunts areas with disrupted Displacement Essence.',
+            'Melody Mephit': 'Pastel swirl of colored sound waves. Appears when Harmony Essence is corrupted.'
+        };
+
+        return summaryMap[char.name] || '';
     }
 
     extractRole(char) {
@@ -287,16 +349,22 @@ class LocationGallery {
 
         container.innerHTML = locations.map(([name, data]) => {
             const detailUrl = this.getDetailUrl(name);
+            const thumbnail = this.getThumbnail(name);
+            const summary = this.getSummary(name);
 
             return `
                 <div class="character-card location-card">
-                    <h3>${data.name || name}</h3>
-                    ${data.description_components?.type ?
-                        `<p class="role">${data.description_components.type}</p>` : ''}
-                    ${detailUrl ?
-                        `<a href="${detailUrl}" class="expand-btn">View Full Details</a>` :
-                        `<button class="expand-btn" data-location="${name}">View Full Description</button>`
-                    }
+                    ${thumbnail ? `<img src="${thumbnail}" alt="${data.name || name}" class="card-thumbnail" onerror="this.src='images/placeholder.png'">` : ''}
+                    <div class="card-content">
+                        <h3>${data.name || name}</h3>
+                        ${data.description_components?.type ?
+                            `<p class="role">${data.description_components.type}</p>` : ''}
+                        ${summary ? `<p class="summary">${summary}</p>` : ''}
+                        ${detailUrl ?
+                            `<a href="${detailUrl}" class="expand-btn">View Full Details</a>` :
+                            `<button class="expand-btn" data-location="${name}">View Full Description</button>`
+                        }
+                    </div>
                 </div>
             `;
         }).join('');
@@ -327,6 +395,42 @@ class LocationGallery {
         };
 
         return urlMap[locationName] || null;
+    }
+
+    getThumbnail(locationName) {
+        const thumbnailMap = {
+            'Everpeak Citadel Exterior': 'images/locations/everpeak_citadel_exterior.png',
+            'Festival Marketplace': 'images/locations/festival_marketplace.png',
+            'Grand Courtyard': 'images/locations/grand_courtyard.png',
+            'The Grand Library': 'images/locations/the_grand_library.png',
+            'The Observatory': 'images/locations/the_observatory.png',
+            'Courier Tunnels': 'images/locations/courier_tunnels.png',
+            'Balcony Garden Café': 'images/locations/balcony_garden_café.png',
+            "Barth's Forge": 'images/locations/barths_forge.png',
+            'Sled Race Course': 'images/locations/sled_race_course.png',
+            'The Elven Sanctum': 'images/locations/the_elven_sanctum.png',
+            'Mountain Path': 'images/locations/mountain_path.png'
+        };
+
+        return thumbnailMap[locationName] || null;
+    }
+
+    getSummary(locationName) {
+        const summaryMap = {
+            'Everpeak Citadel Exterior': 'Massive white stone fortress built atop converging ley lines with crystalline towers and ancient high elven architecture.',
+            'Festival Marketplace': 'Bustling marketplace filled with vendors, decorations, and diverse fantasy races celebrating the winter festival.',
+            'Grand Courtyard': 'Majestic ceremonial center of the citadel where important gatherings and the Yule Tree ceremony take place.',
+            'The Grand Library': 'Scholar\'s paradise containing ancient knowledge about Everpeak\'s history and the high elves\' sacrifice.',
+            'The Observatory': 'Intimate stargazing chamber with a magical telescope, recently restored and holding clues about the Dawn\'s Crown.',
+            'Courier Tunnels': 'Maze-like passages beneath the citadel marked with chalk runes and displacement magic. Evidence of tampering.',
+            'Balcony Garden Café': 'Impossible sunny terrace infused with Nature Essence, creating a warm oasis high in the snowy mountains.',
+            "Barth's Forge": 'Hot working forge where Mechanistic Essence is harnessed for metalworking. Site of mysterious frozen iron theft.',
+            'Sled Race Course': 'Dramatic mountain slope starting line showcasing Everpeak\'s festive spirit and breathtaking vistas.',
+            'The Elven Sanctum': 'Hidden cavern containing the massive Orrery that controls elemental essence flows throughout the citadel.',
+            'Mountain Path': 'Steep winding trail approach to Everpeak Citadel through snow-covered peaks and hardy pine forests.'
+        };
+
+        return summaryMap[locationName] || '';
     }
 
     setupModal() {
