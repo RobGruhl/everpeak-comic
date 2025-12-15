@@ -146,7 +146,15 @@ class CharacterGallery {
             'Gear Mephit': 'images/monsters/gear-mephit.png',
             'Starlight Mephit': 'images/monsters/starlight-mephit.png',
             'Blink Mephit': 'images/monsters/blink-mephit.png',
-            'Melody Mephit': 'images/monsters/melody-mephit.png'
+            'Melody Mephit': 'images/monsters/melody-mephit.png',
+
+            // Background NPCs
+            'Fantasy Crowd': 'images/npcs/fantasy-crowd.png',
+            'Festival crowd': 'images/npcs/festival-crowd.png',
+            'Halfling courier': 'images/npcs/halfling-courier.png',
+            'Gambler': 'images/npcs/gambler.png',
+            'Well-dressed gambler': 'images/npcs/gambler.png',
+            'Race contestants': 'images/npcs/race-contestants.png'
         };
 
         return thumbnailMap[char.name] || null;
@@ -174,7 +182,15 @@ class CharacterGallery {
             'Gear Mephit': 'Tiny mechanical imp of interlocking gears and metal plates. Manifests from disrupted Mechanistic Essence.',
             'Starlight Mephit': 'Luminous ethereal figure of swirling star-fields and cosmic dust. Emerges when Celestial Essence is disturbed.',
             'Blink Mephit': 'Nearly invisible creature that flickers like a mirage. Haunts areas with disrupted Displacement Essence.',
-            'Melody Mephit': 'Pastel swirl of colored sound waves. Appears when Harmony Essence is corrupted.'
+            'Melody Mephit': 'Pastel swirl of colored sound waves. Appears when Harmony Essence is corrupted.',
+
+            // Background NPCs
+            'Fantasy Crowd': 'Diverse gathering of fantasy races at the marketplace - elves, dwarves, humans, halflings, and dragonborn.',
+            'Festival crowd': 'Large festive crowd celebrating the winter festival with decorations, laughter, and magical lighting.',
+            'Halfling courier': 'Energetic young halfling messenger, fellow member of the courier guild, breathless with urgent news.',
+            'Gambler': 'Well-dressed merchant willing to make friendly wagers during festival celebrations.',
+            'Well-dressed gambler': 'Well-dressed merchant willing to make friendly wagers during festival celebrations.',
+            'Race contestants': 'Athletic competitors preparing for the traditional Everpeak sled race down mountain slopes.'
         };
 
         return summaryMap[char.name] || '';
