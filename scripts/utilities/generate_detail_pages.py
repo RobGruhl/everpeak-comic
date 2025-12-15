@@ -5,6 +5,7 @@ with stats, backstories, and generated images.
 """
 
 import json
+import re
 from pathlib import Path
 
 DOCS_DIR = Path("docs")
@@ -15,6 +16,55 @@ MONSTER_DIR = DOCS_DIR / "monsters"
 # Create output directories
 for dir_path in [CHAR_DIR, NPC_DIR, MONSTER_DIR]:
     dir_path.mkdir(parents=True, exist_ok=True)
+
+
+def markdown_to_html(text):
+    """Convert simple markdown to HTML."""
+    if not text:
+        return ""
+
+    # Convert **bold** to <strong>
+    text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
+
+    # Split into lines
+    lines = text.split('\n')
+    html_lines = []
+    in_list = False
+    list_items = []
+
+    for line in lines:
+        stripped = line.strip()
+
+        # Handle list items
+        if stripped.startswith('- '):
+            if not in_list:
+                in_list = True
+                list_items = []
+            list_items.append(stripped[2:])  # Remove '- '
+        else:
+            # Close any open list
+            if in_list:
+                html_lines.append('<ul>')
+                for item in list_items:
+                    html_lines.append(f'<li>{item}</li>')
+                html_lines.append('</ul>')
+                in_list = False
+                list_items = []
+
+            # Add regular line
+            if stripped:
+                html_lines.append(stripped)
+            elif html_lines:  # Add line breaks for paragraph separation
+                html_lines.append('<br><br>')
+
+    # Close any remaining list
+    if in_list:
+        html_lines.append('<ul>')
+        for item in list_items:
+            html_lines.append(f'<li>{item}</li>')
+        html_lines.append('</ul>')
+
+    return '\n'.join(html_lines)
 
 
 # Character data from everpeak-complete-module
@@ -253,7 +303,7 @@ def generate_character_page(char_id, char_data):
             <section class="detail-section">
                 <h3>Background</h3>
                 <div class="section-content">
-                    {char_data['background'].replace(chr(10) + chr(10), '</p><p>')}
+                    <p>{char_data['background'].replace(chr(10) + chr(10), '</p><p>')}</p>
                 </div>
             </section>
 
@@ -274,21 +324,21 @@ def generate_character_page(char_id, char_data):
             <section class="detail-section">
                 <h3>Abilities & Traits</h3>
                 <div class="section-content abilities">
-                    {char_data['abilities'].replace(chr(10), '<br>')}
+                    {markdown_to_html(char_data['abilities'])}
                 </div>
             </section>
 
             <section class="detail-section">
                 <h3>Equipment</h3>
                 <div class="section-content equipment">
-                    {char_data['equipment'].replace(chr(10), '<br>')}
+                    {markdown_to_html(char_data['equipment'])}
                 </div>
             </section>
 
             <section class="detail-section player-info">
                 <h3>Player Information</h3>
                 <div class="section-content">
-                    {char_data['player_notes'].replace(chr(10) + chr(10), '</p><p>').replace(chr(10), '<br>')}
+                    {markdown_to_html(char_data['player_notes'])}
                 </div>
             </section>
         </div>

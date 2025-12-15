@@ -3,11 +3,65 @@
 Generate detailed HTML pages for NPCs with backgrounds and stats.
 """
 
+import re
 from pathlib import Path
 
 # Output directory
 OUTPUT_DIR = Path("docs/npcs")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def markdown_to_html(text):
+    """Convert simple markdown to HTML."""
+    if not text:
+        return ""
+
+    # Convert **bold** to <strong>
+    text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
+
+    # Replace <br> tags with newlines for processing
+    text = text.replace('<br>', '\n')
+
+    # Split into lines
+    lines = text.split('\n')
+    html_lines = []
+    in_list = False
+    list_items = []
+
+    for line in lines:
+        stripped = line.strip()
+
+        # Handle list items
+        if stripped.startswith('- '):
+            if not in_list:
+                in_list = True
+                list_items = []
+            list_items.append(stripped[2:])  # Remove '- '
+        else:
+            # Close any open list
+            if in_list:
+                html_lines.append('<ul>')
+                for item in list_items:
+                    html_lines.append(f'<li>{item}</li>')
+                html_lines.append('</ul>')
+                in_list = False
+                list_items = []
+
+            # Add regular line
+            if stripped:
+                html_lines.append(stripped)
+            elif html_lines:  # Add line breaks for paragraph separation
+                html_lines.append('<br><br>')
+
+    # Close any remaining list
+    if in_list:
+        html_lines.append('<ul>')
+        for item in list_items:
+            html_lines.append(f'<li>{item}</li>')
+        html_lines.append('</ul>')
+
+    return '\n'.join(html_lines)
+
 
 # NPC data extracted from everpeak-complete-module.md
 NPCS = {
@@ -189,8 +243,8 @@ def generate_npc_page(npc_id, npc_data):
         background=npc_data['background'],
         personality=npc_data['personality'],
         appearance=npc_data['appearance'],
-        role_abilities=npc_data['role_abilities'],
-        equipment=npc_data['equipment'],
+        role_abilities=markdown_to_html(npc_data['role_abilities']),
+        equipment=markdown_to_html(npc_data['equipment']),
         image=npc_data['image']
     )
 
