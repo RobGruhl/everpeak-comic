@@ -107,6 +107,7 @@ class CharacterGallery {
 
             // NPCs
             'Sorrel - Halfling': 'npcs/sorrel_halfling.html',
+            'Sorrel (halfling disguise)': 'npcs/sorrel_halfling.html',
             'Sorrel - Dragon Form': 'npcs/sorrel_dragon.html',
             'Marge': 'npcs/marge.html',
             'Barth': 'npcs/barth.html',
@@ -135,6 +136,7 @@ class CharacterGallery {
 
             // NPCs
             'Sorrel - Halfling': 'images/npcs/sorrel-halfling-portrait.png',
+            'Sorrel (halfling disguise)': 'images/npcs/sorrel-halfling-portrait.png',
             'Sorrel - Dragon Form': 'images/npcs/sorrel-dragon-portrait.png',
             'Marge': 'images/npcs/marge-portrait.png',
             'Barth': 'images/npcs/barth-portrait.png',
@@ -171,6 +173,7 @@ class CharacterGallery {
 
             // NPCs
             'Sorrel - Halfling': 'Curious "halfling child" who observes the party with unusual wisdom. Secretly a gold dragon wyrmling.',
+            'Sorrel (halfling disguise)': 'Curious "halfling child" who observes the party with unusual wisdom. Secretly a gold dragon wyrmling.',
             'Sorrel - Dragon Form': 'Small but majestic gold dragon wyrmling, ancient guardian testing the party\'s worth.',
             'Marge': 'Kindly head librarian and keeper of Everpeak\'s incomplete historical records.',
             'Barth': 'Stoic drow blacksmith troubled by theft of mysterious frozen iron from his forge.',
