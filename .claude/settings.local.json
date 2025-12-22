@@ -27,7 +27,18 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:community.openai.com)",
       "Bash(for f in /Users/robgruhl/Projects/everpeak-comic/pages/*.json)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(git push)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(git -C /Users/robgruhl/Projects/everpeak-comic log --oneline -10)",
+      "Bash(do jq:*)",
+      "Bash(sort:*)",
+      "Bash(paste:*)",
+      "Bash(wc:*)",
+      "Bash(du:*)",
+      "Bash(convert:*)",
+      "Bash(chmod:*)"
     ],
     "deny": [],
     "ask": []
